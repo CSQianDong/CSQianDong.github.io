@@ -182,7 +182,7 @@ collections:
     output: false
     permalink: /:collection/:path/
   talks:
-    output:false
+    output: false
     permalink: /:collection/:path/
 
 
