@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am now a first year Ph.D. student in THUIR, Department of Computer Science and Technology in Tsinghua University, Beijing, China. My supervisor is Prof. Yiqun Liu. My major research interests are about session search, user intent modeling and etc.
+I am now a first year Ph.D. student in [THUIR](http://www.thuir.cn/), Department of Computer Science and Technology in Tsinghua University, Beijing, China. My supervisor is Prof. [Yiqun Liu](http://www.thuir.cn/group/~YQLiu/). My major research interests are about session search, user intent modeling and etc.
 
 Education and Experience
 ======
