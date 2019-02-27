@@ -10,17 +10,17 @@ redirect_from:
 
 I am now a first year Ph.D. student in THUIR, Department of Computer Science and Technology in Tsinghua University, Beijing, China. My supervisor is Prof. Yiqun Liu. My major research interests are about session search, user intent modeling and etc.
 
-<a href="#education">Education and Experience>
+<a href="#education">Education and Experience</a>
 ======
 * [08.2018-present] Ph.D. student, Department of Computer Science and Technology, Tsinghua University, China.
 * [09.2014-06.2018] B.S., School of Computer Science, Beijing University of Posts and Telecommunication, China.
 
-<a href="#publication">Publish>
+<a href="#publication">Publish</a>
 ======
 * ***Jia Chen***, Yiqun Liu, Cheng Luo, Jiaxin Mao, Min Zhang, and Shaoping Ma. Improving Session Search Performance with a Multi-MDP Model. The fourteenth Asia Information Retrieval Societies Conference (AIRS 2018). Preprint Version[_publications/JiaChen-AIRS2018.pdf]
 * Yukun Zheng, Cheng Luo, Weixuan Wu, ***Jia Chen***, Yiqun Liu, Huanbo Luan, Min Zhang, Shaoping Ma. THUIR at NTCIR-13 WWW Task. Proceedings of the 13th NTCIR Conference on Evaluation of Information Access Technologies (NTCIR-13). Preprint Version[_publications/NTCIR-13_paper_28.pdf]
 
-<a href="#honor">Honors and Awards>
+<a href="#honor">Honors and Awards</a>
 ======
 * [2015.] Merit Student, Beijing.
 * [2015-2017.] National Scholarship.
