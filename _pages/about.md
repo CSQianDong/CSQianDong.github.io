@@ -20,7 +20,8 @@ Publish<a href="#publication"></a>
 * ***Jia Chen***, Yiqun Liu, Cheng Luo, Jiaxin Mao, Min Zhang, and Shaoping Ma. Improving Session Search Performance with a Multi-MDP Model. The fourteenth Asia Information Retrieval Societies Conference (AIRS 2018). Preprint Version[_publications/JiaChen-AIRS2018.pdf]
 * Yukun Zheng, Cheng Luo, Weixuan Wu, ***Jia Chen***, Yiqun Liu, Huanbo Luan, Min Zhang, Shaoping Ma. THUIR at NTCIR-13 WWW Task. Proceedings of the 13th NTCIR Conference on Evaluation of Information Access Technologies (NTCIR-13). Preprint Version[_publications/NTCIR-13_paper_28.pdf]
 
-Honors and Awards<a href="#honor"></a>
+<a href="#honor"></a>
+Honors and Awards
 ======
 * [2015.] Merit Student, Beijing.
 * [2015-2017.] National Scholarship.
