@@ -17,8 +17,10 @@ Education and Experience
 
 Publications
 ======
-* ***Jia Chen***, Yiqun Liu, Cheng Luo, Jiaxin Mao, Min Zhang, and Shaoping Ma. Improving Session Search Performance with a Multi-MDP Model. The fourteenth Asia Information Retrieval Societies Conference (***AIRS 2018***). [Preprint Version](https://xuanyuan14.github.io/files/JiaChen-AIRS2018.pdf)
-* Yukun Zheng, Cheng Luo, Weixuan Wu, ***Jia Chen***, Yiqun Liu, Huanbo Luan, Min Zhang, Shaoping Ma. THUIR at NTCIR-13 WWW Task. Proceedings of the 13th NTCIR Conference on Evaluation of Information Access Technologies (***NTCIR-13***). [Preprint Version](https://xuanyuan14.github.io/files/NTCIR-13_paper_28.pdf)
+* ***Jia Chen***, Jiaxin Mao, Yiqun Liu, Min Zhang, and Shaoping Ma. TianGong-ST: A New Dataset with Large-scale Refined Real-world Web Search Sessions. The 28th ACM International Conference on Information and Knowledge Management. Short paper. (***CIKM 2019***). [Preprint Version](https://xuanyuan14.github.io/files/CIKM2019chen.pdf)
+* ***Jia Chen***, Jiaxin Mao, Yiqun Liu, Min Zhang, and Shaoping Ma. Investigating Query Reformulation Behavior of Search Users. The 25th China Conference on Information Retrieval. Long paper. (***CCIR 2019***). [Preprint Version](https://xuanyuan14.github.io/files/CCIR2019chen.pdf)
+* ***Jia Chen***, Yiqun Liu, Cheng Luo, Jiaxin Mao, Min Zhang, and Shaoping Ma. Improving Session Search Performance with a Multi-MDP Model. The fourteenth Asia Information Retrieval Societies Conference (***AIRS 2018***). Long paper. [Preprint Version](https://xuanyuan14.github.io/files/JiaChen-AIRS2018.pdf)
+* Yukun Zheng, Cheng Luo, Weixuan Wu, ***Jia Chen***, Yiqun Liu, Huanbo Luan, Min Zhang, Shaoping Ma. THUIR at NTCIR-13 WWW Task. Proceedings of the 13th NTCIR Conference on Evaluation of Information Access Technologies (***NTCIR-13***). short paper. [Preprint Version](https://xuanyuan14.github.io/files/NTCIR-13_paper_28.pdf)
 
 Honor and Awards
 ======
