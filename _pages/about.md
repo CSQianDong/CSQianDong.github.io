@@ -27,7 +27,7 @@ Publications
 Honor and Awards
 ======
 * [2019] Overall Excellence Scholarship, Tsinghua University.
-* [2015, 2016, 2017.] National Scholarship ([2015 No.01214](http://www.moe.gov.cn/srcsite/A05/s7505/201601/t20160120_228481.html), [2016 No.01225](http://www.moe.gov.cn/srcsite/A05/s7505/201612/t20161230_293528.html),[2017 No.01225](http://www.moe.gov.cn/srcsite/A05/s7505/201711/t20171108_318697.html)).
+* [2015, 2016, 2017.] National Scholarship ([2015 No.01214](http://www.moe.gov.cn/srcsite/A05/s7505/201601/t20160120_228481.html), [2016 No.01225](http://www.moe.gov.cn/srcsite/A05/s7505/201612/t20161230_293528.html), [2017 No.01225](http://www.moe.gov.cn/srcsite/A05/s7505/201711/t20171108_318697.html)).
 * [2016, 2017, 2018.] Yiyang Scholarship, BUPT.
 * [2017.] Meritorious Winner, MCM/ICM 2017.
 * [2016.] Honorable Mention, MCM/ICM 2016.
