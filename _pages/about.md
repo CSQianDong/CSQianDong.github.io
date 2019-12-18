@@ -8,11 +8,12 @@ redirect_from:
   - /about.html
 ---
 
-I am now a first year Ph.D. student in [THUIR](http://www.thuir.cn/), Department of Computer Science and Technology in Tsinghua University, Beijing, China. My supervisor is Prof. [Yiqun Liu](http://www.thuir.cn/group/~YQLiu/). My major research interests are about session search, user intent modeling and etc.
+I am now a second year Ph.D. student in [THUIR](http://www.thuir.cn/), Department of Computer Science and Technology in Tsinghua University, Beijing, China. My supervisor is Prof. [Yiqun Liu](http://www.thuir.cn/group/~YQLiu/). My major research interests are about session search, user intent modeling and etc.
 
 Education and Experience
 ======
-* [08.2018-present] Ph.D. student, Department of Computer Science and Technology, Tsinghua University, China.
+* [08.2018-present] Ph.D. student, Department of Computer Science and Technology, Tsinghua University, China.s
+* [07.2019-09.2019] Visiting student, NExT++ Research Centre, National University of Singapore, Singapore.
 * [09.2014-06.2018] B.S., School of Computer Science, Beijing University of Posts and Telecommunication, China.
 
 Publications
@@ -25,11 +26,12 @@ Publications
 
 Honor and Awards
 ======
-* [2015.] Merit Student, Beijing.
-* [2015-2017.] National Scholarship.
-* [2016-2018.] Yiyang Scholarship, BUPT.
-* [2016.] Honorable Mention, MCM/ICM 2016.
+* [2019] Overall Excellence Scholarship, Tsinghua University.
+* [2015, 2016, 2017.] National Scholarship.
+* [2016, 2017, 2018.] Yiyang Scholarship, BUPT.
 * [2017.] Meritorious Winner, MCM/ICM 2017.
+* [2016.] Honorable Mention, MCM/ICM 2016.
+* [2015.] Merit Student, Beijing.
 
 More
 ======
