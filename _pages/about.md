@@ -12,7 +12,7 @@ I am now a second year Ph.D. student in [THUIR](http://www.thuir.cn/), Departmen
 
 Education and Experience
 ======
-* [08.2018-present] Ph.D. student, Department of Computer Science and Technology, Tsinghua University, China.s
+* [08.2018-present] Ph.D. student, Department of Computer Science and Technology, Tsinghua University, China.
 * [07.2019-09.2019] Visiting student, NExT++ Research Centre, National University of Singapore, Singapore.
 * [09.2014-06.2018] B.S., School of Computer Science, Beijing University of Posts and Telecommunication, China.
 
