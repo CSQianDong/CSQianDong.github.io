@@ -18,7 +18,7 @@ Education and Experience
 
 Publications
 ======
-* ***Jia Chen***, Jiaxin Mao, Yiqun Liu, Min Zhang, and Shaoping Ma. Improving Search Snippets in Context-aware Web Search Scenarios. The 25th China Conference on Information Retrieval. Long paper. (***CCIR 2020***). [Preprint Version](https://xuanyuan14.github.io/files/CCIR20chen.pdf)
+* ***Jia Chen***, Jiaxin Mao, Yiqun Liu, Min Zhang, and Shaoping Ma. Improving Search Snippets in Context-aware Web Search Scenarios. The 26th China Conference on Information Retrieval. Long paper. (***CCIR 2020***). [Preprint Version](https://xuanyuan14.github.io/files/CCIR20chen.pdf)
 * ***Jia Chen***, Jiaxin Mao, Yiqun Liu, Min Zhang, and Shaoping Ma. A Context-Aware Click Model for Web Search. The 13th ACM International Conference on Web Search and Data Mining. Long paper. (***WSDM 2020***). [Preprint Version](https://xuanyuan14.github.io/files/WSDM20chen.pdf)
 * ***Jia Chen***. Beyond Sessions: Exploiting Hybrid Contextual Information for Web Search. The 13th ACM International Conference on Web Search and Data Mining. (***WSDM 2020 Doctoral Consortium***). [Preprint Version](https://xuanyuan14.github.io/files/WSDM20DCchen.pdf)
 * ***Jia Chen***, Jiaxin Mao, Yiqun Liu, Min Zhang, and Shaoping Ma. TianGong-ST: A New Dataset with Large-scale Refined Real-world Web Search Sessions. The 28th ACM International Conference on Information and Knowledge Management. Short paper. (***CIKM 2019***). [Preprint Version](https://xuanyuan14.github.io/files/CIKM19chen.pdf)
