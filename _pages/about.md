@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am now a third year Ph.D. candidate in [THUIR](http://www.thuir.cn/), Department of Computer Science and Technology in Tsinghua University, Beijing, China. My supervisor is Prof. [Yiqun Liu](http://www.thuir.cn/group/~YQLiu/). My major research interests are about session search, user intent modeling and etc.
+I am now a third year Ph.D. student in [THUIR](http://www.thuir.cn/), Department of Computer Science and Technology in Tsinghua University, Beijing, China. My supervisor is Prof. [Yiqun Liu](http://www.thuir.cn/group/~YQLiu/). My major research interests are about session search, user intent modeling and etc.
 
 Education and Experience
 ======
@@ -40,3 +40,6 @@ Honor and Awards
 More
 ======
 * My hobbies mainly focus on popular music, comic and animation.
+
+
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=500&t=tt&d=bju4B0QMEhcfQpVMAV_s8aJSfw7oX9YpdHi3zjXMeOs&co=4d81e6&cmo=ff902a&cmn=f55252'></script>
