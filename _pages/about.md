@@ -42,4 +42,4 @@ More
 * My hobbies mainly focus on popular music, comic and animation.
 
 
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=500&t=tt&d=bju4B0QMEhcfQpVMAV_s8aJSfw7oX9YpdHi3zjXMeOs&co=2d78ad&ct=ffffff&cmo=faa629&cmn=ff5353'></script>
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=bju4B0QMEhcfQpVMAV_s8aJSfw7oX9YpdHi3zjXMeOs&cmn=f23b67'></script>
