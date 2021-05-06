@@ -18,7 +18,7 @@ Education and Experience
 
 Publications
 ======
-* ***Jia Chen***, Jiaxin Mao, Yiqun Liu, Ziyi Ye, Weizhi Ma, Chao Wang, Min Zhang, and Shaoping Ma. A Hybrid Framework for Session Context Modeling. ACM Transactions on Information Systems. (**TOIS**). To Appear.
+* ***Jia Chen***, Jiaxin Mao, Yiqun Liu, Ziyi Ye, Weizhi Ma, Chao Wang, Min Zhang, and Shaoping Ma. A Hybrid Framework for Session Context Modeling. ACM Transactions on Information Systems. (**TOIS**). [Preprint Version](https://dl.acm.org/doi/pdf/10.1145/3448127).
 * ***Jia Chen***, Jiaxin Mao, Yiqun Liu, Fan Zhang, Min Zhang, and Shaoping Ma. Towards a Better Understanding of Query Reformulation Behavior in Web Search. the Web Conference 2021. Long paper. (**WWW 2021**). [Preprint Version](https://xuanyuan14.github.io/files/WWW21chen.pdf)
 * ***Jia Chen***, Jiaxin Mao, Yiqun Liu, Min Zhang, and Shaoping Ma. Improving Search Snippets in Context-aware Web Search Scenarios. The 26th China Conference on Information Retrieval. Long paper. (**CCIR 2020**). [Preprint Version](https://xuanyuan14.github.io/files/CCIR20chen.pdf)
 * ***Jia Chen***, Jiaxin Mao, Yiqun Liu, Min Zhang, and Shaoping Ma. A Context-Aware Click Model for Web Search. The 13th ACM International Conference on Web Search and Data Mining. Long paper. (**WSDM 2020**). [Preprint Version](https://xuanyuan14.github.io/files/WSDM20chen.pdf)
