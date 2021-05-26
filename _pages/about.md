@@ -12,6 +12,7 @@ I am now a third year Ph.D. student in [THUIR](http://www.thuir.cn/), Department
 
 Education and Experience
 ======
+* [06.2020-06.2021] Chairman of Graduates Union, Department of Computer Science and Technology, Tsinghua University, China.
 * [08.2018-present] Ph.D. student, Department of Computer Science and Technology, Tsinghua University, China.
 * [07.2019-09.2019] Visiting student, NExT++ Research Centre, National University of Singapore, Singapore.
 * [09.2014-06.2018] B.S., School of Computer Science, Beijing University of Posts and Telecommunication, China.
@@ -35,6 +36,7 @@ Honor and Awards
 * [2016, 2017, 2018.] Yiyang Scholarship, BUPT.
 * [2017.] Meritorious Winner, MCM/ICM 2017.
 * [2016.] Honorable Mention, MCM/ICM 2016.
+* [2016.] CCCC Group Programming Ladder Tournament, National Third Prize.
 * [2015.] Merit Student, Beijing.
 
 More
