@@ -10,12 +10,16 @@ redirect_from:
 
 I am now a third year Ph.D. student in [THUIR](http://www.thuir.cn/), Department of Computer Science and Technology in Tsinghua University, Beijing, China. My supervisor is Prof. [Yiqun Liu](http://www.thuir.cn/group/~YQLiu/). My major research interests are about session search, user intent modeling and etc.
 
-Education and Experience
+Education
 ======
-* [06.2020-06.2021] Chairman of Graduates Union, Department of Computer Science and Technology, Tsinghua University, China.
 * [08.2018-present] Ph.D. student, Department of Computer Science and Technology, Tsinghua University, China.
-* [07.2019-09.2019] Visiting student, NExT++ Research Centre, National University of Singapore, Singapore.
 * [09.2014-06.2018] B.S., School of Computer Science, Beijing University of Posts and Telecommunication, China.
+
+Experience
+======
+* [04.2021-present] I am the main organizer of the [NTCIR-16 Session Search (SS) task](http://www.thuir.cn/session-search/), welcome to participate!
+* [06.2020-06.2021] Chairman of Graduates Union, Department of Computer Science and Technology, Tsinghua University, China.
+* [07.2019-09.2019] Visiting student, NExT++ Research Centre, National University of Singapore, Singapore.
 
 Publications
 ======
