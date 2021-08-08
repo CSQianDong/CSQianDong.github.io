@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c85255bd-5aca-479a-b181-5f2a89df67ed" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/8b1095c73792a8a5ce3aceebe864fdf382b2f3ec/_page.scssc" afterPath="$PROJECT_DIR$/.sass-cache/8b1095c73792a8a5ce3aceebe864fdf382b2f3ec/_page.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/8b1095c73792a8a5ce3aceebe864fdf382b2f3ec/_tables.scssc" afterPath="$PROJECT_DIR$/.sass-cache/8b1095c73792a8a5ce3aceebe864fdf382b2f3ec/_tables.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_pages/about.md" afterPath="$PROJECT_DIR$/_pages/about.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/_page.scss" afterPath="$PROJECT_DIR$/_sass/_page.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/_tables.scss" afterPath="$PROJECT_DIR$/_sass/_tables.scss" />
-    </list>
+    <list default="true" id="c85255bd-5aca-479a-b181-5f2a89df67ed" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,21 +11,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4947">
-              <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+            <state relative-caret-position="221">
+              <caret line="281" column="79" lean-forward="true" selection-start-line="281" selection-start-column="79" selection-end-line="281" selection-end-column="79" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_tables.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_tables.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_sass/_tables.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            <state relative-caret-position="190">
+              <caret line="10" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="37" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -241,18 +234,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/_tables.scss">
+    <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="221">
+          <caret line="281" column="79" lean-forward="true" selection-start-line="281" selection-start-column="79" selection-end-line="281" selection-end-column="79" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
+    <entry file="file://$PROJECT_DIR$/_sass/_tables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4947">
-          <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        <state relative-caret-position="190">
+          <caret line="10" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="37" selection-end-column="1" />
           <folding />
         </state>
       </provider>
