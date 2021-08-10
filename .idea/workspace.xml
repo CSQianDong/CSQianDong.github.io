@@ -15,7 +15,7 @@
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="281" column="79" lean-forward="true" selection-start-line="281" selection-start-column="79" selection-end-line="281" selection-end-column="79" />
+              <caret line="281" column="79" lean-forward="false" selection-start-line="281" selection-start-column="79" selection-end-line="281" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -24,8 +24,8 @@
       <file leaf-file-name="_tables.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_sass/_tables.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="37" selection-end-column="1" />
+            <state relative-caret-position="418">
+              <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -237,15 +237,15 @@
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="281" column="79" lean-forward="true" selection-start-line="281" selection-start-column="79" selection-end-line="281" selection-end-column="79" />
+          <caret line="281" column="79" lean-forward="false" selection-start-line="281" selection-start-column="79" selection-end-line="281" selection-end-column="79" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_sass/_tables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="37" selection-end-column="1" />
+        <state relative-caret-position="418">
+          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
           <folding />
         </state>
       </provider>
