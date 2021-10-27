@@ -86,8 +86,10 @@ Honor and Awards
 
 | Year | Honor & Awards |
 | :------ | :------ | 
+| *2021* | Overall Excellence Scholarship (First Prize), Tsinghua University. (**Top 3%**)|
+| *2021* | Social Work Excellence Scholarship, Tsinghua University.|
 | *2020* | VMware Scholarship, DCST, Tsinghua University. (**Top 5%**)|
-| *2019* | Overall Excellence Scholarship, Tsinghua University. (**Top 10%**)| 
+| *2019* | Overall Excellence Scholarship (Second Prize), Tsinghua University. (**Top 10%**)| 
 | *2015, 2016, 2017* | National Scholarship ([2015 No.01214](http://www.moe.gov.cn/srcsite/A05/s7505/201601/t20160120_228481.html), [2016 No.01225](http://www.moe.gov.cn/srcsite/A05/s7505/201612/t20161230_293528.html), [2017 No.01225](http://www.moe.gov.cn/srcsite/A05/s7505/201711/t20171108_318697.html)). (**Top 2%**)| 
 | *2015, 2016, 2017* | Yiyang Scholarship, BUPT. (**10 places per year in the whole BUPT wide**)|
 | *2017* | Meritorious Winner, MCM/ICM 2017.|
