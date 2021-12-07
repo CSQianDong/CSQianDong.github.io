@@ -31,6 +31,11 @@ Experience
 Publications
 ======
 
+| **Pre-training Methods in Information Retrieval.**<img src="./images/new.gif" alt="image-20191107150755839" style="zoom:150%;" />|
+| :------ |  
+| Yixing Fan, Xiaohui Xie, Yinqiong Cai, ***Jia Chen***, Xinyu Ma, Xiangsheng Li, Ruqing Zhang, Jiafeng Guo, Yiqun Liu. |
+| ArXiv. [Preprint Version](https://arxiv.org/pdf/2111.13853)| 
+
 | **Incorporating Query Reformulating Behavior into Web Search Evaluation.**|
 | :------ |  
 | ***Jia Chen***, Yiqun Liu, Jiaxin Mao, Fan Zhang, Tetsuya Sakai, Weizhi Ma, Min Zhang, Shaoping Ma. |
@@ -92,8 +97,8 @@ Honor and Awards
 | *2019* | Overall Excellence Scholarship (Second Prize), Tsinghua University. (**Top 10%**)| 
 | *2015, 2016, 2017* | National Scholarship ([2015 No.01214](http://www.moe.gov.cn/srcsite/A05/s7505/201601/t20160120_228481.html), [2016 No.01225](http://www.moe.gov.cn/srcsite/A05/s7505/201612/t20161230_293528.html), [2017 No.01225](http://www.moe.gov.cn/srcsite/A05/s7505/201711/t20171108_318697.html)). (**Top 2%**)| 
 | *2015, 2016, 2017* | Yiyang Scholarship, BUPT. (**10 places per year in the whole BUPT wide**)|
-| *2017* | Meritorious Winner, MCM/ICM 2017.|
-| *2016* | Honorable Mention, MCM/ICM 2016.|
+| *2017* | Meritorious Winner (First Author), MCM/ICM 2017.|
+| *2016* | Honorable Mention (First Author), MCM/ICM 2016.|
 | *2016* | CCCC Group Programming Ladder Tournament, National Third Prize.|
 | *2015* | Merit Student, Beijing.|
 
