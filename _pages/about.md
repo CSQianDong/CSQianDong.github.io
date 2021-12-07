@@ -31,7 +31,7 @@ Experience
 Publications
 ======
 
-| **Pre-training Methods in Information Retrieval.**<img src="./images/new.gif" alt="image-20191107150755839" style="zoom:150%;" />|
+| **Pre-training Methods in Information Retrieval.**|
 | :------ |  
 | Yixing Fan, Xiaohui Xie, Yinqiong Cai, ***Jia Chen***, Xinyu Ma, Xiangsheng Li, Ruqing Zhang, Jiafeng Guo, Yiqun Liu. |
 | ArXiv. [Preprint Version](https://arxiv.org/pdf/2111.13853)| 
