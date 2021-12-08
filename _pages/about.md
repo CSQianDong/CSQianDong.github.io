@@ -16,7 +16,7 @@ Education
 | Year | Education |
 | :------ | :------ | 
 | *08.2018-present* | Ph.D. student, Department of Computer Science and Technology, Tsinghua University, China. |
-| *09.2014-06.2018* | B.S., School of Computer Science, Beijing University of Posts and Telecommunication, China. |
+| *09.2014-06.2018* | B.E., School of Computer Science, Beijing University of Posts and Telecommunication, China. |
 
 Experience
 ======
