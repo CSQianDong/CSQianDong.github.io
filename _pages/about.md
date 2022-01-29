@@ -97,7 +97,7 @@ Honor and Awards
 | *2019* | Overall Excellence Scholarship (Second Prize), Tsinghua University. (**Top 10%**)| 
 | *2015, 2016, 2017* | National Scholarship ([2015 No.01214](http://www.moe.gov.cn/srcsite/A05/s7505/201601/t20160120_228481.html), [2016 No.01225](http://www.moe.gov.cn/srcsite/A05/s7505/201612/t20161230_293528.html), [2017 No.01225](http://www.moe.gov.cn/srcsite/A05/s7505/201711/t20171108_318697.html)). (**Top 2%**)| 
 | *2015, 2016, 2017* | Yiyang Scholarship, BUPT. (**10 places per year in the whole BUPT wide**)|
-| *2017* | CCF Outstanding College Student. [link](https://www.ccf.org.cn/Awards/Awards/2017-07-31/602612.shtml) (**About 100 places per year in the Nation wide**)
+| *2017* | CCF Outstanding College Student. (**About 100 places per year in the Nation wide**) [link](https://www.ccf.org.cn/Awards/Awards/2017-07-31/602612.shtml).
 | *2017* | Meritorious Winner (First Author), MCM/ICM 2017.|
 | *2016* | Honorable Mention (First Author), MCM/ICM 2016.|
 | *2016* | CCCC Group Programming Ladder Tournament, National Third Prize.|
