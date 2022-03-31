@@ -30,6 +30,7 @@ Experience
 
 Publications
 ======
+
 | **Axiomatically Regularized Pre-training for Ad hoc Search.**|
 | :------ |  
 | ***Jia Chen***, Yiqun Liu, Yan Fang, Jiaxin Mao, Hui Fang, Shenghao Yang, Xiaohui Xie, Min Zhang, Shaoping Ma. |
