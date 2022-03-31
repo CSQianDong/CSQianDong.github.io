@@ -31,10 +31,10 @@ Experience
 Publications
 ======
 
-| **Axiomatically Regularized Pre-training for Ad hoc Search.**|
+| **Axiomatically Regularized Pre-training for Ad hoc Search.**|  
 | :------ |  
-| ***Jia Chen***, Yiqun Liu, Yan Fang, Jiaxin Mao, Hui Fang, Shenghao Yang, Xiaohui Xie, Min Zhang, Shaoping Ma. |
-| To appear in SIGIR 2022 (Full, Acceptance Rate: 20.3%). [Preprint Version](https://xuanyuan14.github.io/files/SIGIR22Chen.pdf)| 
+| ***Jia Chen***, Yiqun Liu, Yan Fang, Jiaxin Mao, Hui Fang, Shenghao Yang, Xiaohui Xie, Min Zhang, Shaoping Ma. |  
+| To appear in SIGIR 2022 (Full, Acceptance Rate: 20.3%). [Preprint Version](https://xuanyuan14.github.io/files/SIGIR22Chen.pdf)|  
 
 | **Pre-training Methods in Information Retrieval.**|
 | :------ |  
