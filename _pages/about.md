@@ -23,7 +23,8 @@ Experience
 
 | Year | Experience |
 | :------ | :------ | 
-| *04.2021-present* | Main organizer of the [NTCIR-16 Session Search (SS) task](http://www.thuir.cn/session-search/), welcome to participate! |
+| *06.2022-09.2022* | Alibaba Group (Hangzhou), Department of Big Taobao Search, Internship. |
+| *04.2021-06.2022* | Main organizer of the [NTCIR-16 Session Search (SS) task](http://www.thuir.cn/session-search/).|
 | *06.2020-06.2021* | Chairman of Graduates Union, DCST, Tsinghua University, China.|
 | *07.2019-09.2019* | Visiting student, NExT++ Research Centre, National University of Singapore, Singapore. |
 
