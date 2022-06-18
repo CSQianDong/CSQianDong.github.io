@@ -36,10 +36,15 @@ Publications
 | ***Jia Chen***, Yiqun Liu, Yan Fang, Jiaxin Mao, Hui Fang, Shenghao Yang, Xiaohui Xie, Min Zhang, Shaoping Ma. |  
 | To appear in SIGIR 2022 (Full, Acceptance Rate: 20.3%). [Preprint Version](https://xuanyuan14.github.io/files/SIGIR22Chen.pdf)|  
 
-| **Pre-training Methods in Information Retrieval.**|
+| **Overview of the NTCIR-16 Session Search (SS) Task.**|  
 | :------ |  
-| Yixing Fan, Xiaohui Xie, Yinqiong Cai, ***Jia Chen***, Xinyu Ma, Xiangsheng Li, Ruqing Zhang, Jiafeng Guo, Yiqun Liu. |
-| ArXiv. [Preprint Version](https://arxiv.org/pdf/2111.13853)| 
+| ***Jia Chen***, Weihao Wu, Jiaxin Mao, Beining Wang, Fan Zhang, Yiqun Liu. |  
+| NTCIR-16 (Overview paper). [Preprint Version](https://xuanyuan14.github.io/files/01-NTCIR16-OV-SS-ChenJ.pdf)|  
+
+| **Pre-training Methods in Information Retrieval.**|  
+| :------ |  
+| Yixing Fan, Xiaohui Xie, Yinqiong Cai, ***Jia Chen***, Xinyu Ma, Xiangsheng Li, Ruqing Zhang, Jiafeng Guo, Yiqun Liu. |  
+| ArXiv. [Preprint Version](https://arxiv.org/pdf/2111.13853)|   
 
 | **Incorporating Query Reformulating Behavior into Web Search Evaluation.**|
 | :------ |  
