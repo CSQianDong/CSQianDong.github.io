@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am now a fourth year Ph.D. student in [THUIR](http://www.thuir.cn/), Department of Computer Science and Technology in Tsinghua University, Beijing, China. My supervisor is Prof. [Yiqun Liu](http://www.thuir.cn/group/~YQLiu/). My major research interests are about session search, user intent modeling and etc.
+I am now a fifth year Ph.D. student in [THUIR](http://www.thuir.cn/), Department of Computer Science and Technology in Tsinghua University, Beijing, China. My supervisor is Prof. [Yiqun Liu](http://www.thuir.cn/group/~YQLiu/). My major research interests are about session search, user intent modeling and etc.
 
 Education
 ======
@@ -23,7 +23,7 @@ Experience
 
 | Year | Experience |
 | :------ | :------ | 
-| *06.2022-09.2022* | Alibaba Group (Hangzhou), Department of Big Taobao Search, Internship. |
+| *06.2022-09.2022* | Alibaba Group (Hangzhou), Big Taobao Search Division, Internship. |
 | *04.2021-06.2022* | Main organizer of the [NTCIR-16 Session Search (SS) task](http://www.thuir.cn/session-search/).|
 | *06.2020-06.2021* | Chairman of Graduates Union, DCST, Tsinghua University, China.|
 | *07.2019-09.2019* | Visiting student, NExT++ Research Centre, National University of Singapore, Singapore. |
@@ -35,7 +35,7 @@ Publications
 | **Axiomatically Regularized Pre-training for Ad hoc Search.**|  
 | :------ |  
 | ***Jia Chen***, Yiqun Liu, Yan Fang, Jiaxin Mao, Hui Fang, Shenghao Yang, Xiaohui Xie, Min Zhang, Shaoping Ma. |  
-| To appear in SIGIR 2022 (Full, Acceptance Rate: 20.3%). [Preprint Version](https://xuanyuan14.github.io/files/SIGIR22Chen.pdf)|  
+| SIGIR 2022 (Full, Acceptance Rate: 20.3%). [Preprint Version](https://xuanyuan14.github.io/files/SIGIR22Chen.pdf)|  
 
 | **Overview of the NTCIR-16 Session Search (SS) Task.**|  
 | :------ |  
