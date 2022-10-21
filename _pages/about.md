@@ -50,4 +50,4 @@ My hobbies mainly focus on OverWatch🎮, movies🎥 and swimming🏊‍♂️.
 Justice rains from above! ⚡️🚀⚡️🚀⚡️🚀⚡️
 
 
-<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=3Tf_9ZphFyk33DmMJzYguMLBbqNJJXaYiV2WQo92Krc"></script>
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=500&t=tt&d=3Tf_9ZphFyk33DmMJzYguMLBbqNJJXaYiV2WQo92Krc'></script>
