@@ -17,7 +17,7 @@ Education
 | Year | Education |
 | :------ | :------ | 
 | *08.2022-present* | Ph.D. student, Department of Computer Science and Technology, Tsinghua University, China. |
-| *08.2019-06.2022* | B.E., Institute of Software, Chinese Academy of Sciences, China. |
+| *08.2019-06.2022* | M.E., Institute of Software, Chinese Academy of Sciences, China. Supervised by Prof. [Shuzi Niu](https://people.ucas.ac.cn/~0058210).|
 | *08.2015-06.2019* | B.E., School of Software Engineering, South China University of Technology, China. |
 
 Experience
