@@ -8,7 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-I am now a first year Ph.D. student in [THUIR](http://www.thuir.cn/), Department of Computer Science and Technology in Tsinghua University, Beijing, China. My supervisor is Prof. [Shaoping Ma](http://www.thuir.cn/group/~msp/), Prof. [Yiqun Liu](http://www.thuir.cn/group/~YQLiu/) and Prof. [Qingyao Ai](https://ir.aiqingyao.org/home). My major research interests are about information retrieval, knowledge-aware techniques, NLP and etc.
+I am now a first year Ph.D. student in [THUIR](http://www.thuir.cn/), Department of Computer Science and Technology in Tsinghua University (THU), Beijing, China. Before joining THU, I received the B.Eng.(2019) M.Eng.(2022) in South China University of Technology (SCUT) and Institute of Software, Chinese Academy of Sciences (ISCAS) respectively.
+My supervisor is Prof. [Shaoping Ma](http://www.thuir.cn/group/~msp/), Prof. [Yiqun Liu](http://www.thuir.cn/group/~YQLiu/) and Prof. [Qingyao Ai](https://ir.aiqingyao.org/home). My major research interests are about text retrieval/reranking, recommendation, knowledge enhanced pretrained language models for IR, etc.
 
 Education
 ======
@@ -30,10 +31,11 @@ Experience
 Publications
 ======
 
-| **Axiomatically Regularized Pre-training for Ad hoc Search.**|  
+| **Incorporating Explicit Knowledge in Pre-trained Language Models for Passage Re-ranking.**|  
 | :------ |  
-| ***Jia Chen***, Yiqun Liu, Yan Fang, Jiaxin Mao, Hui Fang, Shenghao Yang, Xiaohui Xie, Min Zhang, Shaoping Ma. |  
-| SIGIR 2022 (Full, Acceptance Rate: 20.3%). [Preprint Version](https://xuanyuan14.github.io/files/SIGIR22Chen.pdf)|  
+| ***Qian Dong***, Yiding Liu, Suqi Cheng, Shuaiqiang Wang, Zhicong Cheng, Shuzi Niu, Dawei Yin. |  
+| SIGIR 2022 (Full, Acceptance Rate: 20.3%). [Preprint Version](https://xuanyuan14.github.io/files/SIGIR22Dong.pdf)| 
+ 
 
 Honor and Awards
 ======
