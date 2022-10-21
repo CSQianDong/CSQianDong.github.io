@@ -34,7 +34,27 @@ Publications
 | **Incorporating Explicit Knowledge in Pre-trained Language Models for Passage Re-ranking.**|  
 | :------ |  
 | ***Qian Dong***, Yiding Liu, Suqi Cheng, Shuaiqiang Wang, Zhicong Cheng, Shuzi Niu, Dawei Yin. |  
-| SIGIR 2022 (Full, Acceptance Rate: 20.3%). [Preprint Version](https://xuanyuan14.github.io/files/SIGIR22Dong.pdf)| 
+| SIGIR 2022 (Full, CCF-A). [Preprint Version](https://github.com/DQ0408/DQ0408.github.io/tree/master/files/KERM.pdf)| 
+
+| **Legal Judgment Prediction via Relational Learning.**|  
+| :------ |  
+| ***Qian Dong***, Shuzi Niu. |  
+| SIGIR 2021 (Full, CCF-A). [Preprint Version](https://github.com/DQ0408/DQ0408.github.io/tree/master/files/LJP.pdf)| 
+
+| **Latent Graph Recurrent Network for Document Ranking.**|  
+| :------ |  
+| ***Qian Dong***, Shuzi Niu. |  
+| DASFAA 2021 (Full, CCF-B). [Preprint Version](https://github.com/DQ0408/DQ0408.github.io/tree/master/files/LGRe.pdf)| 
+
+| **Disentangled Graph Recurrent Network for Document Ranking.**|  
+| :------ |  
+| ***Qian Dong***, Shuzi Niu, Yucheng Li. |  
+| DASFAA Special Issue 2021 (Journal, EI). [Preprint Version](https://github.com/DQ0408/DQ0408.github.io/tree/master/files/DGRe.pdf)| 
+
+| **Emotion recognition based on multi-view body gestures.**|  
+| :------ |  
+| Zhijuan Shen, Jun Cheng, Xiping Hu, ***Qian Dong***. |  
+| ICIP 2021 (Short, CCF-C). [Preprint Version](https://github.com/DQ0408/DQ0408.github.io/tree/master/files/MBGD.pdf)| 
 
 
 Honor and Awards
