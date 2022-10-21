@@ -35,7 +35,7 @@ Publications
 | :------ |  
 | ***Qian Dong***, Yiding Liu, Suqi Cheng, Shuaiqiang Wang, Zhicong Cheng, Shuzi Niu, Dawei Yin. |  
 | SIGIR 2022 (Full, Acceptance Rate: 20.3%). [Preprint Version](https://xuanyuan14.github.io/files/SIGIR22Dong.pdf)| 
- 
+
 
 Honor and Awards
 ======
@@ -47,7 +47,7 @@ Honor and Awards
 More
 ======
 My hobbies mainly focus on OverWatch🎮, movies🎥 and swimming🏊‍♂️.  
-Justice rains from above! ⚡️
+Justice rains from above! ⚡️🚀⚡️🚀⚡️🚀⚡️
 
 
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=bju4B0QMEhcfQpVMAV_s8aJSfw7oX9YpdHi3zjXMeOs&cmn=f00b34'></script>
+<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=3Tf_9ZphFyk33DmMJzYguMLBbqNJJXaYiV2WQo92Krc"></script>
