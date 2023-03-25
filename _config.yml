@@ -11,9 +11,9 @@ title                    : "Qian Dong/THUIR"
 title_separator          : "-"
 name                     : &name "Qian Dong"
 description              : &description "personal description"
-url                      : https://dq0408.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://Deriq-Qian-Dong.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "DQ0408/DQ0408.github.io"
+repository               : "Deriq-Qian-Dong/Deriq-Qian-Dong.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -95,7 +95,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "DQ0408"
+  github           : "Deriq-Qian-Dong"
   google_plus      :
   keybase          :
   instagram        :
