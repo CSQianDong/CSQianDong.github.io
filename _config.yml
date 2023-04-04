@@ -83,7 +83,7 @@ author:
   name             : "Qian Dong"
   avatar           : "profile.jpg"
   bio              : "PhD student at Tsinghua University"
-  location         : "[Beijing, China](https://map.baidu.com/poi/%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6-FIT%E6%A5%BC/@11590057.96,4489812.75,4z?uid=b7c48c46ba1d4188095cb3ab&ugc_type=3&ugc_ver=1&device_ratio=1&compat=1&pcevaname=pc4.1&querytype=detailConInfo&da_src=shareurl)"
+  location         : "https://map.baidu.com/poi/%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6-FIT%E6%A5%BC/@11590057.96,4489812.75,4z?uid=b7c48c46ba1d4188095cb3ab&ugc_type=3&ugc_ver=1&device_ratio=1&compat=1&pcevaname=pc4.1&querytype=detailConInfo&da_src=shareurl"
   employer         :
   googlescholar    : "https://scholar.google.com/citations?user=m88SZGgAAAAJ&hl=en"
   email            : "qiandong.97@qq.com"
