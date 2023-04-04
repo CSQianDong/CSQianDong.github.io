@@ -83,7 +83,7 @@ author:
   name             : "Qian Dong"
   avatar           : "profile.jpg"
   bio              : "PhD student at Tsinghua University"
-  location         : "http://j.map.baidu.com/gGj4b"
+  location         : [Beijing](http://j.map.baidu.com/gGj4b)
   employer         :
   googlescholar    : "https://scholar.google.com/citations?user=m88SZGgAAAAJ&hl=en"
   email            : "qiandong.97@qq.com"
