@@ -34,7 +34,7 @@ Publications
 | **T^2^Ranking: A large-scale Chinese Benchmark for Passage Ranking.**| 
 | :------ |  
 | Xiaohui Xie, ***Qian Dong***, Bingning Wang, Feiyang Lv, Ting Yao, Weinan Gan, Zhijing Wu, Xiangsheng Li, Haitao Li, Yiqun Liu, Jin Ma. |  
-| arXiv. [\[Paper\]](https://arxiv.org/pdf/2304.03679)| 
+| SIGIR 2023 (Resource, CCF-A). [\[Paper\]](https://arxiv.org/pdf/2304.03679)| 
 
 | **Layout-aware Webpage Quality Assessment.**| 
 | :------ |  
