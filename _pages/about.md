@@ -31,6 +31,12 @@ Experience
 Publications
 ======
 
+| **SAILER: Structure-aware Pre-trained Language Model for Legal Case Retrieval.**| 
+| :------ |  
+| Haitao Li, Qingyao Ai, Jia Chen, ***Qian Dong***, Yueyue Wu, Yiqun Liu, Chong Chen, Qi Tian. |  
+| SIGIR 2023 (Full, CCF-A). [\[Paper\]](https://arxiv.org/abs/2304.11370)| 
+
+
 | **T<sup>2</sup>Ranking: A large-scale Chinese Benchmark for Passage Ranking.**| 
 | :------ |  
 | Xiaohui Xie, ***Qian Dong***, Bingning Wang, Feiyang Lv, Ting Yao, Weinan Gan, Zhijing Wu, Xiangsheng Li, Haitao Li, Yiqun Liu, Jin Ma. |  
