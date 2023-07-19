@@ -31,16 +31,20 @@ Experience
 Publications
 ======
 
-| **SAILER: Structure-aware Pre-trained Language Model for Legal Case Retrieval.**| 
-| :------ |  
-| Haitao Li, Qingyao Ai, Jia Chen, ***Qian Dong***, Yueyue Wu, Yiqun Liu, Chong Chen, Qi Tian. |  
-| SIGIR 2023 (Full, CCF-A). [\[Paper\]](https://arxiv.org/abs/2304.11370)| 
-
+| **I<sup>3</sup> Retriever: Incorporating Implicit Interaction in Pre-trained Language Models for Passage Retrieval.**|
+| :------ |
+| ***Qian Dong***, Yiding Liu, Qingyao Ai, Haitao Li, Shuaiqiang Wang, Yiqun Liu, Dawei Yin, Shaoping Ma. |
+| arXiv. [\[Paper\]](https://arxiv.org/abs/2306.02371)|
 
 | **T<sup>2</sup>Ranking: A large-scale Chinese Benchmark for Passage Ranking.**| 
 | :------ |  
 | Xiaohui Xie, ***Qian Dong***, Bingning Wang, Feiyang Lv, Ting Yao, Weinan Gan, Zhijing Wu, Xiangsheng Li, Haitao Li, Yiqun Liu, Jin Ma. |  
 | SIGIR 2023 (Resource, CCF-A). [\[Paper\]](https://arxiv.org/pdf/2304.03679)| 
+
+| **SAILER: Structure-aware Pre-trained Language Model for Legal Case Retrieval.**| 
+| :------ |  
+| Haitao Li, Qingyao Ai, Jia Chen, ***Qian Dong***, Yueyue Wu, Yiqun Liu, Chong Chen, Qi Tian. |  
+| SIGIR 2023 (Full, CCF-A). [\[Paper\]](https://arxiv.org/abs/2304.11370)| 
 
 | **Layout-aware Webpage Quality Assessment.**| 
 | :------ |  
