@@ -1,4 +1,4 @@
-| **I<sup>3</sup> Retriever: Incorporating Implicit Interaction in Pre-trained Language Models for Passage Retrieval.**|
+| **I<sup>3</sup>Retriever: Incorporating Implicit Interaction in Pre-trained Language Models for Passage Retrieval.**|
 | :------ |
 | ***Qian Dong***, Yiding Liu, Qingyao Ai, Haitao Li, Shuaiqiang Wang, Yiqun Liu, Dawei Yin, Shaoping Ma. |
 | arXiv. [\[Paper\]](https://arxiv.org/abs/2306.02371)|
