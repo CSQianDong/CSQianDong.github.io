@@ -31,7 +31,7 @@ Experience
 Publications
 ======
 
-``` include::pub.md ```
+``` include::_pages/pub.md ```
 
 
 Honor and Awards
