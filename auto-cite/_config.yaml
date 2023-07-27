@@ -2,5 +2,5 @@ auto-cite:
   plugins:
     - name: sources
       input:
-        - ./_data/sources.yaml
+        - ../_data/sources.yaml
   output: ./_data/citations.yaml
