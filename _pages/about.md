@@ -40,12 +40,12 @@ Experience
 
 | **SimRACG: A Simple Retrieval-Augmented Code Generation Paradigm** |
 | :------ |
-| ***Qian Dong***, Jia Chen, Qingyao Ai, Hongning Wang, Haitao Li, YIWU, Yao Hu, Yiqun LIU, Shaoping Ma |
+| ***Qian Dong***, Jia Chen, Qingyao Ai, Hongning Wang, Haitao Li, Yi Wu, Yao Hu, Yiqun Liu, Shaoping Ma |
 | Under Review. |
 
 | **Qilin: A Multimodal Information Retrieval Dataset with APP-level User Sessions** |
 | :------ |
-| Jia Chen*, ***Qian Dong****, Haitao Li, Xiaohui He, Yan Gao, Shaosheng Cao, Yi Wu, Ping Yang, Chen Xu, Yao Hu, Qingyao Ai, Yiqun Liu (*Equal Contribution) |
+| Jia Chen^*^, ***Qian Dong***^*^, Haitao Li, Xiaohui He, Yan Gao, Shaosheng Cao, Yi Wu, Ping Yang, Chen Xu, Yao Hu, Qingyao Ai, Yiqun Liu (*Equal Contribution) |
 | Under Review. |
 
 | **DecoupledRAG: An Efficient and Effective Retrieval Augmented Generation Framework via Cross Attention** |
