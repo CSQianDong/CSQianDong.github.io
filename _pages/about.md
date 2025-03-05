@@ -159,7 +159,7 @@ Honor and Awards
 
 Curriculum Vitae
 ======
-For a overview of my experience, please refer to my [curriculum vitae](_data/简历.pdf).
+For a overview of my experience, please refer to my [curriculum vitae](files/简历.pdf).
 
 More
 ======
