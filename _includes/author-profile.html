@@ -123,6 +123,9 @@
           </a>
         </li>
       {% endif %}
+      {% if author.chinese_resume %}
+        <li><a href="{{ author.chinese_resume }}"><i class="fas fa-file-alt" aria-hidden="true"></i> Chinese Resume</a></li>
+      {% endif %}
     </ul>
   </div>
 </div>
