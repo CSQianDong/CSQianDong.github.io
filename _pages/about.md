@@ -170,13 +170,6 @@ I'm an enthusiast of a diverse array of craft beers, ranging from crisp wheat be
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=J7QANnH4LJYLoOu_V6HTux3g537xFQCL00jK2z4-6jg'></script>
 
 
-<iframe
- src="https://udify.app/chatbot/6CoM85G6spngdgsq"
- style="width: 100%; height: 100%; min-height: 700px"
- frameborder="0"
- allow="microphone">
-</iframe>
-
 <div class="contact-container" style="max-width: 600px; margin: 30px auto; padding: 25px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); background-color: #fff;">
   <h2 style="text-align: center; color: #2c3e50; margin-bottom: 25px; font-weight: 600;">Leave Me a Message</h2>
   
@@ -220,3 +213,10 @@ I'm an enthusiast of a diverse array of craft beers, ranging from crisp wheat be
     </div>
   </form>
 </div>
+
+<iframe
+ src="https://udify.app/chatbot/6CoM85G6spngdgsq"
+ style="width: 100%; height: 100%; min-height: 700px"
+ frameborder="0"
+ allow="microphone">
+</iframe>
