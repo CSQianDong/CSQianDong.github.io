@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 I am now a third year Ph.D. student in [THUIR](http://ai.thuir.cn/), Department of Computer Science and Technology in Tsinghua University (THU), Beijing, China. Before joining THU, I received the B.Eng.(2019) M.Eng.(2022) in South China University of Technology (SCUT) and Institute of Software, Chinese Academy of Sciences (ISCAS) respectively.
-My supervisors are Prof. [Shaoping Ma](http://www.thuir.cn/group/~msp/), Prof. [Yiqun Liu](http://www.thuir.cn/group/~YQLiu/) and Prof. [Qingyao Ai](http://www.thuir.cn/group/~aiqy/). My major research interests are about large language models, text retrieval/reranking, recommendation, knowledge enhanced pretrained language models for IR, etc.
+My supervisors are Prof. [Shaoping Ma](http://www.thuir.cn/group/~msp/), Prof. [Yiqun Liu](http://www.thuir.cn/group/~YQLiu/) and Prof. [Qingyao Ai](http://www.thuir.cn/group/~aiqy/). My major research interests are about ***Large Language Models, RAG, preference alignment, text retrieval/reranking, knowledge enhanced models***, etc.
 
 I also served as a reviewer/PC-member for SIGIR, ACL, WWW, CIKM, and COLING.
 
