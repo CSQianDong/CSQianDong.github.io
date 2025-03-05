@@ -45,7 +45,7 @@ Experience
 
 | **Qilin: A Multimodal Information Retrieval Dataset with APP-level User Sessions** |
 | :------ |
-| Jia Chen<sup>*</sup>, ***Qian Dong***<sup>*</sup>, Haitao Li, Xiaohui He, Yan Gao, Shaosheng Cao, Yi Wu, Ping Yang, Chen Xu, Yao Hu, Qingyao Ai, Yiqun Liu (*Equal Contribution) |
+| Jia Chen<sup>★</sup>, ***Qian Dong***<sup>★</sup>, Haitao Li, Xiaohui He, Yan Gao, Shaosheng Cao, Yi Wu, Ping Yang, Chen Xu, Yao Hu, Qingyao Ai, Yiqun Liu (★Equal Contribution) |
 | Under Review. |
 
 | **DecoupledRAG: An Efficient and Effective Retrieval Augmented Generation Framework via Cross Attention** |
