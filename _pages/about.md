@@ -100,6 +100,11 @@ Experience
 
 <h3 align='center'>2025</h3>
 
+| **Llms-as-Judges: A Comprehensive Survey on LLM-based Evaluation Methods** |
+| :------ |
+| Haitao Li, ***Qian Dong***, Junjie Chen, Huixue Su, Yujia Zhou, Qingyao Ai, Ziyi Ye, Yiqun Liu |
+| Under Review. |
+
 | **DELTA: Pre-train a Discriminative Encoder for Legal Case Retrieval via Structural Word Alignment** |
 | :------ |
 | Haitao Li, Qingyao Ai, Xinyan Han, Jia Chen, ***Qian Dong***, Yiqun Liu, Chong Chen, Qi Tian |
