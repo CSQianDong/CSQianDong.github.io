@@ -114,7 +114,15 @@
       {% endif %}
       {% if author.wikipedia %}
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
-{% endif %}
+      {% endif %}
+      {% if author.xiaohongshu %}
+        <li>
+          <a href="https://www.xiaohongshu.com/user/profile/{{ author.xiaohongshu }}" class="author-social" target="_blank">
+            <img src="images/xhs.png" style="width: 12px; height: 12px; vertical-align: 1px;" alt="Xiaohongshu logo">
+            Xiaohongshu
+          </a>
+        </li>
+      {% endif %}
     </ul>
   </div>
 </div>
