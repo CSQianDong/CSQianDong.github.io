@@ -157,6 +157,10 @@ Honor and Awards
 | :------ | :------ | 
 | *2021* | National Scholarship. (**Top 1%**)|
 
+Curriculum Vitae
+======
+For a overview of my experience, please refer to my [curriculum vitae](_data/简历.pdf).
+
 More
 ======
 I'm an enthusiast of a diverse array of craft beers, ranging from crisp wheat beers to robust IPAs and everything in between. I'm always on the lookout for exceptional brews from various corners of the globe. Whether it's the refreshing notes of a Belgian Witbier, the hop-forward complexity of an IPA, or the subtle elegance of a Saison, I relish the opportunity to savor and discover the craftsmanship behind each unique flavor profile!🍻
