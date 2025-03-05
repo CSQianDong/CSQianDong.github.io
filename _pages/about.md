@@ -119,7 +119,7 @@ Experience
 
 <h3 align='center'>2024</h3>
 
-| **Calibraeval: Calibrating prediction distribution to mitigate selection bias in llms-as-judges** |
+| **Calibraeval: Calibrating Prediction Distribution to Mitigate Selection Bias in LLMs-as-Judges** |
 | :------ |
 | Haitao Li, Junjie Chen, Qingyao Ai, Zhumin Chu, Yujia Zhou, ***Qian Dong***, Yiqun Liu |
 | Under Review. |
