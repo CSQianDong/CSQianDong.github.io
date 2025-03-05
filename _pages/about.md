@@ -166,12 +166,8 @@ More
 I'm an enthusiast of a diverse array of craft beers, ranging from crisp wheat beers to robust IPAs and everything in between. I'm always on the lookout for exceptional brews from various corners of the globe. Whether it's the refreshing notes of a Belgian Witbier, the hop-forward complexity of an IPA, or the subtle elegance of a Saison, I relish the opportunity to savor and discover the craftsmanship behind each unique flavor profile!🍻
 
 
-
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=J7QANnH4LJYLoOu_V6HTux3g537xFQCL00jK2z4-6jg'></script>
-
-
 <div class="contact-container" style="max-width: 600px; margin: 30px auto; padding: 25px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); background-color: #fff;">
-  <h2 style="text-align: center; color: #2c3e50; margin-bottom: 25px; font-weight: 600;">Leave Me a Message</h2>
+  <h2 style="text-align: center; color: #2c3e50; margin-bottom: 25px; font-weight: 600;">👋 Welcome to contact me.</h2>
   
   <form action="https://formspree.io/f/mnnpaqvk" method="POST">
     <div style="margin-bottom: 20px;">
@@ -220,3 +216,5 @@ I'm an enthusiast of a diverse array of craft beers, ranging from crisp wheat be
  frameborder="0"
  allow="microphone">
 </iframe>
+
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=J7QANnH4LJYLoOu_V6HTux3g537xFQCL00jK2z4-6jg'></script>
