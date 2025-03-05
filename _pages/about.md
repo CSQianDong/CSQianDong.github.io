@@ -176,3 +176,47 @@ I'm an enthusiast of a diverse array of craft beers, ranging from crisp wheat be
  frameborder="0"
  allow="microphone">
 </iframe>
+
+<div class="contact-container" style="max-width: 600px; margin: 30px auto; padding: 25px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); background-color: #fff;">
+  <h2 style="text-align: center; color: #2c3e50; margin-bottom: 25px; font-weight: 600;">Leave Me a Message</h2>
+  
+  <form action="https://formspree.io/f/mnnpaqvk" method="POST">
+    <div style="margin-bottom: 20px;">
+      <label for="name" style="display: block; margin-bottom: 8px; font-weight: 500; color: #34495e;">Name</label>
+      <input type="text" id="name" name="name" required 
+        style="width: 100%; padding: 12px; border-radius: 6px; border: 1px solid #ddd; 
+        transition: all 0.3s; box-sizing: border-box; font-size: 16px;"
+        onFocus="this.style.borderColor='#3498db'; this.style.boxShadow='0 0 0 2px rgba(52, 152, 219, 0.2)';" 
+        onBlur="this.style.borderColor='#ddd'; this.style.boxShadow='none';">
+    </div>
+    
+    <div style="margin-bottom: 20px;">
+      <label for="email" style="display: block; margin-bottom: 8px; font-weight: 500; color: #34495e;">Email</label>
+      <input type="email" id="email" name="email" required
+        style="width: 100%; padding: 12px; border-radius: 6px; border: 1px solid #ddd; 
+        transition: all 0.3s; box-sizing: border-box; font-size: 16px;"
+        onFocus="this.style.borderColor='#3498db'; this.style.boxShadow='0 0 0 2px rgba(52, 152, 219, 0.2)';" 
+        onBlur="this.style.borderColor='#ddd'; this.style.boxShadow='none';">
+    </div>
+    
+    <div style="margin-bottom: 25px;">
+      <label for="message" style="display: block; margin-bottom: 8px; font-weight: 500; color: #34495e;">Message</label>
+      <textarea id="message" name="message" rows="4" required
+        style="width: 100%; padding: 12px; border-radius: 6px; border: 1px solid #ddd; 
+        transition: all 0.3s; box-sizing: border-box; font-size: 16px; min-height: 120px; resize: vertical;"
+        onFocus="this.style.borderColor='#3498db'; this.style.boxShadow='0 0 0 2px rgba(52, 152, 219, 0.2)';" 
+        onBlur="this.style.borderColor='#ddd'; this.style.boxShadow='none';"></textarea>
+    </div>
+    
+    <div style="text-align: center;">
+      <button type="submit" 
+        style="background-color: #3498db; color: white; padding: 12px 24px; border: none; 
+        border-radius: 6px; cursor: pointer; font-size: 16px; font-weight: 500;
+        transition: all 0.3s; box-shadow: 0 2px 5px rgba(0,0,0,0.1);"
+        onmouseover="this.style.backgroundColor='#2980b9';" 
+        onmouseout="this.style.backgroundColor='#3498db';">
+        Send Message
+      </button>
+    </div>
+  </form>
+</div>
