@@ -157,9 +157,9 @@ Honor and Awards
 | :------ | :------ | 
 | *2021* | National Scholarship. (**Top 1%**)|
 
-Curriculum Vitae
+<!-- Curriculum Vitae
 ======
-For a overview of my experience, please refer to my [curriculum vitae](files/简历.pdf).
+For a overview of my experience, please refer to my [curriculum vitae](files/简历.pdf). -->
 
 More
 ======
