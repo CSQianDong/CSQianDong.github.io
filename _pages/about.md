@@ -67,7 +67,7 @@ Experience
 | Xiaohui Xie, ***Qian Dong*** (Student First Author), Bingning Wang, Feiyang Lv, Ting Yao, Weinan Gan, Zhijing Wu, Xiangsheng Li, Haitao Li, Yiqun Liu, Jin Ma |
 | SIGIR 2023 (CCF-A). [\[Paper\]](https://doi.org/gsjb5w) [\[BibTeX\]](https://Deriq-Qian-Dong.github.io/files/bibtexs/doi:10.1145/3539618.3591874.txt) |
 
-| **I3 Retriever: Incorporating Implicit Interaction in Pre-trained Language Models for Passage Retrieval** |
+| **I<sup>3</sup>Retriever: Incorporating Implicit Interaction in Pre-trained Language Models for Passage Retrieval** |
 | :------ |
 | ***Qian Dong***, Yiding Liu, Qingyao Ai, Haitao Li, Shuaiqiang Wang, Yiqun Liu, Dawei Yin, Shaoping Ma |
 | CIKM 2023 (CCF-B). [\[Paper\]](https://doi.org/gs2pcc) [\[BibTeX\]](https://Deriq-Qian-Dong.github.io/files/bibtexs/doi:10.1145/3583780.3614923.txt) |
