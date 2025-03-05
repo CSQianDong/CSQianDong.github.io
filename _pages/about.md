@@ -115,6 +115,13 @@ Experience
 | Haitao Li, Qingyao Ai, Jia Chen, ***Qian Dong***, Zhijing Wu, Yiqun Liu, Chong Chen, Qi Tian |
 | AAAI 2025 (CCF-A). |
 
+<h3 align='center'>2024</h3>
+
+| **Calibraeval: Calibrating prediction distribution to mitigate selection bias in llms-as-judges** |
+| :------ |
+| Haitao Li, Junjie Chen, Qingyao Ai, Zhumin Chu, Yujia Zhou, ***Qian Dong***, Yiqun Liu |
+| Under Review. |
+
 <h3 align='center'>2023</h3>
 
 | **SAILER: Structure-aware Pre-trained Language Model for Legal Case Retrieval** |
