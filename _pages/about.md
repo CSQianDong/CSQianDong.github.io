@@ -45,7 +45,7 @@ Experience
 
 | **Qilin: A Multimodal Information Retrieval Dataset with APP-level User Sessions** |
 | :------ |
-| Jia Chen<sup>★</sup>, ***Qian Dong***<sup>★</sup>, Haitao Li, Xiaohui He, Yan Gao, Shaosheng Cao, Yi Wu, Ping Yang, Chen Xu, Yao Hu, Qingyao Ai, Yiqun Liu (★Equal Contribution) |
+| Jia Chen<sup>★</sup>, ***Qian Dong***<sup>★</sup>, Haitao Li, Xiaohui He, Yan Gao, Shaosheng Cao, Yi Wu, Ping Yang, Chen Xu, Yao Hu, Qingyao Ai, Yiqun Liu (<sup>★</sup>Equal Contribution) |
 | Under Review. |
 
 | **DecoupledRAG: An Efficient and Effective Retrieval Augmented Generation Framework via Cross Attention** |
@@ -64,7 +64,7 @@ Experience
 
 | **T<sup>2</sup>Ranking: A Large-scale Chinese Benchmark for Passage Ranking** |
 | :------ |
-| Xiaohui Xie, ***Qian Dong*** (Student First Author), Bingning Wang, Feiyang Lv, Ting Yao, Weinan Gan, Zhijing Wu, Xiangsheng Li, Haitao Li, Yiqun Liu, Jin Ma |
+| Xiaohui Xie, ***Qian Dong***<sup>★</sup>, Bingning Wang, Feiyang Lv, Ting Yao, Weinan Gan, Zhijing Wu, Xiangsheng Li, Haitao Li, Yiqun Liu, Jin Ma (<sup>★</sup>Student First Author) |
 | SIGIR 2023 (CCF-A). [\[Paper\]](https://doi.org/gsjb5w) [\[BibTeX\]](https://Deriq-Qian-Dong.github.io/files/bibtexs/doi:10.1145/3539618.3591874.txt) |
 
 | **I<sup>3</sup>Retriever: Incorporating Implicit Interaction in Pre-trained Language Models for Passage Retrieval** |
