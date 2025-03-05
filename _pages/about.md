@@ -29,7 +29,7 @@ Experience
 | :------ | :------ | 
 | *11.2024-present* | Xiaohongshu Inc. Research Internship. Working with [Jia Chen](https://xuanyuan14.github.io/).|
 | *08.2024-10.2024* | National University of Singapore, [NExT++ Research Centre](https://www.nextcenter.org/), Visiting Scholar. Working with Prof. [​Tat-Seng Chua](https://www.chuatatseng.com/)|
-| *08.2022-10.2022* | Tencent Inc., Research Internship.|
+| *08.2022-10.2022* | Tencent Inc., Research Internship. Working with [Bingning Wang](https://bingning.wang/research/aboutme)|
 | *07.2021-10.2024* | Baidu Inc., [Search Science Team](http://searchscience.baidu.com/), Research Internship. Working with [Yiding Liu](https://liuyiding.net/)|
 
 
