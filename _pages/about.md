@@ -85,7 +85,7 @@ Experience
 | **Disentangled Graph Recurrent Network for Document Ranking** |
 | :------ |
 | ***Qian Dong***, Shuzi Niu, Tao Yuan, Yucheng Li |
-| Data Science and Engineering-DASFAA2021 Special Issue (CCF-C). [\[Paper\]](https://doi.org/gsh8pw) [\[BibTeX\]](https://Deriq-Qian-Dong.github.io/files/bibtexs/doi:10.1007/s41019-022-00179-3.txt) |
+| Data Science and Engineering-DASFAA2021 Special Issue (JCR-Q1, IF: 7.2, CCF-C). [\[Paper\]](https://doi.org/gsh8pw) [\[BibTeX\]](https://Deriq-Qian-Dong.github.io/files/bibtexs/doi:10.1007/s41019-022-00179-3.txt) |
 
 <h3 align='center'>2021</h3>
 
@@ -103,7 +103,7 @@ Experience
 
 <h3 align='center'>2025</h3>
 
-| **Llms-as-Judges: A Comprehensive Survey on LLM-based Evaluation Methods** |
+| **LLMs-as-Judges: A Comprehensive Survey on LLM-based Evaluation Methods** |
 | :------ |
 | Haitao Li, ***Qian Dong***, Junjie Chen, Huixue Su, Yujia Zhou, Qingyao Ai, Ziyi Ye, Yiqun Liu |
 | Under Review. |
