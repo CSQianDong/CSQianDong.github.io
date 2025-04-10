@@ -49,7 +49,7 @@ Experience
 | **Qilin: A Multimodal Information Retrieval Dataset with APP-level User Sessions** |
 | :------ |
 | Jia Chen<sup>★</sup>, ***Qian Dong***<sup>★</sup>, Haitao Li, Xiaohui He, Yan Gao, Shaosheng Cao, Yi Wu, Ping Yang, Chen Xu, Yao Hu, Qingyao Ai, Yiqun Liu (<sup>★</sup>Equal Contribution) |
-| Under Review. |
+| SIGIR 2025 (CCF-A). |
 
 | **DecoupledRAG: An Efficient and Effective Retrieval Augmented Generation Framework via Cross Attention** |
 | :------ |
