@@ -107,7 +107,7 @@ Experience
 | ***Qian Dong***, Shuzi Niu |
 | DASFAA 2021 (TH-CPL-B, CCF-B). [\[Paper\]](https://doi.org/gsh8ps) [\[BibTeX\]](https://Deriq-Qian-Dong.github.io/files/bibtexs/doi:10.1007/978-3-030-73197-7_6.txt) |
 
-## As a Co-author
+<!-- ## As a Co-author
 
 <h3 align='center'>2025</h3>
 
@@ -161,7 +161,7 @@ Experience
 | :------ |
 | Zhijuan Shen, Jun Cheng, Xiping Hu, ***Qian Dong*** |
 | ICIP 2019 (CCF-C). [\[Paper\]](https://doi.org/ghjxdq) [\[BibTeX\]](https://Deriq-Qian-Dong.github.io/files/bibtexs/doi:10.1109/ICIP.2019.8803460.txt) |
-
+ -->
 
 Honor and Awards
 ======
