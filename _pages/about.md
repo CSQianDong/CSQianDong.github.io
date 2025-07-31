@@ -111,6 +111,11 @@ Experience
 
 <h3 align='center'>2025</h3>
 
+| **Calibraeval: Calibrating prediction distribution to mitigate selection bias in llms-as-judges.** |
+| :------ |
+| Haitao Li, Junjie Chen, Qingyao Ai, Zhumin Chu, Yujia Zhou, ***Qian Dong***, Yiqun Liu |
+| ACL 2025 (CCF-A). |
+
 | **LLMs-as-Judges: A Comprehensive Survey on LLM-based Evaluation Methods** |
 | :------ |
 | Haitao Li, ***Qian Dong***, Junjie Chen, Huixue Su, Yujia Zhou, Qingyao Ai, Ziyi Ye, Yiqun Liu |
