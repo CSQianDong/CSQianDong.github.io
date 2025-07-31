@@ -14,9 +14,9 @@ My supervisors are Prof. [Shaoping Ma](http://www.thuir.cn/group/~msp/), Prof. [
 
 1. **Information Retrieval**: Traditional and neural approaches for text retrieval and text reranking.
 
-2. **LLM Applications**: Retrieval-Augmented Generation (RAG), exploring how to leverage retrieved information to enhance the capabilities and efficiency of generative models.
+2. **LLM Applications**: Retrieval-Augmented Generation, exploring how to leverage retrieved information to enhance the capabilities and efficiency of generative models.
 
-3. **Foundation LLM Architectures**: Novel architectures for large language models (LLMs) targeting long-input and long-output scenarios, with a focus on hardware-algorithm co-design, as well as the corresponding pre-training and post-training techniques.
+3. **LLM Architectures**: Novel architectures for LLMs targeting long-input and long-output scenarios, with a focus on hardware-algorithm co-design.
 
 
 I also served as a reviewer/PC-member for SIGIR, ACL, WWW, CIKM, COLING, AAAI, TOIS and etc.
@@ -53,6 +53,7 @@ Experience
 | :------ |
 | ***Qian Dong***, Jia Chen, Qingyao Ai, Hongning Wang, Haitao Li, Yi Wu, Yao Hu, Yiqun Liu, Shaoping Ma |
 | Under Review. [\[Paper\]](https://www.arxiv.org/abs/2507.19033)|
+<!-- | EMNLP 2025 (TH-CPL-A, CCF-B). [\[Paper\]](https://www.arxiv.org/abs/2507.19033)| -->
 
 | **Qilin: A Multimodal Information Retrieval Dataset with APP-level User Sessions** |
 | :------ |
