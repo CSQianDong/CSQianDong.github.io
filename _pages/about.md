@@ -53,7 +53,6 @@ Experience
 | :------ |
 | ***Qian Dong***, Jia Chen, Qingyao Ai, Hongning Wang, Haitao Li, Yi Wu, Yao Hu, Yiqun Liu, Shaoping Ma |
 | Under Review. [\[Paper\]](https://www.arxiv.org/abs/2507.19033)|
-<!-- | EMNLP 2025 (TH-CPL-A, CCF-B). [\[Paper\]](https://www.arxiv.org/abs/2507.19033)| -->
 
 | **Qilin: A Multimodal Information Retrieval Dataset with APP-level User Sessions** |
 | :------ |
