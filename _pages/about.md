@@ -11,7 +11,7 @@ redirect_from:
 I am now a third year Ph.D. student in [THUIR](http://ai.thuir.cn/), Department of Computer Science and Technology in Tsinghua University (THU), Beijing, China. Before joining THU, I received the B.Eng.(2019) M.Eng.(2022) in South China University of Technology (SCUT) and Institute of Software, Chinese Academy of Sciences (ISCAS) respectively.
 My supervisors are Prof. [Shaoping Ma](http://www.thuir.cn/group/~msp/), Prof. [Yiqun Liu](http://www.thuir.cn/group/~YQLiu/) and Prof. [Qingyao Ai](http://www.thuir.cn/group/~aiqy/). My major research interests are about ***Large Language Models, Retrieval-Augmented Generation, preference alignment, text retrieval/reranking, knowledge enhanced models***, etc.
 
-I also served as a reviewer/PC-member for SIGIR, ACL, WWW, CIKM, and COLING.
+I also served as a reviewer/PC-member for SIGIR, ACL, WWW, CIKM, COLING, AAAI, TOIS and etc.
 
 Education
 ======
@@ -44,7 +44,8 @@ Experience
 | **SelfRACG: Enabling LLMs to Self-Express and Retrieve for Code Generation** |
 | :------ |
 | ***Qian Dong***, Jia Chen, Qingyao Ai, Hongning Wang, Haitao Li, Yi Wu, Yao Hu, Yiqun Liu, Shaoping Ma |
-| ARR 2025 (TH-CPL-A, CCF-B). |
+| Under Review. [\[Paper\]](https://www.arxiv.org/abs/2507.19033)|
+<!-- | EMNLP 2025 (TH-CPL-A, CCF-B). [\[Paper\]](https://www.arxiv.org/abs/2507.19033)| -->
 
 | **Qilin: A Multimodal Information Retrieval Dataset with APP-level User Sessions** |
 | :------ |
