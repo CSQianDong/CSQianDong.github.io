@@ -41,46 +41,46 @@ Experience
 
 <h3 align='center'>2025</h3>
 
-| **SimRACG: A Simple Retrieval-Augmented Code Generation Paradigm** |
+| **SelfRACG: Enabling LLMs to Self-Express and Retrieve for Code Generation** |
 | :------ |
 | ***Qian Dong***, Jia Chen, Qingyao Ai, Hongning Wang, Haitao Li, Yi Wu, Yao Hu, Yiqun Liu, Shaoping Ma |
-| Under Review. |
+| ARR 2025 (TH-CPL-A, CCF-B). |
 
 | **Qilin: A Multimodal Information Retrieval Dataset with APP-level User Sessions** |
 | :------ |
 | Jia Chen<sup>★</sup>, ***Qian Dong***<sup>★</sup>, Haitao Li, Xiaohui He, Yan Gao, Shaosheng Cao, Yi Wu, Ping Yang, Chen Xu, Yao Hu, Qingyao Ai, Yiqun Liu (<sup>★</sup>Equal Contribution) |
-| SIGIR 2025 (CCF-A). |
+| SIGIR 2025 (TH-CPL-A, CCF-A). |
 
 | **DecoupledRAG: An Efficient and Effective Retrieval Augmented Generation Framework via Cross Attention** |
 | :------ |
 | ***Qian Dong***, Qingyao Ai, Hongning Wang, Yiding Liu, Haitao Li, Weihang Su, Yiqun Liu, Tat-Seng Chua, Shaoping Ma|
-| WWW 2025 (CCF-A). |
+| WWW 2025 (TH-CPL-A, CCF-A). |
 
 <h3 align='center'>2024</h3>
 
 | **Unsupervised Large Language Model Alignment for Information Retrieval via Contrastive Feedback** |
 | :------ |
 | ***Qian Dong***, Yiding Liu, Qingyao Ai, Zhijing Wu, Haitao Li, Yiqun Liu, Shuaiqiang Wang, Dawei Yin, Shaoping Ma |
-| SIGIR 2024 (CCF-A). [\[Paper\]](https://doi.org/gss8w3) [\[BibTeX\]](https://Deriq-Qian-Dong.github.io/files/bibtexs/doi:10.48550/arXiv.2309.17078.txt) |
+| SIGIR 2024 (TH-CPL-A, CCF-A). [\[Paper\]](https://doi.org/gss8w3) [\[BibTeX\]](https://Deriq-Qian-Dong.github.io/files/bibtexs/doi:10.48550/arXiv.2309.17078.txt) |
 
 <h3 align='center'>2023</h3>
 
 | **T<sup>2</sup>Ranking: A Large-scale Chinese Benchmark for Passage Ranking** |
 | :------ |
 | Xiaohui Xie, ***Qian Dong***<sup>★</sup>, Bingning Wang, Feiyang Lv, Ting Yao, Weinan Gan, Zhijing Wu, Xiangsheng Li, Haitao Li, Yiqun Liu, Jin Ma (<sup>★</sup>Student First Author) |
-| SIGIR 2023 (CCF-A). [\[Paper\]](https://doi.org/gsjb5w) [\[BibTeX\]](https://Deriq-Qian-Dong.github.io/files/bibtexs/doi:10.1145/3539618.3591874.txt) |
+| SIGIR 2023 (TH-CPL-A, CCF-A). [\[Paper\]](https://doi.org/gsjb5w) [\[BibTeX\]](https://Deriq-Qian-Dong.github.io/files/bibtexs/doi:10.1145/3539618.3591874.txt) |
 
 | **I<sup>3</sup>Retriever: Incorporating Implicit Interaction in Pre-trained Language Models for Passage Retrieval** |
 | :------ |
 | ***Qian Dong***, Yiding Liu, Qingyao Ai, Haitao Li, Shuaiqiang Wang, Yiqun Liu, Dawei Yin, Shaoping Ma |
-| CIKM 2023 (CCF-B). [\[Paper\]](https://doi.org/gs2pcc) [\[BibTeX\]](https://Deriq-Qian-Dong.github.io/files/bibtexs/doi:10.1145/3583780.3614923.txt) |
+| CIKM 2023 (TH-CPL-B, CCF-B). [\[Paper\]](https://doi.org/gs2pcc) [\[BibTeX\]](https://Deriq-Qian-Dong.github.io/files/bibtexs/doi:10.1145/3583780.3614923.txt) |
 
 <h3 align='center'>2022</h3>
 
 | **Incorporating Explicit Knowledge in Pre-trained Language Models for Passage Re-ranking** |
 | :------ |
 | ***Qian Dong***, Yiding Liu, Suqi Cheng, Shuaiqiang Wang, Zhicong Cheng, Shuzi Niu, Dawei Yin |
-| SIGIR 2022 (CCF-A). [\[Paper\]](https://doi.org/gsh8px) [\[BibTeX\]](https://Deriq-Qian-Dong.github.io/files/bibtexs/doi:10.1145/3477495.3531997.txt) |
+| SIGIR 2022 (TH-CPL-A, CCF-A). [\[Paper\]](https://doi.org/gsh8px) [\[BibTeX\]](https://Deriq-Qian-Dong.github.io/files/bibtexs/doi:10.1145/3477495.3531997.txt) |
 
 | **Disentangled Graph Recurrent Network for Document Ranking** |
 | :------ |
@@ -92,12 +92,12 @@ Experience
 | **Legal Judgment Prediction via Relational Learning** |
 | :------ |
 | ***Qian Dong***, Shuzi Niu |
-| SIGIR 2021 (CCF-A). [\[Paper\]](https://doi.org/gq4w8t) [\[BibTeX\]](https://Deriq-Qian-Dong.github.io/files/bibtexs/doi:10.1145/3404835.3462931.txt) |
+| SIGIR 2021 (TH-CPL-A, CCF-A). [\[Paper\]](https://doi.org/gq4w8t) [\[BibTeX\]](https://Deriq-Qian-Dong.github.io/files/bibtexs/doi:10.1145/3404835.3462931.txt) |
 
 | **Latent Graph Recurrent Network for Document Ranking** |
 | :------ |
 | ***Qian Dong***, Shuzi Niu |
-| DASFAA 2021 (CCF-B). [\[Paper\]](https://doi.org/gsh8ps) [\[BibTeX\]](https://Deriq-Qian-Dong.github.io/files/bibtexs/doi:10.1007/978-3-030-73197-7_6.txt) |
+| DASFAA 2021 (TH-CPL-B, CCF-B). [\[Paper\]](https://doi.org/gsh8ps) [\[BibTeX\]](https://Deriq-Qian-Dong.github.io/files/bibtexs/doi:10.1007/978-3-030-73197-7_6.txt) |
 
 ## As a Co-author
 
