@@ -16,7 +16,7 @@ My supervisors are Prof. [Shaoping Ma](http://www.thuir.cn/group/~msp/), Prof. [
 
 2. **LLM Applications**: Retrieval-Augmented Generation, exploring how to leverage retrieved information to enhance the capabilities and efficiency of generative models.
 
-3. **LLM Post-training**: Exploring how to adapt large language models to efficiently handle long inputs and outputs through post-training techniques.
+3. **Long-Context LLM**: Exploring how to adapt LLMs to efficiently handle long inputs and outputs.
 
 
 I also served as a reviewer/PC-member for SIGIR, ACL, WWW, CIKM, COLING, AAAI, TOIS and etc.
