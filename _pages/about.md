@@ -16,7 +16,7 @@ My supervisors are Prof. [Shaoping Ma](http://www.thuir.cn/group/~msp/), Prof. [
 
 2. **LLM Applications**: Retrieval-Augmented Generation, exploring how to leverage retrieved information to enhance the capabilities and efficiency of generative models.
 
-3. **Long-Context LLM**: Exploring how to adapt LLMs to efficiently handle long inputs and outputs.
+3. **Long-Context LLM**: Exploring how to adapt LLMs to efficiently and effectively handle long inputs and outputs.
 
 
 I also served as a reviewer/PC-member for SIGIR, ACL, WWW, CIKM, COLING, AAAI, TOIS and etc.
@@ -52,7 +52,7 @@ Experience
 | **SelfRACG: Enabling LLMs to Self-Express and Retrieve for Code Generation** |
 | :------ |
 | ***Qian Dong***, Jia Chen, Qingyao Ai, Hongning Wang, Haitao Li, Yi Wu, Yao Hu, Yiqun Liu, Shaoping Ma |
-| Under Review. [\[Paper\]](https://www.arxiv.org/abs/2507.19033)|
+| EMNLP 2025 (TH-CPL-A, CCF-B). [\[Paper\]](https://www.arxiv.org/abs/2507.19033)|
 
 | **Qilin: A Multimodal Information Retrieval Dataset with APP-level User Sessions** |
 | :------ |
