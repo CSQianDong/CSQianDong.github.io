@@ -8,8 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am now a third year Ph.D. student in [THUIR](http://ai.thuir.cn/), Department of Computer Science and Technology in Tsinghua University (THU), Beijing, China. Before joining THU, I received the B.Eng.(2019) M.Eng.(2022) in South China University of Technology (SCUT) and Institute of Software, Chinese Academy of Sciences (ISCAS) respectively.
-My supervisors are Prof. [Shaoping Ma](http://www.thuir.cn/group/~msp/), Prof. [Yiqun Liu](http://www.thuir.cn/group/~YQLiu/) and Prof. [Qingyao Ai](http://www.thuir.cn/group/~aiqy/). 
+I am now a third year Ph.D. student in [THUIR](http://ai.thuir.cn/), Department of Computer Science and Technology in Tsinghua University (THU), Beijing, China. I am fortunate to be supervised by Prof. [Shaoping Ma](http://www.thuir.cn/group/~msp/), Prof. [Yiqun Liu](http://www.thuir.cn/group/~YQLiu/) and Prof. [Qingyao Ai](http://www.thuir.cn/group/~aiqy/). 
 **My major research interests include the following three aspects:**
 
 1. **Information Retrieval**: Traditional and neural approaches for text retrieval and text reranking.
@@ -38,7 +37,6 @@ Experience
 | *11.2024-present* | Xiaohongshu Inc., Research Internship. Working with [Jia Chen](https://xuanyuan14.github.io/).|
 | *08.2024-10.2024* | National University of Singapore, [NExT++ Research Centre](https://www.nextcenter.org/), Visiting Scholar. Working with Prof. [​Tat-Seng Chua](https://www.chuatatseng.com/).|
 | *08.2022-08.2024* | Secretary of the Communist Youth League Branch of Jiyan 41, Tsinghua University.|
-| *08.2022-10.2022* | Tencent Inc., Research Internship. Working with [Bingning Wang](https://scholar.google.com.sg/citations?hl=en&user=wW00MTkAAAAJ&view_op=list_works&sortby=pubdate).|
 | *07.2021-10.2024* | Baidu Inc., [Search Science Team](http://searchscience.baidu.com/), Research Internship. Working with [Yiding Liu](https://liuyiding.net/).|
 
 
