@@ -11,9 +11,9 @@ redirect_from:
 I am now a fourth year Ph.D. student in [THUIR](http://ai.thuir.cn/), Department of Computer Science and Technology in Tsinghua University (THU), Beijing, China. I am fortunate to be supervised by Prof. [Shaoping Ma](http://www.thuir.cn/group/~msp/), Prof. [Yiqun Liu](http://www.thuir.cn/group/~YQLiu/) and Prof. [Qingyao Ai](http://www.thuir.cn/group/~aiqy/). 
 **My major research interests include the following three aspects:**
 
-1. **Information Retrieval**: Traditional and neural approaches for text retrieval and text reranking.
+1. **Information Retrieval**: Traditional and neural approaches for retrieval and reranking.
 
-2. **LLM Applications**: Retrieval-Augmented Generation, exploring how to leverage retrieved information to enhance the capabilities and efficiency of generative models.
+2. **LLM Applications**: Exploring how to leverage IR techniques to enhance the capabilities and efficiency of LLMs.
 
 3. **Long-Context LLM**: Exploring how to adapt LLMs to efficiently and effectively handle long inputs and outputs.
 
