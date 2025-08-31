@@ -13,9 +13,9 @@ I am now a fourth year Ph.D. student in [THUIR](http://ai.thuir.cn/), Department
 
 1. **Information Retrieval**: Traditional and neural approaches for retrieval and reranking.
 
-2. **LLM Applications**: Exploring how to leverage IR techniques to enhance the capabilities and efficiency of LLMs.
+2. **LLM Applications**: Leveraging IR techniques to enhance the capabilities and efficiency of LLMs.
 
-3. **Long-Context LLM**: Exploring how to adapt LLMs to efficiently and effectively handle long inputs and outputs.
+3. **Long-Context LLM**: Adapting LLMs to efficiently and effectively handle long inputs and outputs.
 
 
 I also served as a reviewer/PC-member for SIGIR, ACL, WWW, CIKM, COLING, AAAI, TOIS and etc.
