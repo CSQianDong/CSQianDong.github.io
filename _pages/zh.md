@@ -170,10 +170,60 @@ masthead: false
             font-size: clamp(2.5rem, 8vw, 4rem);
             font-weight: 700;
             margin-bottom: 1rem;
-            background: linear-gradient(135deg, #ffffff, #e0e7ff);
+            background: linear-gradient(135deg, #ffffff, #e0e7ff, #ffffff);
+            background-size: 200% 200%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            animation: gradientShift 3s ease-in-out infinite, float 3s ease-in-out infinite;
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        .hero h1::before {
+            content: '董骞';
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientShift 2s ease-in-out infinite reverse;
+            z-index: -1;
+            filter: blur(2px);
+            transform: translateZ(-20px);
+        }
+
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotateX(0deg); }
+            50% { transform: translateY(-10px) rotateX(2deg); }
+        }
+
+        /* 打字机效果 */
+        .typewriter {
+            overflow: hidden;
+            border-right: 3px solid rgba(255, 255, 255, 0.75);
+            white-space: nowrap;
+            animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+            display: inline-block;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: rgba(255, 255, 255, 0.75) }
         }
 
         .hero .subtitle {
@@ -200,24 +250,87 @@ masthead: false
         }
 
         .btn-primary {
-            background: rgba(255, 255, 255, 0.2);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
             color: white;
             padding: 1rem 2rem;
             border-radius: 50px;
             text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            font-weight: 600;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            backdrop-filter: blur(20px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .btn-primary:hover::before {
+            left: 100%;
         }
 
         .btn-primary:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: translateY(-3px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
+            transform: translateY(-5px) scale(1.02);
+            box-shadow:
+                0 20px 40px rgba(0, 0, 0, 0.3),
+                0 0 30px rgba(99, 102, 241, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .btn-primary:active {
+            transform: translateY(-2px) scale(0.98);
+        }
+
+        /* Neon glow effect for buttons */
+        .btn-primary.neon {
+            border-color: rgba(99, 102, 241, 0.6);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.1),
+                0 0 20px rgba(99, 102, 241, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-primary.neon:hover {
+            box-shadow:
+                0 20px 40px rgba(0, 0, 0, 0.3),
+                0 0 40px rgba(99, 102, 241, 0.6),
+                0 0 60px rgba(147, 51, 234, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            animation: neonPulse 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes neonPulse {
+            from {
+                box-shadow:
+                    0 20px 40px rgba(0, 0, 0, 0.3),
+                    0 0 40px rgba(99, 102, 241, 0.6),
+                    0 0 60px rgba(147, 51, 234, 0.4),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            }
+            to {
+                box-shadow:
+                    0 20px 40px rgba(0, 0, 0, 0.3),
+                    0 0 50px rgba(99, 102, 241, 0.8),
+                    0 0 80px rgba(147, 51, 234, 0.6),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            }
         }
 
         /* Sections */
@@ -268,12 +381,15 @@ masthead: false
         }
 
         .research-card {
-            background: white;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+            backdrop-filter: blur(20px);
             padding: 2rem;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            border: 1px solid rgba(0, 0, 0, 0.05);
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             position: relative;
             overflow: hidden;
         }
@@ -285,18 +401,41 @@ masthead: false
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #6366f1, #8b5cf6);
+            background: linear-gradient(90deg, #6366f1, #8b5cf6, #ec4899);
             transform: scaleX(0);
-            transition: transform 0.3s ease;
+            transition: transform 0.4s ease;
+            border-radius: 2px;
+        }
+
+        .research-card::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            pointer-events: none;
         }
 
         .research-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            transform: translateY(-15px) scale(1.02);
+            box-shadow:
+                0 25px 50px rgba(0, 0, 0, 0.2),
+                0 0 30px rgba(99, 102, 241, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.4);
+            border-color: rgba(99, 102, 241, 0.3);
         }
 
         .research-card:hover::before {
             transform: scaleX(1);
+            box-shadow: 0 0 20px rgba(99, 102, 241, 0.6);
+        }
+
+        .research-card:hover::after {
+            opacity: 1;
         }
 
         .research-icon {
@@ -310,6 +449,36 @@ masthead: false
             margin-bottom: 1.5rem;
             font-size: 1.5rem;
             color: white;
+            position: relative;
+            overflow: hidden;
+            box-shadow:
+                0 8px 25px rgba(99, 102, 241, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .research-icon::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transform: translateX(-100%);
+            transition: transform 0.6s ease;
+        }
+
+        .research-card:hover .research-icon {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow:
+                0 15px 35px rgba(99, 102, 241, 0.4),
+                0 0 25px rgba(99, 102, 241, 0.5),
+                inset 0 1px 0 rgba(255, 255, 255, 0.3);
+        }
+
+        .research-card:hover .research-icon::before {
+            transform: translateX(100%);
         }
 
         .research-title {
@@ -509,7 +678,7 @@ masthead: false
             opacity: 1;
         }
 
-        /* Floating particles */
+        /* Enhanced Particles System */
         .particles {
             position: fixed;
             top: 0;
@@ -518,30 +687,122 @@ masthead: false
             height: 100%;
             pointer-events: none;
             z-index: 1;
+            overflow: hidden;
         }
 
         .particle {
             position: absolute;
-            background: rgba(255, 255, 255, 0.1);
             border-radius: 50%;
-            animation: float-particle 20s infinite linear;
+            pointer-events: none;
+            mix-blend-mode: screen;
+            transition: all 0.3s ease;
         }
 
-        @keyframes float-particle {
-            0% {
-                transform: translateY(100vh) rotate(0deg);
+        .particle-basic {
+            background: rgba(255, 255, 255, 0.3);
+            animation: floatBasic linear infinite;
+        }
+
+        .particle-interactive {
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.6) 0%, rgba(99, 102, 241, 0) 70%);
+            animation: floatInteractive linear infinite;
+            cursor: none;
+        }
+
+        .particle-glow {
+            background: radial-gradient(circle, rgba(147, 51, 234, 0.4) 0%, rgba(147, 51, 234, 0) 60%);
+            box-shadow: 0 0 15px rgba(147, 51, 234, 0.3);
+            animation: floatGlow ease-in-out infinite;
+        }
+
+        .particle-mouse {
+            position: fixed;
+            width: 8px;
+            height: 8px;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.8) 0%, rgba(99, 102, 241, 0) 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            mix-blend-mode: screen;
+            transition: transform 0.1s ease;
+        }
+
+        @keyframes floatBasic {
+            from {
+                transform: translateY(100vh) translateX(0) scale(0);
                 opacity: 0;
             }
             10% {
-                opacity: 1;
+                opacity: 0.6;
+                transform: translateY(90vh) translateX(10px) scale(1);
             }
             90% {
-                opacity: 1;
+                opacity: 0.6;
+                transform: translateY(10vh) translateX(80px) scale(1);
             }
-            100% {
-                transform: translateY(-100vh) rotate(360deg);
+            to {
+                transform: translateY(-100vh) translateX(100px) scale(0);
                 opacity: 0;
             }
+        }
+
+        @keyframes floatInteractive {
+            0% {
+                transform: translateY(100vh) translateX(0) rotate(0deg) scale(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.8;
+                transform: translateY(90vh) translateX(20px) rotate(72deg) scale(1);
+            }
+            25% {
+                transform: translateY(75vh) translateX(-30px) rotate(144deg) scale(1.2);
+            }
+            50% {
+                transform: translateY(50vh) translateX(40px) rotate(216deg) scale(0.8);
+            }
+            75% {
+                transform: translateY(25vh) translateX(-20px) rotate(288deg) scale(1.1);
+            }
+            90% {
+                opacity: 0.8;
+                transform: translateY(10vh) translateX(30px) rotate(360deg) scale(1);
+            }
+            100% {
+                transform: translateY(-100vh) translateX(60px) rotate(432deg) scale(0);
+                opacity: 0;
+            }
+        }
+
+        @keyframes floatGlow {
+            0%, 100% {
+                transform: translateY(0) translateX(0) scale(1);
+                opacity: 0.3;
+            }
+            25% {
+                transform: translateY(-20px) translateX(15px) scale(1.1);
+                opacity: 0.5;
+            }
+            50% {
+                transform: translateY(-10px) translateX(-10px) scale(0.9);
+                opacity: 0.4;
+            }
+            75% {
+                transform: translateY(-30px) translateX(20px) scale(1.05);
+                opacity: 0.45;
+            }
+        }
+
+        /* Connection lines for nearby particles */
+        .particle-connection {
+            position: absolute;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.2), transparent);
+            transform-origin: left center;
+            pointer-events: none;
+            z-index: 2;
+            opacity: 0;
+            transition: opacity 0.3s ease;
         }
 
         /* Responsive Design */
@@ -764,7 +1025,7 @@ masthead: false
             <div class="hero-badge">
                 <i class="fas fa-graduation-cap"></i> Ph.D. Candidate
             </div>
-            <h1>董骞</h1>
+            <h1 class="typewriter">董骞</h1>
             <p class="subtitle">
                 <a href="https://www.cs.tsinghua.edu.cn/" target="_blank" style="color: white; text-decoration: none;">清华大学计算机科学与技术系</a><br>
                 <a href="https://ai.thuir.cn/" target="_blank" style="color: white; text-decoration: none;">信息检索实验室 (THUIR)</a>
@@ -777,19 +1038,19 @@ masthead: false
                 </p>
             </div>
             <div class="hero-buttons">
-                <a href="#research" class="btn-primary">
+                <a href="#research" class="btn-primary neon">
                     <i class="fas fa-microscope"></i>
                     研究方向
                 </a>
-                <a href="#contact" class="btn-primary">
+                <a href="#contact" class="btn-primary neon">
                     <i class="fas fa-envelope"></i>
                     联系我
                 </a>
-                <a href="https://scholar.google.com/citations?user=m88SZGgAAAAJ&hl=en" target="_blank" class="btn-primary">
+                <a href="https://scholar.google.com/citations?user=m88SZGgAAAAJ&hl=en" target="_blank" class="btn-primary neon">
                     <i class="fas fa-graduation-cap"></i>
                     Google Scholar
                 </a>
-                <a href="https://github.com/CSQianDong" target="_blank" class="btn-primary">
+                <a href="https://github.com/CSQianDong" target="_blank" class="btn-primary neon">
                     <i class="fab fa-github"></i>
                     GitHub
                 </a>
@@ -1115,24 +1376,151 @@ masthead: false
     </section>
 
     <script>
-        // Generate floating particles
+        // Enhanced Interactive Particles System
         function createParticles() {
             const particlesContainer = document.getElementById('particles');
-            const particleCount = 50;
+            const particles = [];
+            const mouseParticle = document.createElement('div');
+            mouseParticle.className = 'particle-mouse';
+            document.body.appendChild(mouseParticle);
 
-            for (let i = 0; i < particleCount; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
+            // Create different types of particles
+            const particleConfigs = [
+                { type: 'basic', count: 30, sizeRange: [2, 5], speedRange: [15, 25] },
+                { type: 'interactive', count: 15, sizeRange: [6, 12], speedRange: [20, 35] },
+                { type: 'glow', count: 8, sizeRange: [8, 16], speedRange: [8, 15] }
+            ];
 
-                const size = Math.random() * 4 + 2;
-                particle.style.width = size + 'px';
-                particle.style.height = size + 'px';
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.animationDelay = Math.random() * 20 + 's';
-                particle.style.animationDuration = (Math.random() * 20 + 20) + 's';
+            particleConfigs.forEach(config => {
+                for (let i = 0; i < config.count; i++) {
+                    const particle = document.createElement('div');
+                    particle.className = `particle particle-${config.type}`;
 
-                particlesContainer.appendChild(particle);
+                    const size = Math.random() * (config.sizeRange[1] - config.sizeRange[0]) + config.sizeRange[0];
+                    particle.style.width = size + 'px';
+                    particle.style.height = size + 'px';
+                    particle.style.left = Math.random() * 100 + '%';
+                    particle.style.animationDelay = Math.random() * config.speedRange[1] + 's';
+                    particle.style.animationDuration = (Math.random() * (config.speedRange[1] - config.speedRange[0]) + config.speedRange[0]) + 's';
+
+                    particlesContainer.appendChild(particle);
+                    particles.push({
+                        element: particle,
+                        x: parseFloat(particle.style.left),
+                        y: Math.random() * 100,
+                        vx: (Math.random() - 0.5) * 0.5,
+                        vy: (Math.random() - 0.5) * 0.5,
+                        size: size
+                    });
+                }
+            });
+
+            // Mouse interaction
+            let mouseX = 0;
+            let mouseY = 0;
+            let isMouseMoving = false;
+            let mouseTimeout;
+
+            document.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+                isMouseMoving = true;
+
+                // Update mouse particle position
+                mouseParticle.style.left = mouseX - 4 + 'px';
+                mouseParticle.style.top = mouseY - 4 + 'px';
+
+                clearTimeout(mouseTimeout);
+                mouseTimeout = setTimeout(() => {
+                    isMouseMoving = false;
+                    mouseParticle.style.transform = 'scale(0)';
+                }, 100);
+
+                // Interact with nearby particles
+                particles.forEach(particle => {
+                    const rect = particle.element.getBoundingClientRect();
+                    const particleX = rect.left + rect.width / 2;
+                    const particleY = rect.top + rect.height / 2;
+
+                    const distance = Math.sqrt(
+                        Math.pow(mouseX - particleX, 2) +
+                        Math.pow(mouseY - particleY, 2)
+                    );
+
+                    if (distance < 100) {
+                        const force = (100 - distance) / 100;
+                        const angle = Math.atan2(particleY - mouseY, particleX - mouseX);
+
+                        particle.element.style.transform = `translate(${Math.cos(angle) * force * 20}px, ${Math.sin(angle) * force * 20}px) scale(${1 + force * 0.5})`;
+                        particle.element.style.opacity = Math.min(1, parseFloat(particle.element.style.opacity || 0.6) + force * 0.4);
+
+                        // Create connection lines
+                        if (distance < 80 && Math.random() > 0.7) {
+                            createConnectionLine(mouseX, mouseY, particleX, particleY, force);
+                        }
+                    } else {
+                        particle.element.style.transform = '';
+                        particle.element.style.opacity = '';
+                    }
+                });
+            });
+
+            // Create connection lines between particles
+            function createConnectionLine(x1, y1, x2, y2, opacity) {
+                const line = document.createElement('div');
+                line.className = 'particle-connection';
+
+                const distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+                const angle = Math.atan2(y2 - y1, x2 - x1) * 180 / Math.PI;
+
+                line.style.width = distance + 'px';
+                line.style.left = x1 + 'px';
+                line.style.top = y1 + 'px';
+                line.style.transform = `rotate(${angle}deg)`;
+                line.style.opacity = opacity * 0.6;
+
+                document.body.appendChild(line);
+
+                setTimeout(() => {
+                    line.style.opacity = '0';
+                    setTimeout(() => line.remove(), 300);
+                }, 100);
             }
+
+            // Particle collision detection
+            function updateParticles() {
+                particles.forEach((particle, i) => {
+                    particles.forEach((otherParticle, j) => {
+                        if (i !== j) {
+                            const dx = particle.x - otherParticle.x;
+                            const dy = particle.y - otherParticle.y;
+                            const distance = Math.sqrt(dx * dx + dy * dy);
+
+                            if (distance < 5) {
+                                const force = (5 - distance) / 5;
+                                particle.vx += dx * force * 0.01;
+                                particle.vy += dy * force * 0.01;
+                            }
+                        }
+                    });
+
+                    // Update position
+                    particle.x += particle.vx;
+                    particle.y += particle.vy;
+
+                    // Boundary check
+                    if (particle.x < 0 || particle.x > 100) particle.vx *= -1;
+                    if (particle.y < 0 || particle.y > 100) particle.vy *= -1;
+
+                    // Apply friction
+                    particle.vx *= 0.99;
+                    particle.vy *= 0.99;
+                });
+
+                requestAnimationFrame(updateParticles);
+            }
+
+            updateParticles();
         }
 
         // Intersection Observer for animations
