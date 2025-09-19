@@ -740,10 +740,6 @@ masthead: false
                     <i class="fab fa-github"></i>
                     GitHub
                 </a>
-                <a href="https://www.xiaohongshu.com/user/profile/64d8bdc1000000000100f445" target="_blank" class="btn-primary">
-                    <i class="fas fa-heart"></i>
-                    小红书
-                </a>
             </div>
         </div>
     </section>
@@ -1046,22 +1042,6 @@ masthead: false
                 </div>
                 <h3 class="contact-title">邮箱</h3>
                 <p><a href="mailto:qiandong.97@qq.com">qiandong.97@qq.com</a></p>
-            </div>
-
-            <div class="contact-item fade-in">
-                <div class="contact-icon">
-                    <i class="fab fa-google"></i>
-                </div>
-                <h3 class="contact-title">Google Scholar</h3>
-                <p><a href="https://scholar.google.com/citations?user=m88SZGgAAAAJ&hl=en" target="_blank">谷歌学术</a></p>
-            </div>
-
-            <div class="contact-item fade-in">
-                <div class="contact-icon">
-                    <i class="fab fa-github"></i>
-                </div>
-                <h3 class="contact-title">GitHub</h3>
-                <p><a href="https://github.com/CSQianDong" target="_blank">CSQianDong</a></p>
             </div>
         </div>
     </section>
