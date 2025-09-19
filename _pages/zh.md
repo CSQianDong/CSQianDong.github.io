@@ -419,32 +419,54 @@ masthead: false
         }
 
         .contact-item {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 2rem;
-            border-radius: 15px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+            padding: 2.5rem 2rem;
+            border-radius: 20px;
             text-align: center;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            transition: all 0.3s ease;
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             cursor: pointer;
             position: relative;
             overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transform: translateX(-100%);
+            transition: transform 0.6s;
+        }
+
+        .contact-item:hover::before {
+            transform: translateX(100%);
         }
 
         .contact-item:hover {
-            background: rgba(255, 255, 255, 0.15);
-            transform: translateY(-5px);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+            border-color: rgba(255, 255, 255, 0.3);
         }
 
         .contact-icon {
             font-size: 2.5rem;
             margin-bottom: 1rem;
             opacity: 0.9;
-            transition: all 0.3s ease;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
         }
 
         .contact-item:hover .contact-icon {
             margin-bottom: 0.5rem;
+            transform: scale(1.1);
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
         }
 
         .contact-title {
@@ -453,7 +475,8 @@ masthead: false
             margin-bottom: 0.5rem;
             opacity: 0;
             transform: translateY(20px);
-            transition: all 0.3s ease;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
         }
 
         .contact-item:hover .contact-title {
@@ -464,7 +487,8 @@ masthead: false
         .contact-item p {
             opacity: 0;
             transform: translateY(20px);
-            transition: all 0.3s ease 0.1s;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.1s;
+            font-weight: 500;
         }
 
         .contact-item:hover p {
@@ -1067,7 +1091,6 @@ masthead: false
                 <div class="contact-icon">
                     <i class="fas fa-envelope" style="font-size: 2.5rem;"></i>
                 </div>
-                <h3 class="contact-title">邮箱</h3>
                 <p><a href="mailto:qiandong.97@qq.com">qiandong.97@qq.com</a></p>
             </div>
 
@@ -1075,7 +1098,6 @@ masthead: false
                 <div class="contact-icon">
                     <img src="/images/xhs.png" alt="小红书" style="width: 50px; height: 50px; border-radius: 50%;">
                 </div>
-                <h3 class="contact-title">小红书</h3>
                 <p><a href="https://www.xiaohongshu.com/user/profile/64d8bdc1000000000100f445" target="_blank">🎃量子之心</a></p>
             </div>
 
@@ -1085,7 +1107,6 @@ masthead: false
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                     </svg>
                 </div>
-                <h3 class="contact-title">推特</h3>
                 <p><a href="https://x.com/verymakesense" target="_blank">@verymakesense</a></p>
             </div>
         </div>
