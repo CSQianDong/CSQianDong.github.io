@@ -419,17 +419,17 @@ masthead: false
         }
 
         .contact-item {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+            background: transparent;
             padding: 2.5rem 2rem;
             border-radius: 20px;
             text-align: center;
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            backdrop-filter: blur(0px);
+            border: 1px solid transparent;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             cursor: pointer;
             position: relative;
             overflow: hidden;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            box-shadow: none;
         }
 
         .contact-item::before {
@@ -450,23 +450,25 @@ masthead: false
 
         .contact-item:hover {
             background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(20px);
             border-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+            transform: translateY(-8px) scale(1.02);
         }
 
         .contact-icon {
             font-size: 2.5rem;
             margin-bottom: 1rem;
-            opacity: 0.9;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+            opacity: 0.7;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            filter: drop-shadow(0 0px 0px rgba(0, 0, 0, 0));
         }
 
         .contact-item:hover .contact-icon {
             margin-bottom: 0.5rem;
-            transform: scale(1.1);
-            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+            transform: scale(1.15);
+            opacity: 1;
+            filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.3));
         }
 
         .contact-title {
