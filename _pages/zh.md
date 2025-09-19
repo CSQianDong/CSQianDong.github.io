@@ -1040,7 +1040,6 @@ masthead: false
                 <div class="contact-icon">
                     <i class="fas fa-envelope"></i>
                 </div>
-                <h3 class="contact-title">邮箱</h3>
                 <p><a href="mailto:qiandong.97@qq.com">qiandong.97@qq.com</a></p>
             </div>
 
@@ -1048,8 +1047,14 @@ masthead: false
                 <div class="contact-icon">
                     <img src="/images/xhs.png" alt="小红书" style="width: 40px; height: 40px; border-radius: 50%;">
                 </div>
-                <h3 class="contact-title">小红书</h3>
                 <p><a href="https://www.xiaohongshu.com/user/profile/64d8bdc1000000000100f445" target="_blank">🎃量子之心</a></p>
+            </div>
+
+            <div class="contact-item fade-in">
+                <div class="contact-icon">
+                    <i class="fab fa-x-twitter"></i>
+                </div>
+                <p><a href="https://x.com/verymakesense" target="_blank">Qian Dong</a></p>
             </div>
         </div>
     </section>
