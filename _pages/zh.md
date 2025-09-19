@@ -537,6 +537,108 @@ masthead: false
                 transform: translateY(0);
             }
         }
+
+        /* Publications Section */
+        .publications-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .publication-section {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+        }
+
+        .publication-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem 2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .publication-header:hover {
+            background: rgba(99, 102, 241, 0.05);
+        }
+
+        .publication-header h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .publication-header i:first-child {
+            color: #6366f1;
+            font-size: 1.2rem;
+        }
+
+        .publication-header i:last-child {
+            color: #6b7280;
+            transition: transform 0.3s ease;
+        }
+
+        .publication-header.active i:last-child {
+            transform: rotate(180deg);
+        }
+
+        .publication-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .publication-content.active {
+            max-height: 2000px;
+        }
+
+        .publication-grid {
+            display: grid;
+            gap: 1rem;
+            padding: 1.5rem 2rem;
+        }
+
+        .publication-item {
+            padding: 1rem;
+            border-radius: 10px;
+            background: #f8fafc;
+            border-left: 4px solid #6366f1;
+            transition: all 0.3s ease;
+        }
+
+        .publication-item:hover {
+            background: #f1f5f9;
+            transform: translateX(5px);
+        }
+
+        .publication-year {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #6366f1;
+            margin-bottom: 0.25rem;
+        }
+
+        .publication-title {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #1a1a1a;
+            margin-bottom: 0.25rem;
+            line-height: 1.4;
+        }
+
+        .publication-venue {
+            font-size: 0.875rem;
+            color: #6b7280;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -548,6 +650,7 @@ masthead: false
                 <li><a href="#about">关于我</a></li>
                 <li><a href="#research">研究方向</a></li>
                 <li><a href="#education">教育经历</a></li>
+                <li><a href="#publications">学术发表</a></li>
                 <li><a href="#contact">联系方式</a></li>
             </ul>
             <a href="/" class="lang-switch">English</a>
@@ -561,7 +664,7 @@ masthead: false
     <section class="hero" id="about">
         <div class="hero-content fade-in">
             <div class="hero-badge">
-                <i class="fas fa-graduation-cap"></i> 清华大学博士生
+                <i class="fas fa-graduation-cap"></i> Ph.D. Candidate
             </div>
             <h1>董骞</h1>
             <p class="subtitle">
@@ -674,7 +777,118 @@ masthead: false
         </div>
     </section>
 
-  
+    <!-- Publications Section -->
+    <section class="section" id="publications" style="background: #f8fafc;">
+        <div class="section-header fade-in">
+            <h2 class="section-title">学术发表</h2>
+            <p class="section-subtitle">代表性研究成果</p>
+        </div>
+
+        <!-- 主要作者论文 -->
+        <div class="publications-container">
+            <div class="publication-section">
+                <div class="publication-header" onclick="togglePublication('primary-author')">
+                    <i class="fas fa-star"></i>
+                    <h3>主要作者论文</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="publication-content" id="primary-author">
+                    <div class="publication-grid">
+                        <div class="publication-item">
+                            <div class="publication-year">2025</div>
+                            <div class="publication-title">SelfRACG: Enabling LLMs to Self-Express and Retrieve for Code Generation</div>
+                            <div class="publication-venue">EMNLP 2025</div>
+                        </div>
+                        <div class="publication-item">
+                            <div class="publication-year">2025</div>
+                            <div class="publication-title">Qilin: A Multimodal Information Retrieval Dataset with APP-level User Sessions</div>
+                            <div class="publication-venue">SIGIR 2025</div>
+                        </div>
+                        <div class="publication-item">
+                            <div class="publication-year">2025</div>
+                            <div class="publication-title">DecoupledRAG: An Efficient and Effective Retrieval Augmented Generation Framework via Cross Attention</div>
+                            <div class="publication-venue">WWW 2025</div>
+                        </div>
+                        <div class="publication-item">
+                            <div class="publication-year">2024</div>
+                            <div class="publication-title">Unsupervised Large Language Model Alignment for Information Retrieval via Contrastive Feedback</div>
+                            <div class="publication-venue">SIGIR 2024</div>
+                        </div>
+                        <div class="publication-item">
+                            <div class="publication-year">2023</div>
+                            <div class="publication-title">T²Ranking: A Large-scale Chinese Benchmark for Passage Ranking</div>
+                            <div class="publication-venue">SIGIR 2023</div>
+                        </div>
+                        <div class="publication-item">
+                            <div class="publication-year">2023</div>
+                            <div class="publication-title">I³Retriever: Incorporating Implicit Interaction in Pre-trained Language Models for Passage Retrieval</div>
+                            <div class="publication-venue">CIKM 2023</div>
+                        </div>
+                        <div class="publication-item">
+                            <div class="publication-year">2022</div>
+                            <div class="publication-title">Incorporating Explicit Knowledge in Pre-trained Language Models for Passage Re-ranking</div>
+                            <div class="publication-venue">SIGIR 2022</div>
+                        </div>
+                        <div class="publication-item">
+                            <div class="publication-year">2021</div>
+                            <div class="publication-title">Legal Judgment Prediction via Relational Learning</div>
+                            <div class="publication-venue">SIGIR 2021</div>
+                        </div>
+                        <div class="publication-item">
+                            <div class="publication-year">2021</div>
+                            <div class="publication-title">Latent Graph Recurrent Network for Document Ranking</div>
+                            <div class="publication-venue">DASFAA 2021</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 合作作者论文 -->
+            <div class="publication-section">
+                <div class="publication-header" onclick="togglePublication('co-author')">
+                    <i class="fas fa-users"></i>
+                    <h3>合作作者论文</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="publication-content" id="co-author">
+                    <div class="publication-grid">
+                        <div class="publication-item">
+                            <div class="publication-year">2025</div>
+                            <div class="publication-title">BLADE: Enhancing Black-Box Large Language Models with Small Domain-Specific Models</div>
+                            <div class="publication-venue">AAAI 2025</div>
+                        </div>
+                        <div class="publication-item">
+                            <div class="publication-year">2025</div>
+                            <div class="publication-title">DELTA: Pre-train a Discriminative Encoder for Legal Case Retrieval via Structural Word Alignment</div>
+                            <div class="publication-venue">AAAI 2025</div>
+                        </div>
+                        <div class="publication-item">
+                            <div class="publication-year">2025</div>
+                            <div class="publication-title">CalibraEval: Calibrating Prediction Distribution to Mitigate Selection Bias in LLMs-as-Judges</div>
+                            <div class="publication-venue">ACL 2025</div>
+                        </div>
+                        <div class="publication-item">
+                            <div class="publication-year">2025</div>
+                            <div class="publication-title">LLMs-as-Judges: A Comprehensive Survey on LLM-based Evaluation Methods</div>
+                            <div class="publication-venue">arXiv 2025</div>
+                        </div>
+                        <div class="publication-item">
+                            <div class="publication-year">2024</div>
+                            <div class="publication-title">LexiLaw: A Scalable Legal Language Model for Comprehensive Legal Understanding</div>
+                            <div class="publication-venue">2024</div>
+                        </div>
+                        <div class="publication-item">
+                            <div class="publication-year">2023</div>
+                            <div class="publication-title">SAILER: Structure-aware Pre-trained Language Model for Legal Case Retrieval</div>
+                            <div class="publication-venue">SIGIR 2023</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="section-header fade-in">
@@ -779,6 +993,16 @@ masthead: false
 
                 lastScroll = currentScroll;
             });
+        }
+
+        // Toggle publication sections
+        function togglePublication(sectionId) {
+            const content = document.getElementById(sectionId);
+            const header = content.previousElementSibling;
+            const icon = header.querySelector('i:last-child');
+
+            content.classList.toggle('active');
+            header.classList.toggle('active');
         }
 
         // Initialize everything when DOM is loaded
