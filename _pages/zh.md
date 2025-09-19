@@ -836,6 +836,11 @@ masthead: false
                         </div>
                         <div class="publication-item">
                             <div class="publication-year">2021</div>
+                            <div class="publication-title">Disentangled Graph Recurrent Network for Document Ranking</div>
+                            <div class="publication-venue">Data Science and Engineering 2021</div>
+                        </div>
+                        <div class="publication-item">
+                            <div class="publication-year">2021</div>
                             <div class="publication-title">Latent Graph Recurrent Network for Document Ranking</div>
                             <div class="publication-venue">DASFAA 2021</div>
                         </div>
@@ -870,12 +875,22 @@ masthead: false
                         <div class="publication-item">
                             <div class="publication-year">2025</div>
                             <div class="publication-title">LLMs-as-Judges: A Comprehensive Survey on LLM-based Evaluation Methods</div>
-                            <div class="publication-venue">arXiv 2025</div>
+                            <div class="publication-venue">Survey</div>
                         </div>
                         <div class="publication-item">
-                            <div class="publication-year">2024</div>
-                            <div class="publication-title">LexiLaw: A Scalable Legal Language Model for Comprehensive Legal Understanding</div>
-                            <div class="publication-venue">2024</div>
+                            <div class="publication-year">2025</div>
+                            <div class="publication-title">GLM-4.5: Agentic, Reasoning, and Coding (ARC) Foundation Models</div>
+                            <div class="publication-venue">Technical Report of Z.ai</div>
+                        </div>
+                        <div class="publication-item">
+                            <div class="publication-year">2023</div>
+                            <div class="publication-title">Incorporating Social-Aware User Preference for Video Recommendation</div>
+                            <div class="publication-venue">WISE 2023</div>
+                        </div>
+                        <div class="publication-item">
+                            <div class="publication-year">2019</div>
+                            <div class="publication-title">Emotion Recognition Based on Multi-View Body Gestures</div>
+                            <div class="publication-venue">ICIP 2019</div>
                         </div>
                         <div class="publication-item">
                             <div class="publication-year">2023</div>
