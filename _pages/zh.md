@@ -181,22 +181,6 @@ masthead: false
             perspective: 1000px;
         }
 
-        .hero h1::before {
-            content: '董骞';
-            position: absolute;
-            left: 0;
-            top: 0;
-            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
-            background-size: 300% 300%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: gradientShift 2s ease-in-out infinite reverse;
-            z-index: -1;
-            filter: blur(2px);
-            transform: translateZ(-20px);
-        }
-
         @keyframes gradientShift {
             0%, 100% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
