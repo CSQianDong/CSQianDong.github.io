@@ -207,25 +207,7 @@ masthead: false
             50% { transform: translateY(-10px) rotateX(2deg); }
         }
 
-        /* 打字机效果 */
-        .typewriter {
-            overflow: hidden;
-            border-right: 3px solid rgba(255, 255, 255, 0.75);
-            white-space: nowrap;
-            animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
-            display: inline-block;
-        }
-
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-        }
-
-        @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: rgba(255, 255, 255, 0.75) }
-        }
-
+  
         .hero .subtitle {
             font-size: clamp(1.2rem, 3vw, 1.5rem);
             margin-bottom: 2rem;
