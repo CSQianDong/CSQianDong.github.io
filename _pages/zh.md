@@ -170,15 +170,10 @@ masthead: false
             font-size: clamp(2.5rem, 8vw, 4rem);
             font-weight: 700;
             margin-bottom: 1rem;
-            background: linear-gradient(135deg, #ffffff, #e0e7ff, #ffffff);
-            background-size: 200% 200%;
+            background: linear-gradient(135deg, #ffffff, #e0e7ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            animation: gradientShift 3s ease-in-out infinite, float 3s ease-in-out infinite;
-            text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
-            transform-style: preserve-3d;
-            perspective: 1000px;
         }
 
         @keyframes gradientShift {
