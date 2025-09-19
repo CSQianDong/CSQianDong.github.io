@@ -243,3 +243,7 @@ I'm an enthusiast of a diverse array of craft beers, ranging from crisp wheat be
   }
 </style>
 
+<div style="text-align: center; margin-top: 40px; color: #666; font-size: 14px;">
+  Last updated: {{ site.time | date: "%B %d, %Y" }}
+</div>
+

@@ -1145,5 +1145,9 @@ masthead: false
             initNavbar();
         });
     </script>
+
+    <div style="text-align: center; margin-top: 40px; padding-bottom: 20px; color: #666; font-size: 14px;">
+      最后更新：{{ site.time | date: "%Y年%m月%d日" }}
+    </div>
 </body>
 </html>
