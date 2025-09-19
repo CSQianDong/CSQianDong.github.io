@@ -859,6 +859,11 @@ masthead: false
                     <div class="publication-grid">
                         <div class="publication-item">
                             <div class="publication-year">2025</div>
+                            <div class="publication-title">GLM-4.5: Agentic, Reasoning, and Coding (ARC) Foundation Models</div>
+                            <div class="publication-venue">Technical Report of Z.ai</div>
+                        </div>
+                        <div class="publication-item">
+                            <div class="publication-year">2025</div>
                             <div class="publication-title">BLADE: Enhancing Black-Box Large Language Models with Small Domain-Specific Models</div>
                             <div class="publication-venue">AAAI 2025</div>
                         </div>
@@ -878,9 +883,14 @@ masthead: false
                             <div class="publication-venue">Survey</div>
                         </div>
                         <div class="publication-item">
-                            <div class="publication-year">2025</div>
-                            <div class="publication-title">GLM-4.5: Agentic, Reasoning, and Coding (ARC) Foundation Models</div>
-                            <div class="publication-venue">Technical Report of Z.ai</div>
+                            <div class="publication-year">2024</div>
+                            <div class="publication-title">LexiLaw: A Scalable Legal Language Model for Comprehensive Legal Understanding</div>
+                            <div class="publication-venue">2024</div>
+                        </div>
+                        <div class="publication-item">
+                            <div class="publication-year">2023</div>
+                            <div class="publication-title">SAILER: Structure-aware Pre-trained Language Model for Legal Case Retrieval</div>
+                            <div class="publication-venue">SIGIR 2023</div>
                         </div>
                         <div class="publication-item">
                             <div class="publication-year">2023</div>
@@ -891,11 +901,6 @@ masthead: false
                             <div class="publication-year">2019</div>
                             <div class="publication-title">Emotion Recognition Based on Multi-View Body Gestures</div>
                             <div class="publication-venue">ICIP 2019</div>
-                        </div>
-                        <div class="publication-item">
-                            <div class="publication-year">2023</div>
-                            <div class="publication-title">SAILER: Structure-aware Pre-trained Language Model for Legal Case Retrieval</div>
-                            <div class="publication-venue">SIGIR 2023</div>
                         </div>
                     </div>
                 </div>
