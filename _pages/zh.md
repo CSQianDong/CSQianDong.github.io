@@ -1038,25 +1038,25 @@ masthead: false
         <div class="contact-grid">
             <div class="contact-item fade-in">
                 <div class="contact-icon">
-                    <i class="fas fa-envelope"></i>
+                    <i class="fas fa-envelope" style="font-size: 2.5rem;"></i>
                 </div>
                 <p><a href="mailto:qiandong.97@qq.com">qiandong.97@qq.com</a></p>
             </div>
 
             <div class="contact-item fade-in">
                 <div class="contact-icon">
-                    <img src="/images/xhs.png" alt="小红书" style="width: 40px; height: 40px; border-radius: 50%;">
+                    <img src="/images/xhs.png" alt="小红书" style="width: 50px; height: 50px; border-radius: 50%;">
                 </div>
                 <p><a href="https://www.xiaohongshu.com/user/profile/64d8bdc1000000000100f445" target="_blank">🎃量子之心</a></p>
             </div>
 
             <div class="contact-item fade-in">
                 <div class="contact-icon">
-                    <svg style="width: 24px; height: 24px; fill: white;" viewBox="0 0 24 24">
+                    <svg style="width: 40px; height: 40px; fill: white;" viewBox="0 0 24 24">
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                     </svg>
                 </div>
-                <p><a href="https://x.com/verymakesense" target="_blank">Qian Dong</a></p>
+                <p><a href="https://x.com/verymakesense" target="_blank">@verymakesense</a></p>
             </div>
         </div>
     </section>
