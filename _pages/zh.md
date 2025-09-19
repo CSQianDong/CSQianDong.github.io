@@ -639,6 +639,51 @@ masthead: false
             color: #6b7280;
             font-style: italic;
         }
+
+        .publication-tags {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            padding: 0.2rem 0.5rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .tag-ccf-a {
+            background: #ef4444;
+            color: white;
+        }
+
+        .tag-ccf-b {
+            background: #f97316;
+            color: white;
+        }
+
+        .tag-ccf-c {
+            background: #eab308;
+            color: white;
+        }
+
+        .tag-th-a {
+            background: #22c55e;
+            color: white;
+        }
+
+        .tag-th-b {
+            background: #3b82f6;
+            color: white;
+        }
+
+        .tag-jcr-q1 {
+            background: #10b981;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -798,51 +843,92 @@ masthead: false
                             <div class="publication-year">2025</div>
                             <div class="publication-title">SelfRACG: Enabling LLMs to Self-Express and Retrieve for Code Generation</div>
                             <div class="publication-venue">EMNLP 2025</div>
+                            <div class="publication-tags">
+                                <span class="tag tag-ccf-b">CCF-B</span>
+                                <span class="tag tag-th-a">TH-A</span>
+                            </div>
                         </div>
                         <div class="publication-item">
                             <div class="publication-year">2025</div>
                             <div class="publication-title">Qilin: A Multimodal Information Retrieval Dataset with APP-level User Sessions</div>
                             <div class="publication-venue">SIGIR 2025</div>
+                            <div class="publication-tags">
+                                <span class="tag tag-ccf-a">CCF-A</span>
+                                <span class="tag tag-th-a">TH-A</span>
+                            </div>
                         </div>
                         <div class="publication-item">
                             <div class="publication-year">2025</div>
                             <div class="publication-title">DecoupledRAG: An Efficient and Effective Retrieval Augmented Generation Framework via Cross Attention</div>
                             <div class="publication-venue">WWW 2025</div>
+                            <div class="publication-tags">
+                                <span class="tag tag-ccf-a">CCF-A</span>
+                                <span class="tag tag-th-a">TH-A</span>
+                            </div>
                         </div>
                         <div class="publication-item">
                             <div class="publication-year">2024</div>
                             <div class="publication-title">Unsupervised Large Language Model Alignment for Information Retrieval via Contrastive Feedback</div>
                             <div class="publication-venue">SIGIR 2024</div>
+                            <div class="publication-tags">
+                                <span class="tag tag-ccf-a">CCF-A</span>
+                                <span class="tag tag-th-a">TH-A</span>
+                            </div>
                         </div>
                         <div class="publication-item">
                             <div class="publication-year">2023</div>
                             <div class="publication-title">T²Ranking: A Large-scale Chinese Benchmark for Passage Ranking</div>
                             <div class="publication-venue">SIGIR 2023</div>
+                            <div class="publication-tags">
+                                <span class="tag tag-ccf-a">CCF-A</span>
+                                <span class="tag tag-th-a">TH-A</span>
+                            </div>
                         </div>
                         <div class="publication-item">
                             <div class="publication-year">2023</div>
                             <div class="publication-title">I³Retriever: Incorporating Implicit Interaction in Pre-trained Language Models for Passage Retrieval</div>
                             <div class="publication-venue">CIKM 2023</div>
+                            <div class="publication-tags">
+                                <span class="tag tag-ccf-b">CCF-B</span>
+                                <span class="tag tag-th-b">TH-B</span>
+                            </div>
                         </div>
                         <div class="publication-item">
                             <div class="publication-year">2022</div>
                             <div class="publication-title">Incorporating Explicit Knowledge in Pre-trained Language Models for Passage Re-ranking</div>
                             <div class="publication-venue">SIGIR 2022</div>
+                            <div class="publication-tags">
+                                <span class="tag tag-ccf-a">CCF-A</span>
+                                <span class="tag tag-th-a">TH-A</span>
+                            </div>
                         </div>
                         <div class="publication-item">
                             <div class="publication-year">2021</div>
                             <div class="publication-title">Legal Judgment Prediction via Relational Learning</div>
                             <div class="publication-venue">SIGIR 2021</div>
+                            <div class="publication-tags">
+                                <span class="tag tag-ccf-a">CCF-A</span>
+                                <span class="tag tag-th-a">TH-A</span>
+                            </div>
                         </div>
                         <div class="publication-item">
                             <div class="publication-year">2021</div>
                             <div class="publication-title">Disentangled Graph Recurrent Network for Document Ranking</div>
-                            <div class="publication-venue">Data Science and Engineering 2021</div>
+                            <div class="publication-venue">Data Science and Engineering 2021 (JCR-Q1, IF: 7.2)</div>
+                            <div class="publication-tags">
+                                <span class="tag tag-ccf-b">CCF-B</span>
+                                <span class="tag tag-th-b">TH-B</span>
+                                <span class="tag tag-jcr-q1">JCR-Q1</span>
+                            </div>
                         </div>
                         <div class="publication-item">
                             <div class="publication-year">2021</div>
                             <div class="publication-title">Latent Graph Recurrent Network for Document Ranking</div>
                             <div class="publication-venue">DASFAA 2021</div>
+                            <div class="publication-tags">
+                                <span class="tag tag-ccf-b">CCF-B</span>
+                                <span class="tag tag-th-b">TH-B</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -866,16 +952,28 @@ masthead: false
                             <div class="publication-year">2025</div>
                             <div class="publication-title">BLADE: Enhancing Black-Box Large Language Models with Small Domain-Specific Models</div>
                             <div class="publication-venue">AAAI 2025</div>
+                            <div class="publication-tags">
+                                <span class="tag tag-ccf-a">CCF-A</span>
+                                <span class="tag tag-th-a">TH-A</span>
+                            </div>
                         </div>
                         <div class="publication-item">
                             <div class="publication-year">2025</div>
                             <div class="publication-title">DELTA: Pre-train a Discriminative Encoder for Legal Case Retrieval via Structural Word Alignment</div>
                             <div class="publication-venue">AAAI 2025</div>
+                            <div class="publication-tags">
+                                <span class="tag tag-ccf-a">CCF-A</span>
+                                <span class="tag tag-th-a">TH-A</span>
+                            </div>
                         </div>
                         <div class="publication-item">
                             <div class="publication-year">2025</div>
                             <div class="publication-title">CalibraEval: Calibrating Prediction Distribution to Mitigate Selection Bias in LLMs-as-Judges</div>
                             <div class="publication-venue">ACL 2025</div>
+                            <div class="publication-tags">
+                                <span class="tag tag-ccf-a">CCF-A</span>
+                                <span class="tag tag-th-a">TH-A</span>
+                            </div>
                         </div>
                         <div class="publication-item">
                             <div class="publication-year">2025</div>
@@ -886,21 +984,37 @@ masthead: false
                             <div class="publication-year">2025</div>
                             <div class="publication-title">Dynamic and Parametric Retrieval-Augmented Generation</div>
                             <div class="publication-venue">SIGIR 2025</div>
+                            <div class="publication-tags">
+                                <span class="tag tag-ccf-a">CCF-A</span>
+                                <span class="tag tag-th-a">TH-A</span>
+                            </div>
                         </div>
                         <div class="publication-item">
                             <div class="publication-year">2023</div>
                             <div class="publication-title">SAILER: Structure-aware Pre-trained Language Model for Legal Case Retrieval</div>
                             <div class="publication-venue">SIGIR 2023</div>
+                            <div class="publication-tags">
+                                <span class="tag tag-ccf-a">CCF-A</span>
+                                <span class="tag tag-th-a">TH-A</span>
+                            </div>
                         </div>
                         <div class="publication-item">
                             <div class="publication-year">2023</div>
                             <div class="publication-title">Incorporating Social-Aware User Preference for Video Recommendation</div>
                             <div class="publication-venue">WISE 2023</div>
+                            <div class="publication-tags">
+                                <span class="tag tag-ccf-c">CCF-C</span>
+                                <span class="tag tag-th-b">TH-B</span>
+                            </div>
                         </div>
                         <div class="publication-item">
                             <div class="publication-year">2019</div>
                             <div class="publication-title">Emotion Recognition Based on Multi-View Body Gestures</div>
                             <div class="publication-venue">ICIP 2019</div>
+                            <div class="publication-tags">
+                                <span class="tag tag-ccf-c">CCF-C</span>
+                                <span class="tag tag-th-b">TH-B</span>
+                            </div>
                         </div>
                     </div>
                 </div>
