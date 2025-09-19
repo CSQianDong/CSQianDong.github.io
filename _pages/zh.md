@@ -883,11 +883,6 @@ masthead: false
                             <div class="publication-venue">Survey</div>
                         </div>
                         <div class="publication-item">
-                            <div class="publication-year">2024</div>
-                            <div class="publication-title">LexiLaw: A Scalable Legal Language Model for Comprehensive Legal Understanding</div>
-                            <div class="publication-venue">2024</div>
-                        </div>
-                        <div class="publication-item">
                             <div class="publication-year">2023</div>
                             <div class="publication-title">SAILER: Structure-aware Pre-trained Language Model for Legal Case Retrieval</div>
                             <div class="publication-venue">SIGIR 2023</div>
