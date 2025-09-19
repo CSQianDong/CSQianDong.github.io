@@ -14,7 +14,7 @@ masthead: false
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>董骞 - 清华大学博士生</title>
+    <title>董骞 - 清华大学信息检索实验室</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -539,7 +539,6 @@ masthead: false
                 <li><a href="#about">关于我</a></li>
                 <li><a href="#research">研究方向</a></li>
                 <li><a href="#education">教育经历</a></li>
-                <li><a href="#experience">工作经历</a></li>
                 <li><a href="#contact">联系方式</a></li>
             </ul>
             <a href="/" class="lang-switch">English</a>
@@ -557,8 +556,8 @@ masthead: false
             </div>
             <h1>董骞</h1>
             <p class="subtitle">
-                清华大学计算机科学与技术系<br>
-                智能信息检索实验室 (THUIR)
+                <a href="https://www.cs.tsinghua.edu.cn/" target="_blank" style="color: white; text-decoration: none;">清华大学计算机科学与技术系</a><br>
+                <a href="https://ai.thuir.cn/" target="_blank" style="color: white; text-decoration: none;">信息检索实验室 (THUIR)</a>
             </p>
             <div class="hero-buttons">
                 <a href="#research" class="btn-primary">
@@ -578,8 +577,8 @@ masthead: false
         <div class="section-header fade-in">
             <h2 class="section-title">个人简介</h2>
             <p class="section-subtitle">
-                我目前是清华大学计算机科学与技术系四年级博士生，在清华大学智能信息检索实验室（THUIR）进行学术研究。
-                我很荣幸能够在马少平教授、刘奕群教授和艾清遥教授的指导下进行学术研究。
+                我目前在清华大学计算机科学与技术系，信息检索实验室（THUIR）进行攻读博士学位，预计2026年6月毕业。
+                很荣幸能够在马少平教授、刘奕群教授和艾清遥教授的指导下进行学术研究。
                 我还担任多个顶级学术会议的审稿人/程序委员会委员。
             </p>
         </div>
@@ -629,96 +628,51 @@ masthead: false
     </section>
 
     <!-- Education -->
-    <section class="section" id="education">
+    <section class="section" id="education" style="background: #f8fafc;">
         <div class="section-header fade-in">
             <h2 class="section-title">教育背景</h2>
+            <p class="section-subtitle">学术成长历程</p>
         </div>
 
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-date">2022.08 - 至今</div>
-                    <h3 class="timeline-title">博士研究生</h3>
-                    <p class="timeline-desc">
-                        <strong>清华大学计算机科学与技术系</strong><br>
-                        <strong>导师：</strong>马少平教授、刘奕群教授、艾清遥教授
-                    </p>
+        <div class="research-grid">
+            <div class="research-card fade-in">
+                <div class="research-icon">
+                    <i class="fas fa-university"></i>
                 </div>
-                <div class="timeline-dot"></div>
+                <h3 class="research-title">博士研究生</h3>
+                <p class="research-desc">
+                    <strong>清华大学计算机科学与技术系</strong><br>
+                    <strong>时间：</strong>2022.08 - 至今<br>
+                    <strong>导师：</strong>马少平教授、刘奕群教授、艾清遥教授
+                </p>
             </div>
 
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-date">2019.08 - 2022.06</div>
-                    <h3 class="timeline-title">工程硕士</h3>
-                    <p class="timeline-desc">
-                        <strong>中国科学院软件研究所</strong><br>
-                        <strong>导师：</strong>牛树梓教授
-                    </p>
+            <div class="research-card fade-in">
+                <div class="research-icon">
+                    <i class="fas fa-flask"></i>
                 </div>
-                <div class="timeline-dot"></div>
+                <h3 class="research-title">工程硕士</h3>
+                <p class="research-desc">
+                    <strong>中国科学院软件研究所</strong><br>
+                    <strong>时间：</strong>2019.08 - 2022.06<br>
+                    <strong>导师：</strong>牛树梓教授
+                </p>
             </div>
 
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-date">2015.08 - 2019.06</div>
-                    <h3 class="timeline-title">工程学士</h3>
-                    <p class="timeline-desc">
-                        <strong>华南理工大学软件学院</strong>
-                    </p>
+            <div class="research-card fade-in">
+                <div class="research-icon">
+                    <i class="fas fa-laptop-code"></i>
                 </div>
-                <div class="timeline-dot"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience -->
-    <section class="section" id="experience" style="background: #f8fafc;">
-        <div class="section-header fade-in">
-            <h2 class="section-title">工作经历</h2>
-        </div>
-
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-date">2024.11 - 至今</div>
-                    <h3 class="timeline-title">研究实习生</h3>
-                    <p class="timeline-desc">
-                        <strong>小红书公司</strong><br>
-                        合作导师：陈佳
-                    </p>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-date">2024.08 - 2024.10</div>
-                    <h3 class="timeline-title">访问学者</h3>
-                    <p class="timeline-desc">
-                        <strong>新加坡国立大学</strong><br>
-                        NExT++研究中心<br>
-                        合作导师：蔡达成教授
-                    </p>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-date">2021.07 - 2024.10</div>
-                    <h3 class="timeline-title">研究实习生</h3>
-                    <p class="timeline-desc">
-                        <strong>百度公司</strong><br>
-                        搜索科学团队<br>
-                        合作导师：刘亦丁
-                    </p>
-                </div>
-                <div class="timeline-dot"></div>
+                <h3 class="research-title">工程学士</h3>
+                <p class="research-desc">
+                    <strong>华南理工大学软件学院</strong><br>
+                    <strong>时间：</strong>2015.08 - 2019.06
+                </p>
             </div>
         </div>
     </section>
 
+  
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="section-header fade-in">
@@ -736,18 +690,10 @@ masthead: false
 
             <div class="contact-item fade-in">
                 <div class="contact-icon">
-                    <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <h3 class="contact-title">位置</h3>
-                <p>中国北京</p>
-            </div>
-
-            <div class="contact-item fade-in">
-                <div class="contact-icon">
                     <i class="fab fa-google"></i>
                 </div>
                 <h3 class="contact-title">Google Scholar</h3>
-                <p><a href="https://scholar.google.com/citations?user=m88SZGgAAAAJ&hl=en" target="_blank">学术主页</a></p>
+                <p><a href="https://scholar.google.com/citations?user=m88SZGgAAAAJ&hl=en" target="_blank">谷歌学术</a></p>
             </div>
 
             <div class="contact-item fade-in">
@@ -756,14 +702,6 @@ masthead: false
                 </div>
                 <h3 class="contact-title">GitHub</h3>
                 <p><a href="https://github.com/CSQianDong" target="_blank">CSQianDong</a></p>
-            </div>
-
-            <div class="contact-item fade-in">
-                <div class="contact-icon">
-                    <i class="fas fa-file-alt"></i>
-                </div>
-                <h3 class="contact-title">中文简历</h3>
-                <p><a href="https://dongqian.bj.cn/files/chinese_cv.pdf" target="_blank">下载简历</a></p>
             </div>
         </div>
     </section>
