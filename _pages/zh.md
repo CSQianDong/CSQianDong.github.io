@@ -426,6 +426,9 @@ masthead: false
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
             transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
         }
 
         .contact-item:hover {
@@ -437,12 +440,36 @@ masthead: false
             font-size: 2.5rem;
             margin-bottom: 1rem;
             opacity: 0.9;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover .contact-icon {
+            margin-bottom: 0.5rem;
         }
 
         .contact-title {
             font-size: 1.125rem;
             font-weight: 600;
             margin-bottom: 0.5rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover .contact-title {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .contact-item p {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.3s ease 0.1s;
+        }
+
+        .contact-item:hover p {
+            opacity: 1;
+            transform: translateY(0);
         }
 
         .contact a {
@@ -1040,6 +1067,7 @@ masthead: false
                 <div class="contact-icon">
                     <i class="fas fa-envelope" style="font-size: 2.5rem;"></i>
                 </div>
+                <h3 class="contact-title">邮箱</h3>
                 <p><a href="mailto:qiandong.97@qq.com">qiandong.97@qq.com</a></p>
             </div>
 
@@ -1047,6 +1075,7 @@ masthead: false
                 <div class="contact-icon">
                     <img src="/images/xhs.png" alt="小红书" style="width: 50px; height: 50px; border-radius: 50%;">
                 </div>
+                <h3 class="contact-title">小红书</h3>
                 <p><a href="https://www.xiaohongshu.com/user/profile/64d8bdc1000000000100f445" target="_blank">🎃量子之心</a></p>
             </div>
 
@@ -1056,6 +1085,7 @@ masthead: false
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                     </svg>
                 </div>
+                <h3 class="contact-title">推特</h3>
                 <p><a href="https://x.com/verymakesense" target="_blank">@verymakesense</a></p>
             </div>
         </div>
