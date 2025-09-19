@@ -3,7 +3,10 @@ permalink: /zh/
 title: "董骞 - 中文主页"
 excerpt: "董骞个人中文主页，清华大学博士生"
 author_profile: false
-layout: splash
+layout: null
+header: false
+sidebar: false
+masthead: false
 ---
 
 <!DOCTYPE html>
@@ -12,7 +15,8 @@ layout: splash
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>董骞 - 清华大学博士生</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -21,20 +25,107 @@ layout: splash
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
+            color: #1a1a1a;
+            background: #f8fafc;
+            overflow-x: hidden;
         }
 
-        .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        /* 平滑滚动 */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* 导航栏 */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #6366f1;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #4b5563;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: #6366f1;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #6366f1;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .lang-switch {
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
             color: white;
-            padding: 100px 20px;
-            text-align: center;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .lang-switch:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
             position: relative;
             overflow: hidden;
+            margin-top: 80px;
         }
 
         .hero::before {
@@ -44,80 +135,103 @@ layout: splash
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-            opacity: 0.3;
+            background:
+                radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
         }
 
         .hero-content {
+            text-align: center;
+            color: white;
+            z-index: 2;
             position: relative;
-            z-index: 1;
             max-width: 800px;
-            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
         }
 
         .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+            font-size: clamp(2.5rem, 8vw, 4rem);
             font-weight: 700;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #ffffff, #e0e7ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .hero .subtitle {
-            font-size: 1.5rem;
+            font-size: clamp(1.2rem, 3vw, 1.5rem);
             margin-bottom: 2rem;
             opacity: 0.9;
+            font-weight: 300;
         }
 
-        .lang-switch {
-            margin-top: 2rem;
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
-        .lang-switch a {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
+        .btn-primary {
+            background: rgba(255, 255, 255, 0.2);
             color: white;
-            padding: 12px 30px;
+            padding: 1rem 2rem;
+            border-radius: 50px;
             text-decoration: none;
-            border-radius: 30px;
-            border: 2px solid rgba(255,255,255,0.3);
+            font-weight: 500;
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
-        .lang-switch a:hover {
-            background: rgba(255,255,255,0.3);
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        .btn-primary:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
         }
 
-        .container {
+        /* Sections */
+        .section {
+            padding: 5rem 2rem;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
         }
 
-        .section {
-            background: white;
-            margin: 40px 0;
-            padding: 60px 40px;
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .section:hover {
-            transform: translateY(-5px);
-        }
-
-        .section h2 {
-            color: #667eea;
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
+        .section-header {
             text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 5vw, 2.5rem);
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 1rem;
             position: relative;
         }
 
-        .section h2::after {
+        .section-title::after {
             content: '';
             position: absolute;
             bottom: -10px;
@@ -125,416 +239,615 @@ layout: splash
             transform: translateX(-50%);
             width: 60px;
             height: 4px;
-            background: linear-gradient(90deg, #667eea, #764ba2);
+            background: linear-gradient(90deg, #6366f1, #8b5cf6);
             border-radius: 2px;
         }
 
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: #6b7280;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Research Interests */
+        .research-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .research-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .research-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #6366f1, #8b5cf6);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .research-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .research-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .research-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .research-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+
+        .research-desc {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+
+        /* Timeline */
         .timeline {
             position: relative;
-            padding: 20px 0;
+            padding: 2rem 0;
         }
 
         .timeline::before {
             content: '';
             position: absolute;
             left: 50%;
-            transform: translateX(-50%);
+            top: 0;
+            bottom: 0;
             width: 2px;
-            height: 100%;
-            background: linear-gradient(180deg, #667eea, #764ba2);
+            background: linear-gradient(180deg, #6366f1, #8b5cf6);
+            transform: translateX(-50%);
         }
 
         .timeline-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 40px 0;
             position: relative;
+            margin: 3rem 0;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 0.6s ease forwards;
         }
 
-        .timeline-item:nth-child(odd) {
-            flex-direction: row-reverse;
+        .timeline-item:nth-child(1) { animation-delay: 0.1s; }
+        .timeline-item:nth-child(2) { animation-delay: 0.2s; }
+        .timeline-item:nth-child(3) { animation-delay: 0.3s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .timeline-content {
-            width: 45%;
-            background: #f8f9fa;
-            padding: 30px;
+            background: white;
+            padding: 2rem;
             border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 45%;
             position: relative;
         }
 
-        .timeline-content::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            width: 20px;
-            height: 20px;
-            background: #667eea;
-            border-radius: 50%;
-            transform: translateY(-50%);
-        }
-
-        .timeline-item:nth-child(odd) .timeline-content::before {
-            right: -60px;
-        }
-
-        .timeline-item:nth-child(even) .timeline-content::before {
-            left: -60px;
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-left: auto;
         }
 
         .timeline-dot {
             position: absolute;
             left: 50%;
-            transform: translateX(-50%);
+            top: 2rem;
             width: 16px;
             height: 16px;
-            background: #667eea;
+            background: #6366f1;
             border-radius: 50%;
+            transform: translateX(-50%);
             border: 3px solid white;
-            z-index: 1;
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
         }
 
         .timeline-date {
-            font-weight: bold;
-            color: #667eea;
-            margin-bottom: 10px;
+            color: #6366f1;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
         }
 
         .timeline-title {
-            font-size: 1.2rem;
+            font-size: 1.125rem;
             font-weight: 600;
-            margin-bottom: 10px;
-            color: #333;
+            margin-bottom: 0.5rem;
+            color: #1a1a1a;
         }
 
         .timeline-desc {
-            color: #666;
-            line-height: 1.6;
+            color: #6b7280;
         }
 
-        .research-interests {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .interest-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 30px;
-            border-radius: 15px;
-            text-align: center;
-            transform: perspective(1000px) rotateX(0deg);
-            transition: all 0.3s ease;
-        }
-
-        .interest-card:hover {
-            transform: perspective(1000px) rotateX(-5deg) translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-        }
-
-        .interest-icon {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-
-        .interest-title {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-
-        .interest-desc {
-            opacity: 0.9;
-            line-height: 1.6;
-        }
-
+        /* Contact Section */
         .contact {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            text-align: center;
+            padding: 5rem 2rem;
         }
 
         .contact-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
         }
 
         .contact-item {
-            background: rgba(255,255,255,0.1);
-            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
             border-radius: 15px;
+            text-align: center;
             backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             transition: all 0.3s ease;
         }
 
         .contact-item:hover {
-            background: rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.15);
             transform: translateY(-5px);
         }
 
         .contact-icon {
             font-size: 2.5rem;
-            margin-bottom: 20px;
+            margin-bottom: 1rem;
+            opacity: 0.9;
         }
 
         .contact-title {
-            font-size: 1.2rem;
+            font-size: 1.125rem;
             font-weight: 600;
-            margin-bottom: 10px;
-        }
-
-        .contact-desc {
-            opacity: 0.9;
+            margin-bottom: 0.5rem;
         }
 
         .contact a {
             color: white;
             text-decoration: none;
+            opacity: 0.9;
             transition: opacity 0.3s ease;
         }
 
         .contact a:hover {
-            opacity: 0.8;
+            opacity: 1;
         }
 
+        /* Floating particles */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .particle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float-particle 20s infinite linear;
+        }
+
+        @keyframes float-particle {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* Responsive Design */
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
+            .nav-links {
+                display: none;
             }
 
-            .hero .subtitle {
-                font-size: 1.2rem;
-            }
-
-            .section {
-                margin: 20px 0;
-                padding: 40px 20px;
+            .hero {
+                margin-top: 60px;
             }
 
             .timeline::before {
                 left: 30px;
             }
 
-            .timeline-item {
-                flex-direction: column !important;
-                align-items: flex-start;
-                padding-left: 60px;
-            }
-
             .timeline-content {
-                width: 100%;
-            }
-
-            .timeline-content::before {
-                left: -50px !important;
-                right: auto !important;
+                width: calc(100% - 60px);
+                margin-left: 60px !important;
             }
 
             .timeline-dot {
                 left: 30px;
             }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .research-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Loading Animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
 <body>
-    <section class="hero">
-        <div class="hero-content">
-            <h1>董骞 (Qian Dong)</h1>
-            <p class="subtitle">清华大学计算机科学与技术系博士生</p>
-            <div class="lang-switch">
-                <a href="/">English Version</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">董骞</a>
+            <ul class="nav-links">
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#research">研究方向</a></li>
+                <li><a href="#education">教育经历</a></li>
+                <li><a href="#experience">工作经历</a></li>
+                <li><a href="#contact">联系方式</a></li>
+            </ul>
+            <a href="/" class="lang-switch">English</a>
+        </div>
+    </nav>
+
+    <!-- Floating Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <div class="hero-content fade-in">
+            <div class="hero-badge">
+                <i class="fas fa-graduation-cap"></i> 清华大学博士生
+            </div>
+            <h1>董骞</h1>
+            <p class="subtitle">
+                清华大学计算机科学与技术系<br>
+                智能信息检索实验室 (THUIR)
+            </p>
+            <div class="hero-buttons">
+                <a href="#research" class="btn-primary">
+                    <i class="fas fa-microscope"></i>
+                    研究方向
+                </a>
+                <a href="#contact" class="btn-primary">
+                    <i class="fas fa-envelope"></i>
+                    联系我
+                </a>
             </div>
         </div>
     </section>
 
-    <div class="container">
-        <section class="section">
-            <h2>个人简介</h2>
-            <p style="text-align: center; font-size: 1.2rem; line-height: 1.8; max-width: 800px; margin: 0 auto;">
+    <!-- About Section -->
+    <section class="section">
+        <div class="section-header fade-in">
+            <h2 class="section-title">个人简介</h2>
+            <p class="section-subtitle">
                 我目前是清华大学计算机科学与技术系四年级博士生，在清华大学智能信息检索实验室（THUIR）进行学术研究。
                 我很荣幸能够在马少平教授、刘奕群教授和艾清遥教授的指导下进行学术研究。
-                我的研究方向主要涵盖信息检索、大语言模型应用和长上下文处理等领域。
-                我还担任多个顶级学术会议的审稿人/程序委员会委员，包括SIGIR、ACL、WWW、CIKM、COLING、AAAI、TOIS等。
+                我还担任多个顶级学术会议的审稿人/程序委员会委员。
             </p>
+        </div>
+    </section>
 
-            <div class="research-interests">
-                <div class="interest-card">
-                    <div class="interest-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <div class="interest-title">信息检索</div>
-                    <div class="interest-desc">
-                        传统和神经网络方法用于检索和重排序，专注于提升检索系统的准确性和效率。
-                    </div>
-                </div>
+    <!-- Research Interests -->
+    <section class="section" id="research" style="background: #f8fafc;">
+        <div class="section-header fade-in">
+            <h2 class="section-title">研究方向</h2>
+            <p class="section-subtitle">专注于以下三个研究领域的探索与创新</p>
+        </div>
 
-                <div class="interest-card">
-                    <div class="interest-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <div class="interest-title">大语言模型应用</div>
-                    <div class="interest-desc">
-                        利用信息检索技术来增强大语言模型的能力和效率，探索LLM的新应用场景。
-                    </div>
+        <div class="research-grid">
+            <div class="research-card fade-in">
+                <div class="research-icon">
+                    <i class="fas fa-search"></i>
                 </div>
-
-                <div class="interest-card">
-                    <div class="interest-icon">
-                        <i class="fas fa-text-width"></i>
-                    </div>
-                    <div class="interest-title">长上下文处理</div>
-                    <div class="interest-desc">
-                        使大语言模型能够高效有效地处理长输入和输出，突破上下文长度限制。
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>教育背景</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2022.08 - 至今</div>
-                        <div class="timeline-title">博士研究生</div>
-                        <div class="timeline-desc">
-                            清华大学计算机科学与技术系，中国。<br>
-                            <strong>导师：</strong>马少平教授、刘奕群教授、艾清遥教授
-                        </div>
-                    </div>
-                    <div class="timeline-dot"></div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2019.08 - 2022.06</div>
-                        <div class="timeline-title">工程硕士</div>
-                        <div class="timeline-desc">
-                            中国科学院软件研究所，中国。<br>
-                            <strong>导师：</strong>牛树梓教授
-                        </div>
-                    </div>
-                    <div class="timeline-dot"></div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2015.08 - 2019.06</div>
-                        <div class="timeline-title">工程学士</div>
-                        <div class="timeline-desc">
-                            华南理工大学软件学院，中国。
-                        </div>
-                    </div>
-                    <div class="timeline-dot"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>工作经历</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2024.11 - 至今</div>
-                        <div class="timeline-title">研究实习生</div>
-                        <div class="timeline-desc">
-                            小红书公司，中国。<br>
-                            合作导师：陈佳
-                        </div>
-                    </div>
-                    <div class="timeline-dot"></div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2024.08 - 2024.10</div>
-                        <div class="timeline-title">访问学者</div>
-                        <div class="timeline-desc">
-                            新加坡国立大学，NExT++研究中心，新加坡。<br>
-                            合作导师：蔡达成教授
-                        </div>
-                    </div>
-                    <div class="timeline-dot"></div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2021.07 - 2024.10</div>
-                        <div class="timeline-title">研究实习生</div>
-                        <div class="timeline-desc">
-                            百度公司，搜索科学团队，中国。<br>
-                            合作导师：刘一丁
-                        </div>
-                    </div>
-                    <div class="timeline-dot"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section contact">
-            <h2>联系方式</h2>
-            <div class="contact-grid">
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="contact-title">邮箱</div>
-                    <div class="contact-desc">
-                        <a href="mailto:qiandong.97@qq.com">qiandong.97@qq.com</a>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="contact-title">位置</div>
-                    <div class="contact-desc">中国北京</div>
-                </div>
-
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fab fa-google"></i>
-                    </div>
-                    <div class="contact-title">Google Scholar</div>
-                    <div class="contact-desc">
-                        <a href="https://scholar.google.com/citations?user=m88SZGgAAAAJ&hl=en" target="_blank">学术主页</a>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fab fa-github"></i>
-                    </div>
-                    <div class="contact-title">GitHub</div>
-                    <div class="contact-desc">
-                        <a href="https://github.com/CSQianDong" target="_blank">CSQianDong</a>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-file-alt"></i>
-                    </div>
-                    <div class="contact-title">中文简历</div>
-                    <div class="contact-desc">
-                        <a href="https://dongqian.bj.cn/files/chinese_cv.pdf" target="_blank">下载简历</a>
-                    </div>
-                </div>
+                <h3 class="research-title">信息检索</h3>
+                <p class="research-desc">
+                    传统和神经网络方法用于检索和重排序，专注于提升检索系统的准确性和效率。
+                    探索新的检索算法和优化技术。
+                </p>
             </div>
 
-            <div style="margin-top: 40px;">
-                <a href="/" class="lang-switch" style="margin-top: 0;">
-                    切换到英文版
-                </a>
+            <div class="research-card fade-in">
+                <div class="research-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3 class="research-title">大语言模型应用</h3>
+                <p class="research-desc">
+                    利用信息检索技术来增强大语言模型的能力和效率，探索LLM的新应用场景，
+                    提升模型性能和实用性。
+                </p>
             </div>
-        </section>
-    </div>
+
+            <div class="research-card fade-in">
+                <div class="research-icon">
+                    <i class="fas fa-text-width"></i>
+                </div>
+                <h3 class="research-title">长上下文处理</h3>
+                <p class="research-desc">
+                    使大语言模型能够高效有效地处理长输入和输出，突破上下文长度限制，
+                    提升长文本处理能力。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education">
+        <div class="section-header fade-in">
+            <h2 class="section-title">教育背景</h2>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">2022.08 - 至今</div>
+                    <h3 class="timeline-title">博士研究生</h3>
+                    <p class="timeline-desc">
+                        <strong>清华大学计算机科学与技术系</strong><br>
+                        <strong>导师：</strong>马少平教授、刘奕群教授、艾清遥教授
+                    </p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">2019.08 - 2022.06</div>
+                    <h3 class="timeline-title">工程硕士</h3>
+                    <p class="timeline-desc">
+                        <strong>中国科学院软件研究所</strong><br>
+                        <strong>导师：</strong>牛树梓教授
+                    </p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">2015.08 - 2019.06</div>
+                    <h3 class="timeline-title">工程学士</h3>
+                    <p class="timeline-desc">
+                        <strong>华南理工大学软件学院</strong>
+                    </p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience" style="background: #f8fafc;">
+        <div class="section-header fade-in">
+            <h2 class="section-title">工作经历</h2>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">2024.11 - 至今</div>
+                    <h3 class="timeline-title">研究实习生</h3>
+                    <p class="timeline-desc">
+                        <strong>小红书公司</strong><br>
+                        合作导师：陈佳
+                    </p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">2024.08 - 2024.10</div>
+                    <h3 class="timeline-title">访问学者</h3>
+                    <p class="timeline-desc">
+                        <strong>新加坡国立大学</strong><br>
+                        NExT++研究中心<br>
+                        合作导师：蔡达成教授
+                    </p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">2021.07 - 2024.10</div>
+                    <h3 class="timeline-title">研究实习生</h3>
+                    <p class="timeline-desc">
+                        <strong>百度公司</strong><br>
+                        搜索科学团队<br>
+                        合作导师：刘亦丁
+                    </p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-header fade-in">
+            <h2 class="section-title" style="color: white;">联系方式</h2>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-item fade-in">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3 class="contact-title">邮箱</h3>
+                <p><a href="mailto:qiandong.97@qq.com">qiandong.97@qq.com</a></p>
+            </div>
+
+            <div class="contact-item fade-in">
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3 class="contact-title">位置</h3>
+                <p>中国北京</p>
+            </div>
+
+            <div class="contact-item fade-in">
+                <div class="contact-icon">
+                    <i class="fab fa-google"></i>
+                </div>
+                <h3 class="contact-title">Google Scholar</h3>
+                <p><a href="https://scholar.google.com/citations?user=m88SZGgAAAAJ&hl=en" target="_blank">学术主页</a></p>
+            </div>
+
+            <div class="contact-item fade-in">
+                <div class="contact-icon">
+                    <i class="fab fa-github"></i>
+                </div>
+                <h3 class="contact-title">GitHub</h3>
+                <p><a href="https://github.com/CSQianDong" target="_blank">CSQianDong</a></p>
+            </div>
+
+            <div class="contact-item fade-in">
+                <div class="contact-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <h3 class="contact-title">中文简历</h3>
+                <p><a href="https://dongqian.bj.cn/files/chinese_cv.pdf" target="_blank">下载简历</a></p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Generate floating particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 50;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+
+                const size = Math.random() * 4 + 2;
+                particle.style.width = size + 'px';
+                particle.style.height = size + 'px';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                particle.style.animationDuration = (Math.random() * 20 + 20) + 's';
+
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Intersection Observer for animations
+        function initAnimations() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.fade-in').forEach(el => {
+                el.style.animationPlayState = 'paused';
+                observer.observe(el);
+            });
+        }
+
+        // Smooth scrolling for navigation links
+        function initSmoothScroll() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        }
+
+        // Navbar scroll effect
+        function initNavbar() {
+            const navbar = document.querySelector('.navbar');
+            let lastScroll = 0;
+
+            window.addEventListener('scroll', () => {
+                const currentScroll = window.pageYOffset;
+
+                if (currentScroll > 100) {
+                    navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+                    navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+                } else {
+                    navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                    navbar.style.boxShadow = 'none';
+                }
+
+                lastScroll = currentScroll;
+            });
+        }
+
+        // Initialize everything when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            createParticles();
+            initAnimations();
+            initSmoothScroll();
+            initNavbar();
+        });
+    </script>
 </body>
 </html>
