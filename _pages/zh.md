@@ -914,10 +914,8 @@ masthead: false
                         <div class="publication-item">
                             <div class="publication-year">2021</div>
                             <div class="publication-title">Disentangled Graph Recurrent Network for Document Ranking</div>
-                            <div class="publication-venue">Data Science and Engineering 2021 (JCR-Q1, IF: 7.2)</div>
+                            <div class="publication-venue">Data Science and Engineering (JCR-Q1, IF: 7.2)</div>
                             <div class="publication-tags">
-                                <span class="tag tag-ccf-b">CCF-B</span>
-                                <span class="tag tag-th-b">TH-B</span>
                                 <span class="tag tag-jcr-q1">JCR-Q1</span>
                             </div>
                         </div>
