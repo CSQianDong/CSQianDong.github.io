@@ -1,11 +1,14 @@
 # main links links
 main:
 
+  - title: "中文主页"
+    url: /zh/
+
   - title: "Education"
     url: /#education-and-experience
 
   - title: "Publications"
-    url: /#publications    
+    url: /#publications
 
   - title: "Honors and Awards"
     url: /#honor-and-awards    
