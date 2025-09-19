@@ -183,11 +183,20 @@ masthead: false
             font-weight: 300;
         }
 
+        .hero-intro {
+            max-width: 600px;
+            margin: 2rem auto 0;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
         .hero-buttons {
             display: flex;
             gap: 1rem;
             justify-content: center;
             flex-wrap: wrap;
+            margin-top: 2rem;
         }
 
         .btn-primary {
@@ -559,6 +568,13 @@ masthead: false
                 <a href="https://www.cs.tsinghua.edu.cn/" target="_blank" style="color: white; text-decoration: none;">清华大学计算机科学与技术系</a><br>
                 <a href="https://ai.thuir.cn/" target="_blank" style="color: white; text-decoration: none;">信息检索实验室 (THUIR)</a>
             </p>
+            <div class="hero-intro">
+                <p>
+                    我目前在清华大学计算机科学与技术系，信息检索实验室（THUIR）进行攻读博士学位，预计2026年6月毕业。
+                    很荣幸能够在马少平教授、刘奕群教授和艾清遥教授的指导下进行学术研究。
+                    我还担任多个顶级学术会议的审稿人/程序委员会委员。
+                </p>
+            </div>
             <div class="hero-buttons">
                 <a href="#research" class="btn-primary">
                     <i class="fas fa-microscope"></i>
@@ -572,18 +588,7 @@ masthead: false
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="section">
-        <div class="section-header fade-in">
-            <h2 class="section-title">个人简介</h2>
-            <p class="section-subtitle">
-                我目前在清华大学计算机科学与技术系，信息检索实验室（THUIR）进行攻读博士学位，预计2026年6月毕业。
-                很荣幸能够在马少平教授、刘奕群教授和艾清遥教授的指导下进行学术研究。
-                我还担任多个顶级学术会议的审稿人/程序委员会委员。
-            </p>
-        </div>
-    </section>
-
+    
     <!-- Research Interests -->
     <section class="section" id="research" style="background: #f8fafc;">
         <div class="section-header fade-in">
@@ -631,19 +636,17 @@ masthead: false
     <section class="section" id="education" style="background: #f8fafc;">
         <div class="section-header fade-in">
             <h2 class="section-title">教育背景</h2>
-            <p class="section-subtitle">学术成长历程</p>
         </div>
 
         <div class="research-grid">
             <div class="research-card fade-in">
                 <div class="research-icon">
-                    <i class="fas fa-university"></i>
+                    <i class="fas fa-laptop-code"></i>
                 </div>
-                <h3 class="research-title">博士研究生</h3>
+                <h3 class="research-title">工程学士</h3>
                 <p class="research-desc">
-                    <strong>清华大学计算机科学与技术系</strong><br>
-                    <strong>时间：</strong>2022.08 - 至今<br>
-                    <strong>导师：</strong>马少平教授、刘奕群教授、艾清遥教授
+                    <strong><a href="https://www.scut.edu.cn/sse/" target="_blank">华南理工大学软件学院</a></strong><br>
+                    <strong>时间：</strong>2015.08 - 2019.06
                 </p>
             </div>
 
@@ -653,20 +656,19 @@ masthead: false
                 </div>
                 <h3 class="research-title">工程硕士</h3>
                 <p class="research-desc">
-                    <strong>中国科学院软件研究所</strong><br>
+                    <strong><a href="http://www.is.cas.cn/" target="_blank">中国科学院软件研究所</a></strong><br>
                     <strong>时间：</strong>2019.08 - 2022.06<br>
-                    <strong>导师：</strong>牛树梓教授
                 </p>
             </div>
 
             <div class="research-card fade-in">
                 <div class="research-icon">
-                    <i class="fas fa-laptop-code"></i>
+                    <i class="fas fa-university"></i>
                 </div>
-                <h3 class="research-title">工程学士</h3>
+                <h3 class="research-title">博士研究生</h3>
                 <p class="research-desc">
-                    <strong>华南理工大学软件学院</strong><br>
-                    <strong>时间：</strong>2015.08 - 2019.06
+                    <strong><a href="https://ai.thuir.cn/" target="_blank">清华大学计算机科学与技术系</a></strong><br>
+                    <strong>时间：</strong>2022.08 - 至今<br>
                 </p>
             </div>
         </div>
