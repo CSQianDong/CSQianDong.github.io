@@ -1025,7 +1025,7 @@ masthead: false
             <div class="hero-badge">
                 <i class="fas fa-graduation-cap"></i> Ph.D. Candidate
             </div>
-            <h1 class="typewriter">董骞</h1>
+            <h1>董骞</h1>
             <p class="subtitle">
                 <a href="https://www.cs.tsinghua.edu.cn/" target="_blank" style="color: white; text-decoration: none;">清华大学计算机科学与技术系</a><br>
                 <a href="https://ai.thuir.cn/" target="_blank" style="color: white; text-decoration: none;">信息检索实验室 (THUIR)</a>
