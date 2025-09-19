@@ -732,6 +732,18 @@ masthead: false
                     <i class="fas fa-envelope"></i>
                     联系我
                 </a>
+                <a href="https://scholar.google.com/citations?user=m88SZGgAAAAJ&hl=en" target="_blank" class="btn-primary">
+                    <i class="fas fa-graduation-cap"></i>
+                    Google Scholar
+                </a>
+                <a href="https://github.com/CSQianDong" target="_blank" class="btn-primary">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a href="https://www.xiaohongshu.com/user/profile/64d8bdc1000000000100f445" target="_blank" class="btn-primary">
+                    <i class="fas fa-heart"></i>
+                    小红书
+                </a>
             </div>
         </div>
     </section>
