@@ -17,8 +17,12 @@ I am now a final year Ph.D. student in [THUIR](http://ai.thuir.cn/), Department 
 
 3. **Long-Context LLM**: Adapting LLMs to efficiently and effectively handle long inputs and outputs.
 
-
 I also served as a reviewer/PC-member for SIGIR, ACL, WWW, CIKM, COLING, AAAI, TOIS and etc.
+
+News
+======
+* [2026.02] GLM-5 Technical Report is released! I am one of the core contributors for model architecture.
+* [2025.08] GLM-4.5 Technical Report is released! I am one of the contributors for sparse attention exploration in the post-training stage.
 
 Education
 ======
