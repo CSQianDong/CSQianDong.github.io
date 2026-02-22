@@ -22,6 +22,8 @@ I also served as a reviewer/PC-member for SIGIR, ACL, WWW, CIKM, COLING, AAAI, T
 News
 ======
 * [2026.02] [GLM-5 Technical Report](https://www.arxiv.org/abs/2602.15763) is released! I am one of the core contributors for model architecture.
+
+Education
 ======
 
 | Year | Education |
