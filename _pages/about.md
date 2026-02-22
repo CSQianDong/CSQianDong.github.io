@@ -22,7 +22,7 @@ I also served as a reviewer/PC-member for SIGIR, ACL, WWW, CIKM, COLING, AAAI, T
 News
 ======
 * [2026.02] GLM-5 Technical Report is released! I am one of the core contributors for model architecture.
-* [2025.08] GLM-4.5 Technical Report is released! I am one of the contributors for sparse attention adaptation in the post-training stage.
+* [2025.08] GLM-4.5 Technical Report is released! I am one of the contributors for exploring sparse attention adaptation in the post-training stage.
 
 Education
 ======
