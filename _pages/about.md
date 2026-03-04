@@ -36,6 +36,17 @@ redirect_from:
             --global-hover-color: #3a5a8c;
             --global-divider-color: #e5e7eb;
             --global-muted: #6b7280;
+            --global-card-bg: #ffffff;
+        }
+
+        [data-theme="dark"] {
+            --global-bg-color: #1a1a2e;
+            --global-text-color: #e0e0e8;
+            --global-theme-color: #7b9fd4;
+            --global-hover-color: #a3c0e8;
+            --global-divider-color: #2e2e45;
+            --global-muted: #9a9ab0;
+            --global-card-bg: #22223a;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -47,6 +58,7 @@ redirect_from:
             color: var(--global-text-color);
             background-color: var(--global-bg-color);
             -webkit-font-smoothing: antialiased;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         a { color: var(--global-theme-color); text-decoration: none; transition: color 0.2s ease; }
@@ -151,6 +163,28 @@ redirect_from:
         @media (max-width: 768px) {
             .profile { float: none; margin: 0 auto 1.5rem; width: 160px; text-align: center; }
         }
+
+        /* Theme toggle */
+        .theme-toggle {
+            display: inline-flex; align-items: center; justify-content: center;
+            width: 36px; height: 36px; border-radius: 50%;
+            border: 1px solid var(--global-divider-color);
+            background: transparent; color: var(--global-muted);
+            cursor: pointer; font-size: 1.1rem;
+            transition: all 0.3s ease; margin-left: 0.5rem;
+            vertical-align: middle;
+        }
+        .theme-toggle:hover {
+            color: var(--global-theme-color);
+            border-color: var(--global-theme-color);
+            transform: rotate(30deg);
+        }
+
+        /* Dark mode specific overrides */
+        [data-theme="dark"] .profile img { box-shadow: 0 4px 15px rgba(0,0,0,0.4); }
+        [data-theme="dark"] .tag { opacity: 0.9; }
+        [data-theme="dark"] .pub-info .links a { border-color: var(--global-divider-color); }
+        [data-theme="dark"] .pub-info .links a:hover { background: var(--global-theme-color); color: #1a1a2e; }
     </style>
 </head>
 <body>
@@ -162,6 +196,7 @@ redirect_from:
                 <span class="name-english"><span style="font-weight:700;">Qian</span> Dong</span>
                 (<span class="name-chinese">董骞</span>)
                 <a href="/zh/" class="lang-switch">中文</a>
+                <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode"><i class="fas fa-moon"></i></button>
             </h1>
         </header>
 
@@ -351,6 +386,33 @@ redirect_from:
 </style>
 
 <script>
+// Theme toggle
+function toggleTheme() {
+    var html = document.documentElement;
+    var btn = document.querySelector('.theme-toggle i');
+    if (html.getAttribute('data-theme') === 'dark') {
+        html.removeAttribute('data-theme');
+        btn.className = 'fas fa-moon';
+        localStorage.setItem('theme', 'light');
+    } else {
+        html.setAttribute('data-theme', 'dark');
+        btn.className = 'fas fa-sun';
+        localStorage.setItem('theme', 'dark');
+    }
+}
+
+// Load saved theme
+(function() {
+    var saved = localStorage.getItem('theme');
+    if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        document.addEventListener('DOMContentLoaded', function() {
+            var btn = document.querySelector('.theme-toggle i');
+            if (btn) btn.className = 'fas fa-sun';
+        });
+    }
+})();
+
 function togglePub(id) {
     var body = document.getElementById(id);
     var header = body.previousElementSibling;
