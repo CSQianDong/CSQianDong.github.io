@@ -131,18 +131,18 @@ masthead: false
                 <table>
                     <tr><td>2026.02</td><td>🚀 <a href="https://www.arxiv.org/abs/2602.15763" target="_blank">GLM-5 技术报告</a>发布！我是模型架构核心贡献者之一。</td></tr>
                     <tr><td>2025.12</td><td>🚀 GLM-4.7 发布！<a href="https://z.ai/blog/glm-4.7" target="_blank">Blog</a></td></tr>
-                    <tr><td>2025.11</td><td>📄 一篇论文被 <strong>EMNLP 2025</strong> 接收：SelfRACG</td></tr>
+                    <tr><td>2025.11</td><td>📄 <strong>SelfRACG</strong> accepted to EMNLP 2025 — Letting LLMs self-express retrieval queries for better code generation in one model arch.</td></tr>
                     <tr><td>2025.09</td><td>🚀 GLM-4.6 发布！<a href="https://z.ai/blog/glm-4.6" target="_blank">Blog</a></td></tr>
                     <tr><td>2025.08</td><td>🚀 <a href="https://arxiv.org/abs/2508.06471" target="_blank">GLM-4.5 技术报告</a>发布！我是 post-training 阶段 sparse attention adaptation 方向的贡献者之一。</td></tr>
                     <tr><td>2025.07</td><td>📄 一篇论文被 <strong>SIGIR 2025</strong> 接收：Qilin</td></tr>
-                    <tr><td>2025.04</td><td>📄 一篇论文被 <strong>WWW 2025</strong> 接收：DecoupledRAG</td></tr>
-                    <tr><td>2024.07</td><td>📄 一篇论文被 <strong>SIGIR 2024</strong> 接收</td></tr>
-                    <tr><td>2023.10</td><td>📄 一篇论文被 <strong>CIKM 2023</strong> 接收：I³Retriever</td></tr>
+                    <tr><td>2025.04</td><td>📄 <strong>DecoupledRAG</strong> accepted to WWW 2025 — Decoupling context and knowledge via cross-attention for efficient RAG.</td></tr>
+                    <tr><td>2024.07</td><td>📄 <strong>RLCF</strong> accepted to SIGIR 2024 — Aligning LLMs for IR through unsupervised contrastive feedback.</td></tr>
+                    <tr><td>2023.10</td><td>📄 <strong>I³Retriever</strong> accepted to CIKM 2023 — Incorporating implicit query-document interaction into retrievers via a generative module.</td></tr>
                     <tr><td>2023.07</td><td>📄 一篇论文被 <strong>SIGIR 2023</strong> 接收：T²Ranking</td></tr>
-                    <tr><td>2022.07</td><td>📄 一篇论文被 <strong>SIGIR 2022</strong> 接收</td></tr>
-                    <tr><td>2022.02</td><td>📄 一篇论文发表在 <strong>Data Science and Engineering</strong> (JCR-Q1): Disentangled Graph Recurrent Network</td></tr>
+                    <tr><td>2022.07</td><td>📄 <strong>KERM</strong> accepted to SIGIR 2022 — Incorporating explicit knowledge into PLMs for passage re-ranking.</td></tr>
+                    <tr><td>2022.02</td><td>📄 <strong>DGRe</strong> published in Data Science and Engineering — Disentangled Causal Intervention for BERT-based Ad Hoc Document Ranking.</td></tr>
                     <tr><td>2021.07</td><td>📄 一篇论文被 <strong>SIGIR 2021</strong> 接收</td></tr>
-                    <tr><td>2021.04</td><td>📄 一篇论文被 <strong>DASFAA 2021</strong> 接收</td></tr>
+                    <tr><td>2021.04</td><td>📄 <strong>LGRe</strong> accepted to DASFAA 2021 — Refining BERT-based Document Ranking via Latent Graph Recurrent Networks.</td></tr>
                 </table>
             </div>
 
