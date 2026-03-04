@@ -226,13 +226,22 @@ function handleSubmit(e) {
     }
 
     url = normalizeUrl(url);
+
+    // Extract arXiv ID for dedup & display
+    var idMatch = url.match(/(\d{4}\.\d{4,5})/);
+    var arxivId = idMatch ? idMatch[1] : url;
+
+    // Dedup: check if this arXiv ID was already submitted
+    var existing = getSubmissions();
+    if (existing.some(function(s) { return s.id === arxivId; })) {
+        msg.className = 'msg error';
+        msg.textContent = '⚠️ 这篇论文（' + arxivId + '）已经投过啦，换一篇试试？';
+        return false;
+    }
+
     btn.disabled = true;
     btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>&nbsp; 提交中...';
     msg.textContent = '';
-
-    // Extract arXiv ID for display
-    var idMatch = url.match(/(\d{4}\.\d{4,5})/);
-    var arxivId = idMatch ? idMatch[1] : url;
 
     // Build Feishu message card
     var cardContent = '**📄 新论文投稿**\n\n**arXiv 链接：**' + url;
