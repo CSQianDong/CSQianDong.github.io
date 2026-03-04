@@ -169,7 +169,7 @@ masthead: false
 </div>
 
 <script>
-var FEISHU_WEBHOOK = 'https://open.feishu.cn/open-apis/bot/v2/hook/25165bf1-2cc6-4263-9186-621f2c2debb4';
+var FEISHU_WEBHOOK = 'https://open.feishu.cn/open-apis/bot/v2/hook/46d0571a-e3b8-4588-bda9-61fe5e7ae80c';
 var STORAGE_KEY = 'arxiv_submissions';
 
 function getSubmissions() {
