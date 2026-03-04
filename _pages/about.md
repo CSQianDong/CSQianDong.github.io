@@ -75,14 +75,7 @@ redirect_from:
         /* Profile image + X timeline */
         .profile { float: right; margin: 0 0 1.5rem 2rem; width: 200px; }
         .profile img { width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        .x-timeline-widget {
-            margin-top: 1rem;
-            border-radius: 8px;
-            overflow: hidden;
-            max-height: 360px;
-            overflow-y: auto;
-            border: 1px solid var(--global-divider-color);
-        }
+
 
         /* Bio text */
         .bio-text { font-size: 1rem; line-height: 1.8; color: var(--global-text-color); }
@@ -229,14 +222,6 @@ redirect_from:
                 <figure>
                     <img src="/images/profile.jpg" alt="Qian Dong" loading="eager">
                 </figure>
-                <div class="x-timeline-widget">
-                    <a class="twitter-timeline"
-                       data-height="360"
-                       data-chrome="noheader nofooter noborders transparent"
-                       data-tweet-limit="3"
-                       data-dnt="true"
-                       href="https://twitter.com/verymakesense?ref_src=twsrc%5Etfw">Tweets by verymakesense</a>
-                </div>
             </div>
 
             <div class="bio-text clearfix">
@@ -453,6 +438,5 @@ function togglePub(id) {
 }
 </script>
 
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>
