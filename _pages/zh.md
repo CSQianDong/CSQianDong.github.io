@@ -53,6 +53,14 @@ masthead: false
         .post-title { font-size: 2rem; font-weight: 700; color: var(--global-text-color); line-height: 1.3; }
         .profile { float: right; margin: 0 0 1.5rem 2rem; width: 200px; }
         .profile img { width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .x-timeline-widget {
+            margin-top: 1rem;
+            border-radius: 8px;
+            overflow: hidden;
+            max-height: 360px;
+            overflow-y: auto;
+            border: 1px solid var(--global-divider-color);
+        }
         .bio-text { font-size: 1rem; line-height: 1.8; color: var(--global-text-color); }
         .bio-text p { margin-bottom: 1rem; }
         h2.section-title { font-size: 1.5rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; padding-bottom: 0.4rem; border-bottom: 2px solid var(--global-theme-color); color: var(--global-text-color); }
@@ -135,6 +143,16 @@ masthead: false
                 <figure>
                     <img src="/images/profile.jpg" alt="董骞" loading="eager">
                 </figure>
+                <div class="x-timeline-widget">
+                    <a class="twitter-timeline"
+                       href="https://twitter.com/verymakesense"
+                       data-height="360"
+                       data-width="200"
+                       data-chrome="noheader nofooter noborders transparent"
+                       data-tweet-limit="3"
+                       data-dnt="true">
+                    </a>
+                </div>
             </div>
 
             <div class="bio-text clearfix">
@@ -301,5 +319,6 @@ function togglePub(id) {
 }
 </script>
 
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>
