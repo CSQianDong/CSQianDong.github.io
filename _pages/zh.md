@@ -119,10 +119,21 @@ masthead: false
                 </p>
             </div>
 
+            <!-- Quote -->
+            <div style="text-align:center;margin:2rem 0 2.5rem;padding:1.2rem 0;border-top:1px solid var(--global-divider-color);border-bottom:1px solid var(--global-divider-color);">
+                <p style="font-family:Georgia,serif;font-style:italic;font-size:1.15rem;margin-bottom:0.3rem;color:var(--global-text-color);">
+                    "Do not go gentle into that good night."</p>
+                <p style="font-size:0.85rem;opacity:0.6;color:var(--global-text-color);margin:0;">
+                    — Dylan Thomas</p>
+            </div>
+
             <h2 class="section-title">最新动态</h2>
             <div class="news-table">
                 <table>
                     <tr><td>2026.02</td><td>🚀 <a href="https://www.arxiv.org/abs/2602.15763" target="_blank">GLM-5 技术报告</a>发布！我是模型架构核心贡献者之一。</td></tr>
+                    <tr><td>2025.12</td><td>🚀 GLM-4.7 发布！<a href="https://z.ai/blog/glm-4.7" target="_blank">Blog</a></td></tr>
+                    <tr><td>2025.09</td><td>🚀 GLM-4.6 发布！<a href="https://z.ai/blog/glm-4.6" target="_blank">Blog</a></td></tr>
+                    <tr><td>2025.08</td><td>🚀 <a href="https://arxiv.org/abs/2508.06471" target="_blank">GLM-4.5 技术报告</a>发布！我是 post-training 阶段 sparse attention adaptation 方向的贡献者之一。</td></tr>
                 </table>
             </div>
 

@@ -199,11 +199,22 @@ redirect_from:
                 </p>
             </div>
 
+            <!-- Quote -->
+            <div style="text-align:center;margin:2rem 0 2.5rem;padding:1.2rem 0;border-top:1px solid var(--global-divider-color);border-bottom:1px solid var(--global-divider-color);">
+                <p style="font-family:Georgia,serif;font-style:italic;font-size:1.15rem;margin-bottom:0.3rem;color:var(--global-text-color);">
+                    "Do not go gentle into that good night."</p>
+                <p style="font-size:0.85rem;opacity:0.6;color:var(--global-text-color);margin:0;">
+                    — Dylan Thomas</p>
+            </div>
+
             <!-- News -->
             <h2 class="section-title">News</h2>
             <div class="news-table">
                 <table>
                     <tr><td>Feb 2026</td><td>🚀 <a href="https://www.arxiv.org/abs/2602.15763" target="_blank">GLM-5 Technical Report</a> is released! I am one of the core contributors for model architecture.</td></tr>
+                    <tr><td>Dec 2025</td><td>🚀 GLM-4.7 is released! <a href="https://z.ai/blog/glm-4.7" target="_blank">Blog</a></td></tr>
+                    <tr><td>Sep 2025</td><td>🚀 GLM-4.6 is released! <a href="https://z.ai/blog/glm-4.6" target="_blank">Blog</a></td></tr>
+                    <tr><td>Aug 2025</td><td>🚀 <a href="https://arxiv.org/abs/2508.06471" target="_blank">GLM-4.5 Technical Report</a> is released! I am one of the contributors for exploring sparse attention adaptation in the post-training stage.</td></tr>
                 </table>
             </div>
 
