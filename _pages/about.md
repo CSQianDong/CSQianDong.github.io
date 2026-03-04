@@ -183,7 +183,7 @@ redirect_from:
                     <a href="http://www.thuir.cn/group/aiqy/" target="_blank">Qingyao Ai</a>.
                 </p>
                 <p>
-                    My research interest lies in <strong>algo &amp; infra co-designed <strong>model architectures</strong> for <strong>scalable</strong> <em>parameters, context, and especially intelligence</em></strong>.
+                    My research interest lies in algo &amp; infra co-designed <strong>model architectures</strong> for <strong>scalable</strong> <em>parameters, context, and especially intelligence</em>.
                 </p>
                 <p>
                     <a href="mailto:qiandong.97@qq.com" title="Email"><i class="fas fa-envelope"></i></a>&nbsp;&nbsp;
