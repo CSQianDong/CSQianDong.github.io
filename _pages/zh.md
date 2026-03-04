@@ -105,7 +105,7 @@ masthead: false
                     <a href="http://www.thuir.cn/group/aiqy/" target="_blank">艾清遥</a>教授的指导下进行学术研究。
                 </p>
                 <p>
-                    我的研究兴趣是 <strong>algo &amp; infra co-design for scalable model architectures</strong>。
+                    我的研究兴趣是 <strong>algo &amp; infra co-designed model architectures for scaling both parameter size and context length</strong>。
                 </p>
                 <p>
                     <a href="mailto:qiandong.97@qq.com" title="Email"><i class="fas fa-envelope"></i></a>&nbsp;&nbsp;
