@@ -253,8 +253,6 @@ function handleSubmit(e) {
     msg.textContent = '';
 
     // Build Feishu message card
-    var MENTION_USER_ID = 'ou_a47861e76c984bad3dabb05f2977d28d';
-
     var payload = {
         msg_type: 'interactive',
         card: {
@@ -281,7 +279,7 @@ function handleSubmit(e) {
                     tag: 'div',
                     text: {
                         tag: 'lark_md',
-                        content: '**提交时间：**' + new Date().toLocaleString('zh-CN') + '\n\n<at user_id="' + MENTION_USER_ID + '">@董骞</at> 新投稿来啦 🦞'
+                        content: '**提交时间：**' + new Date().toLocaleString('zh-CN') + '\n\n<at id=all></at> 新投稿来啦 🦞'
                     }
                 },
                 {
