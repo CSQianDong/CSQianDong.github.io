@@ -122,7 +122,7 @@ masthead: false
     <div class="post">
         <header class="post-header">
             <h1 class="post-title">
-                <span style="font-weight:700;">董骞</span> Qian Dong
+                <span style="font-weight:700;">董骞</span>
             </h1>
             <div class="header-controls">
                 <a href="/" class="lang-switch">English</a>

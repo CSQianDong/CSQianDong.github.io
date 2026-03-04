@@ -209,7 +209,6 @@ redirect_from:
         <header class="post-header">
             <h1 class="post-title">
                 <span class="name-english"><span style="font-weight:700;">Qian</span> Dong</span>
-                (<span class="name-chinese">董骞</span>)
             </h1>
             <div class="header-controls">
                 <a href="/zh/" class="lang-switch">中文</a>
