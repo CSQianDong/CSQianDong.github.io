@@ -67,7 +67,8 @@ redirect_from:
         .container { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
 
         /* Header */
-        .post-header { margin-top: 3rem; margin-bottom: 0.5rem; }
+        .post-header { margin-top: 3rem; margin-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: flex-start; }
+        .header-controls { display: flex; align-items: center; gap: 0.5rem; flex-shrink: 0; margin-top: 0.5rem; }
         .post-title { font-size: 2rem; font-weight: 700; color: var(--global-text-color); line-height: 1.3; }
         .post-title .name-chinese { font-weight: 400; font-size: 1.5rem; }
 
@@ -209,9 +210,11 @@ redirect_from:
             <h1 class="post-title">
                 <span class="name-english"><span style="font-weight:700;">Qian</span> Dong</span>
                 (<span class="name-chinese">董骞</span>)
+            </h1>
+            <div class="header-controls">
                 <a href="/zh/" class="lang-switch">中文</a>
                 <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode"><i class="fas fa-moon"></i></button>
-            </h1>
+            </div>
         </header>
 
         <article>

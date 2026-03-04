@@ -48,7 +48,8 @@ masthead: false
         a { color: var(--global-theme-color); text-decoration: none; transition: color 0.2s ease; }
         a:hover { color: var(--global-hover-color); text-decoration: none; }
         .container { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
-        .post-header { margin-top: 3rem; margin-bottom: 0.5rem; }
+        .post-header { margin-top: 3rem; margin-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: flex-start; }
+        .header-controls { display: flex; align-items: center; gap: 0.5rem; flex-shrink: 0; margin-top: 0.5rem; }
         .post-title { font-size: 2rem; font-weight: 700; color: var(--global-text-color); line-height: 1.3; }
         .profile { float: right; margin: 0 0 1.5rem 2rem; width: 200px; }
         .profile img { width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
@@ -122,9 +123,11 @@ masthead: false
         <header class="post-header">
             <h1 class="post-title">
                 <span style="font-weight:700;">董骞</span> Qian Dong
+            </h1>
+            <div class="header-controls">
                 <a href="/" class="lang-switch">English</a>
                 <button class="theme-toggle" onclick="toggleTheme()" title="切换深色模式"><i class="fas fa-moon"></i></button>
-            </h1>
+            </div>
         </header>
 
         <article>
