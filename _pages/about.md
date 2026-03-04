@@ -209,9 +209,9 @@ redirect_from:
             <div class="news-table">
                 <table>
                     <tr><td>Feb 2026</td><td>🚀 <a href="https://www.arxiv.org/abs/2602.15763" target="_blank">GLM-5 Technical Report</a> is released! I am one of the core contributors for model architecture.</td></tr>
-                    <tr><td>Dec 2025</td><td>🚀 GLM-4.7 is released! <a href="https://z.ai/blog/glm-4.7" target="_blank">Blog</a></td></tr>
+                    <tr><td>Dec 2025</td><td>🚀 GLM-4.7 is released! Check our <a href="https://z.ai/blog/glm-4.7" target="_blank">Blog</a> for details.</td></tr>
                     <tr><td>Nov 2025</td><td>📄 <strong>SelfRACG</strong> accepted to EMNLP 2025 — Letting LLMs self-express retrieval queries for better code generation in one model arch.</td></tr>
-                    <tr><td>Sep 2025</td><td>🚀 GLM-4.6 is released! <a href="https://z.ai/blog/glm-4.6" target="_blank">Blog</a></td></tr>
+                    <tr><td>Sep 2025</td><td>🚀 GLM-4.6 is released! Check our <a href="https://z.ai/blog/glm-4.6" target="_blank">Blog</a> for details.</td></tr>
                     <tr><td>Aug 2025</td><td>🚀 <a href="https://arxiv.org/abs/2508.06471" target="_blank">GLM-4.5 Technical Report</a> is released! I am one of the contributors for exploring sparse attention adaptation in the post-training stage.</td></tr>
                     <tr><td>Jul 2025</td><td>📄 <strong>Qilin</strong> accepted to SIGIR 2025 — A multimodal IR dataset capturing real APP-level user sessions.</td></tr>
                     <tr><td>Apr 2025</td><td>📄 <strong>DecoupledRAG</strong> accepted to WWW 2025 — Decoupling context and knowledge via cross-attention for efficient RAG.</td></tr>
