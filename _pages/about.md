@@ -12,7 +12,6 @@ redirect_from:
   - /about.html
 ---
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -220,6 +219,7 @@ redirect_from:
                     <tr><td>Oct 2023</td><td>📄 One paper accepted to <strong>CIKM 2023</strong>: I³Retriever.</td></tr>
                     <tr><td>Jul 2023</td><td>📄 One paper accepted to <strong>SIGIR 2023</strong>: T²Ranking.</td></tr>
                     <tr><td>Jul 2022</td><td>📄 One paper accepted to <strong>SIGIR 2022</strong>: Explicit Knowledge for Re-ranking.</td></tr>
+                    <tr><td>Feb 2022</td><td>📄 One paper published in <strong>Data Science and Engineering</strong> (JCR-Q1): Disentangled Graph Recurrent Network.</td></tr>
                     <tr><td>Jul 2021</td><td>📄 One paper accepted to <strong>SIGIR 2021</strong>: Legal Judgment Prediction.</td></tr>
                     <tr><td>Apr 2021</td><td>📄 One paper accepted to <strong>DASFAA 2021</strong>: Latent Graph Recurrent Network.</td></tr>
                 </table>

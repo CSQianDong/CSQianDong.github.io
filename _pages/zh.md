@@ -9,7 +9,6 @@ sidebar: false
 masthead: false
 ---
 
-<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -141,6 +140,7 @@ masthead: false
                     <tr><td>2023.10</td><td>📄 一篇论文被 <strong>CIKM 2023</strong> 接收：I³Retriever</td></tr>
                     <tr><td>2023.07</td><td>📄 一篇论文被 <strong>SIGIR 2023</strong> 接收：T²Ranking</td></tr>
                     <tr><td>2022.07</td><td>📄 一篇论文被 <strong>SIGIR 2022</strong> 接收</td></tr>
+                    <tr><td>2022.02</td><td>📄 一篇论文发表在 <strong>Data Science and Engineering</strong> (JCR-Q1): Disentangled Graph Recurrent Network</td></tr>
                     <tr><td>2021.07</td><td>📄 一篇论文被 <strong>SIGIR 2021</strong> 接收</td></tr>
                     <tr><td>2021.04</td><td>📄 一篇论文被 <strong>DASFAA 2021</strong> 接收</td></tr>
                 </table>
