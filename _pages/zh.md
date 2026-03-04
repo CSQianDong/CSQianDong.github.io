@@ -3,7 +3,7 @@ permalink: /zh/
 title: "董骞 - 中文主页"
 excerpt: "董骞个人中文主页，清华大学博士生"
 author_profile: false
-layout: null
+layout: bare
 header: false
 sidebar: false
 masthead: false
@@ -26,10 +26,10 @@ masthead: false
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --global-bg-color: #ffffff;
-            --global-text-color: #2c2c2c;
-            --global-theme-color: #6366f1;
-            --global-hover-color: #4f46e5;
+            --global-bg-color: #f7f7f8;
+            --global-text-color: #1a1a2e;
+            --global-theme-color: #4a6fa5;
+            --global-hover-color: #3a5a8c;
             --global-divider-color: #e5e7eb;
             --global-muted: #6b7280;
         }
@@ -101,9 +101,9 @@ masthead: false
                     我目前在<a href="https://www.tsinghua.edu.cn/" target="_blank">清华大学</a>
                     <a href="https://www.cs.tsinghua.edu.cn/" target="_blank">计算机科学与技术系</a>
                     <a href="https://ai.thuir.cn/" target="_blank">信息检索实验室（THUIR）</a>攻读博士学位，预计2026年6月毕业。
-                    很荣幸在<a href="http://www.thuir.cn/group/~msp/" target="_blank">马少平</a>教授、
-                    <a href="http://www.thuir.cn/group/~YQLiu/" target="_blank">刘奕群</a>教授和
-                    <a href="http://www.thuir.cn/group/~aiqy/" target="_blank">艾清遥</a>教授的指导下进行学术研究。
+                    很荣幸在<a href="http://www.thuir.cn/group/msp/" target="_blank">马少平</a>教授、
+                    <a href="http://www.thuir.cn/group/YQLiu/" target="_blank">刘奕群</a>教授和
+                    <a href="http://www.thuir.cn/group/aiqy/" target="_blank">艾清遥</a>教授的指导下进行学术研究。
                 </p>
                 <p>
                     我的研究兴趣包括<strong>信息检索</strong>、<strong>大语言模型应用</strong>和<strong>长上下文处理</strong>。
@@ -115,7 +115,8 @@ masthead: false
                     <a href="https://github.com/CSQianDong" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>&nbsp;&nbsp;
                     <a href="https://x.com/verymakesense" target="_blank" title="Twitter/X">
                         <svg style="width:16px;height:16px;fill:currentColor;vertical-align:middle;" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                    </a>
+                    </a>&nbsp;&nbsp;
+                    <a href="https://www.xiaohongshu.com/user/profile/64d8bdc1000000000100f445" target="_blank" title="小红书"><img src="/images/xhs.png" alt="XHS" style="width:16px;height:16px;border-radius:50%;vertical-align:middle;"></a>
                 </p>
             </div>
 

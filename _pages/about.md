@@ -3,7 +3,7 @@ permalink: /
 title: "Qian Dong 董骞"
 excerpt: "Home page"
 author_profile: false
-layout: null
+layout: bare
 header: false
 sidebar: false
 masthead: false
@@ -31,10 +31,10 @@ redirect_from:
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --global-bg-color: #ffffff;
-            --global-text-color: #2c2c2c;
-            --global-theme-color: #6366f1;
-            --global-hover-color: #4f46e5;
+            --global-bg-color: #f7f7f8;
+            --global-text-color: #1a1a2e;
+            --global-theme-color: #4a6fa5;
+            --global-hover-color: #3a5a8c;
             --global-divider-color: #e5e7eb;
             --global-muted: #6b7280;
         }
@@ -179,9 +179,9 @@ redirect_from:
                     <a href="https://www.cs.tsinghua.edu.cn/" target="_blank">Department of Computer Science and Technology</a>,
                     <a href="https://www.tsinghua.edu.cn/" target="_blank">Tsinghua University</a>.
                     I am fortunate to be supervised by Prof.
-                    <a href="http://www.thuir.cn/group/~msp/" target="_blank">Shaoping Ma</a>, Prof.
-                    <a href="http://www.thuir.cn/group/~YQLiu/" target="_blank">Yiqun Liu</a> and Prof.
-                    <a href="http://www.thuir.cn/group/~aiqy/" target="_blank">Qingyao Ai</a>.
+                    <a href="http://www.thuir.cn/group/msp/" target="_blank">Shaoping Ma</a>, Prof.
+                    <a href="http://www.thuir.cn/group/YQLiu/" target="_blank">Yiqun Liu</a> and Prof.
+                    <a href="http://www.thuir.cn/group/aiqy/" target="_blank">Qingyao Ai</a>.
                 </p>
                 <p>
                     My research interests include <strong>Information Retrieval</strong>,
@@ -195,7 +195,8 @@ redirect_from:
                     <a href="https://github.com/CSQianDong" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>&nbsp;&nbsp;
                     <a href="https://x.com/verymakesense" target="_blank" title="Twitter/X">
                         <svg style="width:16px;height:16px;fill:currentColor;vertical-align:middle;" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                    </a>
+                    </a>&nbsp;&nbsp;
+                    <a href="https://www.xiaohongshu.com/user/profile/64d8bdc1000000000100f445" target="_blank" title="Xiaohongshu"><img src="/images/xhs.png" alt="XHS" style="width:16px;height:16px;border-radius:50%;vertical-align:middle;"></a>
                 </p>
             </div>
 
@@ -339,7 +340,7 @@ redirect_from:
 </script>
 <script src="https://udify.app/embed.min.js" id="6CoM85G6spngdgsq" defer></script>
 <style>
-  #dify-chatbot-bubble-button { background-color: #6366f1 !important; }
+  #dify-chatbot-bubble-button { background-color: #4a6fa5 !important; }
   #dify-chatbot-bubble-window { width: 24rem !important; height: 40rem !important; }
 </style>
 
