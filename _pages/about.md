@@ -213,14 +213,14 @@ redirect_from:
                     <tr><td>Nov 2025</td><td>📄 <strong>SelfRACG</strong> accepted to EMNLP 2025 — Letting LLMs self-express retrieval queries for better code generation in one model arch.</td></tr>
                     <tr><td>Sep 2025</td><td>🚀 GLM-4.6 is released! <a href="https://z.ai/blog/glm-4.6" target="_blank">Blog</a></td></tr>
                     <tr><td>Aug 2025</td><td>🚀 <a href="https://arxiv.org/abs/2508.06471" target="_blank">GLM-4.5 Technical Report</a> is released! I am one of the contributors for exploring sparse attention adaptation in the post-training stage.</td></tr>
-                    <tr><td>Jul 2025</td><td>📄 One paper accepted to <strong>SIGIR 2025</strong>: Qilin.</td></tr>
+                    <tr><td>Jul 2025</td><td>📄 <strong>Qilin</strong> accepted to SIGIR 2025 — A multimodal IR dataset capturing real APP-level user sessions.</td></tr>
                     <tr><td>Apr 2025</td><td>📄 <strong>DecoupledRAG</strong> accepted to WWW 2025 — Decoupling context and knowledge via cross-attention for efficient RAG.</td></tr>
                     <tr><td>Jul 2024</td><td>📄 <strong>RLCF</strong> accepted to SIGIR 2024 — Aligning LLMs for IR through unsupervised contrastive feedback.</td></tr>
                     <tr><td>Oct 2023</td><td>📄 <strong>I³Retriever</strong> accepted to CIKM 2023 — Incorporating implicit query-document interaction into retrievers via a generative module.</td></tr>
-                    <tr><td>Jul 2023</td><td>📄 One paper accepted to <strong>SIGIR 2023</strong>: T²Ranking.</td></tr>
+                    <tr><td>Jul 2023</td><td>📄 <strong>T²Ranking</strong> accepted to SIGIR 2023 — A large-scale Chinese passage ranking benchmark.</td></tr>
                     <tr><td>Jul 2022</td><td>📄 <strong>KERM</strong> accepted to SIGIR 2022 — Incorporating explicit knowledge into PLMs for passage re-ranking.</td></tr>
                     <tr><td>Feb 2022</td><td>📄 <strong>DGRe</strong> published in Data Science and Engineering — Disentangled Causal Intervention for BERT-based Ad Hoc Document Ranking.</td></tr>
-                    <tr><td>Jul 2021</td><td>📄 One paper accepted to <strong>SIGIR 2021</strong>: Legal Judgment Prediction.</td></tr>
+                    <tr><td>Jul 2021</td><td>📄 <strong>LJP-RL</strong> accepted to SIGIR 2021 — Predicting legal judgments via relational learning on case graphs.</td></tr>
                     <tr><td>Apr 2021</td><td>📄 <strong>LGRe</strong> accepted to DASFAA 2021 — Refining BERT-based Document Ranking via Latent Graph Recurrent Networks.</td></tr>
                 </table>
             </div>
