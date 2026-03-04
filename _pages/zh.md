@@ -141,7 +141,7 @@ masthead: false
                     <tr><td>2023.07</td><td>📄 <strong>T²Ranking</strong> accepted to SIGIR 2023 — A large-scale Chinese passage ranking benchmark.</td></tr>
                     <tr><td>2022.07</td><td>📄 <strong>KERM</strong> accepted to SIGIR 2022 — Incorporating explicit knowledge into PLMs for passage re-ranking.</td></tr>
                     <tr><td>2022.02</td><td>📄 <strong>DGRe</strong> published in Data Science and Engineering — Disentangled Causal Intervention for BERT-based Ad Hoc Document Ranking.</td></tr>
-                    <tr><td>2021.07</td><td>📄 <strong>LJP-RL</strong> accepted to SIGIR 2021 — Predicting legal judgments via relational learning on case graphs.</td></tr>
+                    <tr><td>2021.07</td><td>📄 <strong>R-FORMER</strong> accepted to SIGIR 2021 — Modeling Global Consistency Graphs for Entangled Multi-Task Legal Judgment Prediction.</td></tr>
                     <tr><td>2021.04</td><td>📄 <strong>LGRe</strong> accepted to DASFAA 2021 — Refining BERT-based Document Ranking via Latent Graph Recurrent Networks.</td></tr>
                 </table>
             </div>
