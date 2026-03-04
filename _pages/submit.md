@@ -179,7 +179,7 @@ function getSubmissions() {
 function saveSubmission(url) {
     var subs = getSubmissions();
     var match = url.match(/(\d{4}\.\d{4,5})/);
-    subs.unshift({ id: match ? match[1] : url, url: url, time: new Date().toLocaleString('zh-CN') });
+    subs.unshift({ id: match ? match[1] : url, url: url, time: new Date().toLocaleString('zh-CN'), date: new Date().toLocaleDateString('zh-CN') });
     if (subs.length > 10) subs = subs.slice(0, 10);
     localStorage.setItem(STORAGE_KEY, JSON.stringify(subs));
     renderRecent();
@@ -236,6 +236,15 @@ function handleSubmit(e) {
     if (existing.some(function(s) { return s.id === arxivId; })) {
         msg.className = 'msg error';
         msg.textContent = '⚠️ 这篇论文（' + arxivId + '）已经投过啦，换一篇试试？';
+        return false;
+    }
+
+    // Rate limit: max 1 submission per day
+    var today = new Date().toLocaleDateString('zh-CN');
+    var todayCount = existing.filter(function(s) { return s.date === today; }).length;
+    if (todayCount >= 1) {
+        msg.className = 'msg error';
+        msg.textContent = '⚠️ 每天最多投稿 1 次，明天再来吧 ✨';
         return false;
     }
 
