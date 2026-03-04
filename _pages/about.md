@@ -182,6 +182,20 @@ redirect_from:
 
         /* Dark mode specific overrides */
         [data-theme="dark"] .profile img { box-shadow: 0 4px 15px rgba(0,0,0,0.4); }
+        [data-theme="dark"] .news-table td { color: var(--global-text-color); }
+        [data-theme="dark"] .news-table a { color: var(--global-theme-color); }
+        [data-theme="dark"] .info-table td { color: var(--global-text-color); }
+        [data-theme="dark"] .info-table a { color: var(--global-theme-color); }
+        [data-theme="dark"] .pub-info .title { color: var(--global-text-color); }
+        [data-theme="dark"] .pub-info .authors { color: var(--global-muted); }
+        [data-theme="dark"] .pub-info .authors strong { color: var(--global-text-color); }
+        [data-theme="dark"] .pub-info .venue { color: var(--global-muted); }
+        [data-theme="dark"] .pub-section-header h3 { color: var(--global-text-color); }
+        [data-theme="dark"] .quote-text, [data-theme="dark"] .quote-attr { color: var(--global-text-color) !important; }
+        [data-theme="dark"] .more-text { color: var(--global-muted); }
+        [data-theme="dark"] .site-footer { border-top-color: var(--global-divider-color); color: var(--global-muted); }
+        [data-theme="dark"] .social-icons a { border-color: var(--global-divider-color); color: var(--global-muted); }
+        [data-theme="dark"] .social-icons a:hover { background: var(--global-theme-color); color: var(--global-bg-color); border-color: var(--global-theme-color); }
         [data-theme="dark"] .tag { opacity: 0.9; }
         [data-theme="dark"] .pub-info .links a { border-color: var(--global-divider-color); }
         [data-theme="dark"] .pub-info .links a:hover { background: var(--global-theme-color); color: #1a1a2e; }
