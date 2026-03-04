@@ -144,14 +144,14 @@ masthead: false
                     <img src="/images/profile.jpg" alt="董骞" loading="eager">
                 </figure>
                 <div class="x-timeline-widget">
-                    <a class="twitter-timeline"
-                       href="https://twitter.com/verymakesense"
-                       data-height="360"
-                       data-width="200"
-                       data-chrome="noheader nofooter noborders transparent"
-                       data-tweet-limit="3"
-                       data-dnt="true">
-                    </a>
+                    <iframe src="https://syndication.twitter.com/srv/timeline-profile/screen-name/verymakesense?dnt=true&hideHeader=true&hideFooter=true&hideBorder=true&transparent=true&limit=3&showReplies=false"
+                            style="width:100%;height:360px;border:none;"
+                            sandbox="allow-scripts allow-same-origin allow-popups"
+                            loading="lazy">
+                    </iframe>
+                    <noscript>
+                        <a href="https://x.com/verymakesense" target="_blank">Follow @verymakesense on X</a>
+                    </noscript>
                 </div>
             </div>
 
@@ -319,6 +319,5 @@ function togglePub(id) {
 }
 </script>
 
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>
