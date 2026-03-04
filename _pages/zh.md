@@ -106,8 +106,7 @@ masthead: false
                     <a href="http://www.thuir.cn/group/aiqy/" target="_blank">艾清遥</a>教授的指导下进行学术研究。
                 </p>
                 <p>
-                    我的研究兴趣包括<strong>信息检索</strong>、<strong>大语言模型应用</strong>和<strong>长上下文处理</strong>。
-                    我还担任 SIGIR、ACL、WWW、CIKM、COLING、AAAI、TOIS 等会议/期刊的审稿人。
+                    我的研究兴趣是 <strong>algo &amp; infra co-design for scalable model architectures</strong>。
                 </p>
                 <p>
                     <a href="mailto:qiandong.97@qq.com" title="Email"><i class="fas fa-envelope"></i></a>&nbsp;&nbsp;
@@ -133,8 +132,17 @@ masthead: false
                 <table>
                     <tr><td>2026.02</td><td>🚀 <a href="https://www.arxiv.org/abs/2602.15763" target="_blank">GLM-5 技术报告</a>发布！我是模型架构核心贡献者之一。</td></tr>
                     <tr><td>2025.12</td><td>🚀 GLM-4.7 发布！<a href="https://z.ai/blog/glm-4.7" target="_blank">Blog</a></td></tr>
+                    <tr><td>2025.11</td><td>📄 一篇论文被 <strong>EMNLP 2025</strong> 接收：SelfRACG</td></tr>
                     <tr><td>2025.09</td><td>🚀 GLM-4.6 发布！<a href="https://z.ai/blog/glm-4.6" target="_blank">Blog</a></td></tr>
                     <tr><td>2025.08</td><td>🚀 <a href="https://arxiv.org/abs/2508.06471" target="_blank">GLM-4.5 技术报告</a>发布！我是 post-training 阶段 sparse attention adaptation 方向的贡献者之一。</td></tr>
+                    <tr><td>2025.07</td><td>📄 一篇论文被 <strong>SIGIR 2025</strong> 接收：Qilin</td></tr>
+                    <tr><td>2025.04</td><td>📄 一篇论文被 <strong>WWW 2025</strong> 接收：DecoupledRAG</td></tr>
+                    <tr><td>2024.07</td><td>📄 一篇论文被 <strong>SIGIR 2024</strong> 接收</td></tr>
+                    <tr><td>2023.10</td><td>📄 一篇论文被 <strong>CIKM 2023</strong> 接收：I³Retriever</td></tr>
+                    <tr><td>2023.07</td><td>📄 一篇论文被 <strong>SIGIR 2023</strong> 接收：T²Ranking</td></tr>
+                    <tr><td>2022.07</td><td>📄 一篇论文被 <strong>SIGIR 2022</strong> 接收</td></tr>
+                    <tr><td>2021.07</td><td>📄 一篇论文被 <strong>SIGIR 2021</strong> 接收</td></tr>
+                    <tr><td>2021.04</td><td>📄 一篇论文被 <strong>DASFAA 2021</strong> 接收</td></tr>
                 </table>
             </div>
 

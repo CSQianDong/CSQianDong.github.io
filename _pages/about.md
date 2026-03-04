@@ -184,10 +184,7 @@ redirect_from:
                     <a href="http://www.thuir.cn/group/aiqy/" target="_blank">Qingyao Ai</a>.
                 </p>
                 <p>
-                    My research interests include <strong>Information Retrieval</strong>,
-                    <strong>Large Language Model Applications</strong>, and
-                    <strong>Long-Context LLM</strong>.
-                    I also serve as a reviewer / PC member for SIGIR, ACL, WWW, CIKM, COLING, AAAI, TOIS, etc.
+                    My research interest lies in <strong>algo &amp; infra co-design for scalable model architectures</strong>.
                 </p>
                 <p>
                     <a href="mailto:qiandong.97@qq.com" title="Email"><i class="fas fa-envelope"></i></a>&nbsp;&nbsp;
@@ -214,8 +211,17 @@ redirect_from:
                 <table>
                     <tr><td>Feb 2026</td><td>🚀 <a href="https://www.arxiv.org/abs/2602.15763" target="_blank">GLM-5 Technical Report</a> is released! I am one of the core contributors for model architecture.</td></tr>
                     <tr><td>Dec 2025</td><td>🚀 GLM-4.7 is released! <a href="https://z.ai/blog/glm-4.7" target="_blank">Blog</a></td></tr>
+                    <tr><td>Nov 2025</td><td>📄 One paper accepted to <strong>EMNLP 2025</strong>: SelfRACG.</td></tr>
                     <tr><td>Sep 2025</td><td>🚀 GLM-4.6 is released! <a href="https://z.ai/blog/glm-4.6" target="_blank">Blog</a></td></tr>
                     <tr><td>Aug 2025</td><td>🚀 <a href="https://arxiv.org/abs/2508.06471" target="_blank">GLM-4.5 Technical Report</a> is released! I am one of the contributors for exploring sparse attention adaptation in the post-training stage.</td></tr>
+                    <tr><td>Jul 2025</td><td>📄 One paper accepted to <strong>SIGIR 2025</strong>: Qilin.</td></tr>
+                    <tr><td>Apr 2025</td><td>📄 One paper accepted to <strong>WWW 2025</strong>: DecoupledRAG.</td></tr>
+                    <tr><td>Jul 2024</td><td>📄 One paper accepted to <strong>SIGIR 2024</strong>: Unsupervised LLM Alignment for IR.</td></tr>
+                    <tr><td>Oct 2023</td><td>📄 One paper accepted to <strong>CIKM 2023</strong>: I³Retriever.</td></tr>
+                    <tr><td>Jul 2023</td><td>📄 One paper accepted to <strong>SIGIR 2023</strong>: T²Ranking.</td></tr>
+                    <tr><td>Jul 2022</td><td>📄 One paper accepted to <strong>SIGIR 2022</strong>: Explicit Knowledge for Re-ranking.</td></tr>
+                    <tr><td>Jul 2021</td><td>📄 One paper accepted to <strong>SIGIR 2021</strong>: Legal Judgment Prediction.</td></tr>
+                    <tr><td>Apr 2021</td><td>📄 One paper accepted to <strong>DASFAA 2021</strong>: Latent Graph Recurrent Network.</td></tr>
                 </table>
             </div>
 
