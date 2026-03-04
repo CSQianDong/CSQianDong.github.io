@@ -70,12 +70,12 @@ masthead: false
             display: flex; align-items: center; justify-content: center;
             width: 48px; background: var(--bg); color: var(--muted); font-size: 1rem; flex-shrink: 0;
         }
-        .input-wrapper input {
+        .input-wrapper input, .input-wrapper textarea {
             flex: 1; border: none; outline: none; padding: 0.85rem;
             font-size: 0.95rem; background: var(--card); color: var(--text);
-            font-family: inherit;
+            font-family: inherit; resize: none;
         }
-        .input-wrapper input::placeholder { color: var(--muted); }
+        .input-wrapper input::placeholder, .input-wrapper textarea::placeholder { color: var(--muted); }
         .btn {
             width: 100%; padding: 0.9rem; border: none; border-radius: 10px;
             background: var(--theme); color: #fff; font-size: 1rem; font-weight: 600;
@@ -117,6 +117,7 @@ masthead: false
             font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.5rem;
             border-radius: 10px; margin-left: 0.5rem;
         }
+        .optional-label { font-size: 0.75rem; color: var(--muted); font-weight: 400; margin-left: 0.3rem; }
     </style>
 </head>
 <body>
@@ -142,6 +143,14 @@ masthead: false
                            required autocomplete="off">
                 </div>
             </div>
+            <div class="input-group">
+                <label for="comment">推荐理由 <span class="optional-label">（选填）</span></label>
+                <div class="input-wrapper">
+                    <div class="icon"><i class="fas fa-comment"></i></div>
+                    <textarea id="comment" name="comment" rows="2"
+                              placeholder="为什么推荐这篇论文？"></textarea>
+                </div>
+            </div>
             <button type="submit" class="btn" id="submitBtn">
                 <i class="fas fa-paper-plane"></i>&nbsp; 提交投稿
             </button>
@@ -160,9 +169,7 @@ masthead: false
 </div>
 
 <script>
-// LocalStorage based submission (no backend needed, data stored in browser)
-// The actual collection happens via Google Form hidden iframe
-var GOOGLE_FORM_URL = '';  // Will be set after creating Google Form
+var FEISHU_WEBHOOK = 'https://open.feishu.cn/open-apis/bot/v2/hook/25165bf1-2cc6-4263-9186-621f2c2debb4';
 var STORAGE_KEY = 'arxiv_submissions';
 
 function getSubmissions() {
@@ -193,7 +200,6 @@ function renderRecent() {
 
 function validateArxiv(url) {
     url = url.trim();
-    // Accept various arxiv URL formats and plain IDs
     return /arxiv\.org\/(abs|pdf|html)\/\d{4}\.\d{4,5}/i.test(url) ||
            /^\d{4}\.\d{4,5}(v\d+)?$/.test(url);
 }
@@ -207,9 +213,11 @@ function normalizeUrl(url) {
 function handleSubmit(e) {
     e.preventDefault();
     var input = document.getElementById('arxiv-url');
+    var commentInput = document.getElementById('comment');
     var btn = document.getElementById('submitBtn');
     var msg = document.getElementById('msg');
     var url = input.value.trim();
+    var comment = commentInput.value.trim();
 
     if (!validateArxiv(url)) {
         msg.className = 'msg error';
@@ -220,48 +228,92 @@ function handleSubmit(e) {
     url = normalizeUrl(url);
     btn.disabled = true;
     btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>&nbsp; 提交中...';
+    msg.textContent = '';
 
-    // Submit via Google Form (if configured) or just save locally
-    if (GOOGLE_FORM_URL) {
-        submitToGoogleForm(url);
+    // Extract arXiv ID for display
+    var idMatch = url.match(/(\d{4}\.\d{4,5})/);
+    var arxivId = idMatch ? idMatch[1] : url;
+
+    // Build Feishu message card
+    var cardContent = '**📄 新论文投稿**\n\n**arXiv 链接：**' + url;
+    if (comment) {
+        cardContent += '\n**推荐理由：**' + comment;
     }
+    cardContent += '\n**提交时间：**' + new Date().toLocaleString('zh-CN');
 
-    // Always save locally and show success
-    setTimeout(function() {
-        saveSubmission(url);
-        msg.className = 'msg success';
-        msg.textContent = '✅ 投稿成功！感谢你的推荐 🎉';
-        input.value = '';
+    var payload = {
+        msg_type: 'interactive',
+        card: {
+            header: {
+                title: { tag: 'plain_text', content: '📄 新论文投稿 — ' + arxivId },
+                template: 'blue'
+            },
+            elements: [
+                {
+                    tag: 'div',
+                    text: {
+                        tag: 'lark_md',
+                        content: '**arXiv 链接：**[' + arxivId + '](' + url + ')'
+                    }
+                },
+                comment ? {
+                    tag: 'div',
+                    text: {
+                        tag: 'lark_md',
+                        content: '**推荐理由：**' + comment
+                    }
+                } : null,
+                {
+                    tag: 'div',
+                    text: {
+                        tag: 'lark_md',
+                        content: '**提交时间：**' + new Date().toLocaleString('zh-CN')
+                    }
+                },
+                {
+                    tag: 'action',
+                    actions: [
+                        {
+                            tag: 'button',
+                            text: { tag: 'plain_text', content: '查看论文' },
+                            url: url,
+                            type: 'primary'
+                        }
+                    ]
+                }
+            ].filter(Boolean)
+        }
+    };
+
+    fetch(FEISHU_WEBHOOK, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+    }).then(function(resp) {
+        return resp.json();
+    }).then(function(data) {
+        if (data.code === 0 || data.StatusCode === 0) {
+            saveSubmission(url);
+            msg.className = 'msg success';
+            msg.textContent = '✅ 投稿成功！感谢你的推荐 🎉';
+            input.value = '';
+            commentInput.value = '';
+            setTimeout(function() { msg.textContent = ''; }, 4000);
+        } else {
+            msg.className = 'msg error';
+            msg.textContent = '❌ 提交失败，请稍后再试';
+            console.error('Feishu webhook error:', data);
+        }
+    }).catch(function(err) {
+        msg.className = 'msg error';
+        msg.textContent = '❌ 网络错误，请检查网络后重试';
+        console.error('Network error:', err);
+    }).finally(function() {
         btn.disabled = false;
         btn.innerHTML = '<i class="fas fa-paper-plane"></i>&nbsp; 提交投稿';
-        setTimeout(function() { msg.textContent = ''; }, 3000);
-    }, 500);
+    });
 
     return false;
-}
-
-function submitToGoogleForm(url) {
-    if (!GOOGLE_FORM_URL) return;
-    var iframe = document.createElement('iframe');
-    iframe.name = 'hidden_iframe';
-    iframe.style.display = 'none';
-    document.body.appendChild(iframe);
-
-    var form = document.createElement('form');
-    form.method = 'POST';
-    form.action = GOOGLE_FORM_URL;
-    form.target = 'hidden_iframe';
-    var input = document.createElement('input');
-    input.name = 'entry.0';  // Will update with actual field ID
-    input.value = url;
-    form.appendChild(input);
-    document.body.appendChild(form);
-    form.submit();
-
-    setTimeout(function() {
-        document.body.removeChild(form);
-        document.body.removeChild(iframe);
-    }, 2000);
 }
 
 // Theme toggle (synced with main site)
