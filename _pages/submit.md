@@ -210,7 +210,6 @@ function handleSubmit(e) {
     var btn = document.getElementById('submitBtn');
     var msg = document.getElementById('msg');
     var url = input.value.trim();
-    var comment = commentInput.value.trim();
 
     if (!validateArxiv(url)) {
         msg.className = 'msg error';
