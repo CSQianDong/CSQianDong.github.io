@@ -253,7 +253,7 @@ function handleSubmit(e) {
     msg.textContent = '';
 
     // Build Feishu text message
-    var textContent = '@dq faster上的龙虾 arxiv链接：' + url;
+    var textContent = 'arxiv链接：' + url;
     if (comment) textContent += '\n推荐理由：' + comment;
     var payload = {
         msg_type: 'text',
