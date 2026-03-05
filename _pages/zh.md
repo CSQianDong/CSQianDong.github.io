@@ -154,6 +154,7 @@ masthead: false
                     <a href="mailto:qiandong.97@qq.com" title="Email"><i class="fas fa-envelope"></i></a>&nbsp;&nbsp;
                     <a href="https://scholar.google.com/citations?user=m88SZGgAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>&nbsp;&nbsp;
                     <a href="https://github.com/CSQianDong" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>&nbsp;&nbsp;
+                    <a href="https://www.linkedin.com/in/qian-dong-58b14a23a/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>&nbsp;&nbsp;
                     <a href="https://x.com/verymakesense" target="_blank" title="Twitter/X">
                         <svg style="width:16px;height:16px;fill:currentColor;vertical-align:middle;" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                     </a>&nbsp;&nbsp;
@@ -252,6 +253,7 @@ masthead: false
                 <a href="mailto:qiandong.97@qq.com" title="Email"><i class="fas fa-envelope"></i></a>
                 <a href="https://scholar.google.com/citations?user=m88SZGgAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
                 <a href="https://github.com/CSQianDong" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/qian-dong-58b14a23a/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 <a href="https://x.com/verymakesense" target="_blank" title="Twitter/X">
                     <svg style="width:16px;height:16px;fill:currentColor;" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                 </a>
