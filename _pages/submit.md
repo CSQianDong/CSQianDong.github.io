@@ -143,14 +143,7 @@ masthead: false
                            required autocomplete="off">
                 </div>
             </div>
-            <div class="input-group">
-                <label for="comment">推荐理由 <span class="optional-label">（选填）</span></label>
-                <div class="input-wrapper">
-                    <div class="icon"><i class="fas fa-comment"></i></div>
-                    <textarea id="comment" name="comment" rows="2"
-                              placeholder="为什么推荐这篇论文？"></textarea>
-                </div>
-            </div>
+
             <button type="submit" class="btn" id="submitBtn">
                 <i class="fas fa-paper-plane"></i>&nbsp; 提交投稿
             </button>
@@ -213,7 +206,7 @@ function normalizeUrl(url) {
 function handleSubmit(e) {
     e.preventDefault();
     var input = document.getElementById('arxiv-url');
-    var commentInput = document.getElementById('comment');
+    var comment = '';
     var btn = document.getElementById('submitBtn');
     var msg = document.getElementById('msg');
     var url = input.value.trim();
@@ -254,7 +247,6 @@ function handleSubmit(e) {
 
     // Build Feishu text message
     var textContent = 'arxiv链接：' + url;
-    if (comment) textContent += '\n推荐理由：' + comment;
     var payload = {
         msg_type: 'text',
         content: {
@@ -274,7 +266,6 @@ function handleSubmit(e) {
             msg.className = 'msg success';
             msg.textContent = '✅ 投稿成功！感谢你的推荐 🎉';
             input.value = '';
-            commentInput.value = '';
             setTimeout(function() { msg.textContent = ''; }, 4000);
         } else {
             msg.className = 'msg error';
