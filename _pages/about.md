@@ -212,6 +212,7 @@ redirect_from:
                 <span class="name-english"><span style="font-weight:700;">Qian</span> Dong</span>
             </h1>
             <div class="header-controls">
+                <a href="/dm/" class="lang-switch" title="Send me a message">DM</a>
                 <a href="/zh/" class="lang-switch">中文</a>
                 <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode"><i class="fas fa-moon"></i></button>
             </div>
