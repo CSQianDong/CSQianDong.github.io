@@ -252,48 +252,13 @@ function handleSubmit(e) {
     btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>&nbsp; 提交中...';
     msg.textContent = '';
 
-    // Build Feishu message card
+    // Build Feishu text message
+    var textContent = '@dq faster上的龙虾 arxiv链接：' + url;
+    if (comment) textContent += '\n推荐理由：' + comment;
     var payload = {
-        msg_type: 'interactive',
-        card: {
-            header: {
-                title: { tag: 'plain_text', content: '📄 新论文投稿 — ' + arxivId },
-                template: 'blue'
-            },
-            elements: [
-                {
-                    tag: 'div',
-                    text: {
-                        tag: 'lark_md',
-                        content: '**arXiv 链接：**[' + arxivId + '](' + url + ')'
-                    }
-                },
-                comment ? {
-                    tag: 'div',
-                    text: {
-                        tag: 'lark_md',
-                        content: '**推荐理由：**' + comment
-                    }
-                } : null,
-                {
-                    tag: 'div',
-                    text: {
-                        tag: 'lark_md',
-                        content: '**提交时间：**' + new Date().toLocaleString('zh-CN') + '\n\n<at id=all></at> 新投稿来啦 🦞'
-                    }
-                },
-                {
-                    tag: 'action',
-                    actions: [
-                        {
-                            tag: 'button',
-                            text: { tag: 'plain_text', content: '查看论文' },
-                            url: url,
-                            type: 'primary'
-                        }
-                    ]
-                }
-            ].filter(Boolean)
+        msg_type: 'text',
+        content: {
+            text: textContent
         }
     };
 
