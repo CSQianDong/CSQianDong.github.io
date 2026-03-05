@@ -87,6 +87,50 @@ masthead: false
         .msg { text-align: center; margin-top: 1rem; font-size: 0.9rem; min-height: 1.5em; }
         .msg.success { color: var(--success); }
         .msg.error { color: var(--error); }
+        /* Coffee section */
+        .coffee {
+            margin-top: 2rem; padding-top: 1.5rem;
+            border-top: 1px solid var(--divider);
+            text-align: center;
+        }
+        .coffee-trigger {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            padding: 0.6rem 1.2rem; border-radius: 24px;
+            background: var(--bg); border: 1px solid var(--divider);
+            color: var(--muted); font-size: 0.85rem; font-weight: 500;
+            cursor: default; transition: all 0.3s ease;
+            position: relative;
+        }
+        .coffee-trigger:hover {
+            border-color: var(--theme); color: var(--theme);
+            box-shadow: 0 2px 12px rgba(74, 111, 165, 0.15);
+        }
+        .coffee-trigger .coffee-emoji {
+            font-size: 1.1rem; transition: transform 0.3s ease;
+        }
+        .coffee-trigger:hover .coffee-emoji {
+            transform: rotate(-15deg) scale(1.2);
+        }
+        .coffee-qr-wrapper {
+            max-height: 0; overflow: hidden; opacity: 0;
+            transition: max-height 0.4s ease, opacity 0.3s ease, margin 0.3s ease;
+            margin-top: 0;
+        }
+        .coffee:hover .coffee-qr-wrapper {
+            max-height: 280px; opacity: 1; margin-top: 1rem;
+        }
+        .coffee-qr-wrapper img {
+            width: 180px; height: 180px; border-radius: 12px;
+            border: 1px solid var(--divider);
+            object-fit: cover;
+        }
+        .coffee-hint {
+            font-size: 0.75rem; color: var(--muted);
+            margin-top: 0.5rem; opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .coffee:hover .coffee-hint { opacity: 1; }
+
         .recent { margin-top: 2rem; }
         .recent h3 { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.75rem; color: var(--muted); }
         .recent-list { list-style: none; }
@@ -149,6 +193,17 @@ masthead: false
             </button>
         </form>
         <div class="msg" id="msg"></div>
+
+        <div class="coffee">
+            <div class="coffee-trigger">
+                <span class="coffee-emoji">☕</span>
+                <span>请我喝杯咖啡？</span>
+            </div>
+            <div class="coffee-qr-wrapper">
+                <img src="/images/coffee.jpg" alt="赞赏码">
+                <div class="coffee-hint">微信扫码赞赏，感谢支持 💛</div>
+            </div>
+        </div>
 
         <div class="recent" id="recentSection" style="display:none;">
             <h3>📋 最近投稿 <span class="count-badge" id="countBadge">0</span></h3>
