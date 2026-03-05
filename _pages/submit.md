@@ -197,11 +197,11 @@ masthead: false
         <div class="coffee">
             <div class="coffee-trigger">
                 <span class="coffee-emoji">☕</span>
-                <span>请我喝杯咖啡？</span>
+                <span>Buy Me a Coffee</span>
             </div>
             <div class="coffee-qr-wrapper">
                 <img src="/images/coffee.jpg" alt="赞赏码">
-                <div class="coffee-hint">微信扫码赞赏，感谢支持 💛</div>
+                <div class="coffee-hint">Scan with WeChat to support 💛</div>
             </div>
         </div>
 
