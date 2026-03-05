@@ -161,7 +161,6 @@ masthead: false
                         <option value="Academic Collaboration">Academic Collaboration</option>
                         <option value="Industry Opportunity">Industry Opportunity</option>
                         <option value="Research Discussion">Research Discussion</option>
-                        <option value="Media / Interview">Media / Interview</option>
                         <option value="Other">Other</option>
                     </select>
                 </div>
