@@ -126,6 +126,7 @@ masthead: false
                 <span style="font-weight:700;">董骞</span>
             </h1>
             <div class="header-controls">
+                <a href="/submit/" class="lang-switch" title="投稿论文">📄 投稿</a>
                 <a href="/dm/" class="lang-switch" title="Send me a message">DM</a>
                 <a href="/" class="lang-switch">English</a>
                 <button class="theme-toggle" onclick="toggleTheme()" title="切换深色模式"><i class="fas fa-moon"></i></button>
