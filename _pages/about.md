@@ -212,7 +212,7 @@ redirect_from:
                 <span class="name-english"><span style="font-weight:700;">Qian</span> Dong</span>
             </h1>
             <div class="header-controls">
-                <a href="/submit/" class="lang-switch" title="Submit a paper">📄 Submit</a>
+                <a href="/submit/" class="lang-switch" title="Submit a paper"><img src="/images/xhs.png" alt="XHS" style="width:14px;height:14px;border-radius:50%;vertical-align:middle;margin-right:2px;"> Submit</a>
                 <a href="/dm/" class="lang-switch" title="Send me a message">DM</a>
                 <a href="/zh/" class="lang-switch">中文</a>
                 <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode"><i class="fas fa-moon"></i></button>
