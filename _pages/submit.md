@@ -191,8 +191,8 @@ masthead: false
 
         <div class="coffee">
             <div class="coffee-trigger">
-                <span class="coffee-emoji">☕</span>
-                <span>Buy Me a Coffee</span>
+                <span class="coffee-emoji">🦞</span>
+                <span>Buy Me a Token</span>
             </div>
             <div class="coffee-qr-wrapper">
                 <img src="/images/coffee.jpg" alt="赞赏码">
