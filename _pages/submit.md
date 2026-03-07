@@ -112,12 +112,9 @@ masthead: false
             transform: rotate(-15deg) scale(1.2);
         }
         .coffee-qr-wrapper {
-            max-height: 0; overflow: hidden; opacity: 0;
+            max-height: 280px; overflow: hidden; opacity: 1;
             transition: max-height 0.4s ease, opacity 0.3s ease, margin 0.3s ease;
-            margin-top: 0;
-        }
-        .coffee:hover .coffee-qr-wrapper {
-            max-height: 280px; opacity: 1; margin-top: 1rem;
+            margin-top: 1rem;
         }
         .coffee-qr-wrapper img {
             width: 180px; height: 180px; border-radius: 12px;
@@ -126,10 +123,8 @@ masthead: false
         }
         .coffee-hint {
             font-size: 0.75rem; color: var(--muted);
-            margin-top: 0.5rem; opacity: 0;
-            transition: opacity 0.3s ease;
+            margin-top: 0.5rem; opacity: 1;
         }
-        .coffee:hover .coffee-hint { opacity: 1; }
 
         .recent { margin-top: 2rem; }
         .recent h3 { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.75rem; color: var(--muted); }
