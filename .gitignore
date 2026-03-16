@@ -1,3 +1,6 @@
 _site/
 CLAUDE.md
+vendor/
+.bundle/
+Gemfile.lock
 

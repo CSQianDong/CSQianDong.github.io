@@ -96,12 +96,40 @@ redirect_from:
 
         /* Publication list */
         .pub-list { list-style: none; padding: 0; }
-        .pub-list li { margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #f0f0f0; }
+        .pub-list li {
+            margin-bottom: 2rem;
+            padding: 1.2rem 1rem 1.2rem 1rem;
+            border-bottom: 2px solid var(--global-divider-color);
+            position: relative;
+            background: transparent;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
         .pub-list li:last-child { border-bottom: none; }
-        .pub-info .title { font-weight: 600; font-size: 0.95rem; line-height: 1.45; color: var(--global-text-color); margin-bottom: 0.2rem; }
-        .pub-info .authors { font-size: 0.87rem; color: var(--global-muted); margin-bottom: 0.15rem; }
+        .pub-list li:hover {
+            background: var(--global-card-bg);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transform: translateY(-2px);
+        }
+        .pub-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 1.2rem;
+            bottom: 1.2rem;
+            width: 4px;
+            background: linear-gradient(180deg, var(--global-theme-color), var(--global-hover-color));
+            border-radius: 0 4px 4px 0;
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+        .pub-list li:hover::before {
+            opacity: 1;
+        }
+        .pub-info .title { font-weight: 600; font-size: 0.95rem; line-height: 1.45; color: var(--global-text-color); margin-bottom: 0.3rem; }
+        .pub-info .authors { font-size: 0.87rem; color: var(--global-muted); margin-bottom: 0.2rem; line-height: 1.4; }
         .pub-info .authors strong { color: var(--global-text-color); }
-        .pub-info .venue { font-size: 0.87rem; color: var(--global-muted); font-style: italic; margin-bottom: 0.3rem; }
+        .pub-info .venue { font-size: 0.87rem; color: var(--global-muted); font-style: italic; margin-bottom: 0.5rem; }
         .pub-info .links a {
             display: inline-block; font-size: 0.78rem; font-weight: 500;
             padding: 0.15rem 0.55rem; border: 1px solid var(--global-divider-color);
@@ -118,11 +146,36 @@ redirect_from:
         .tag-jcr-q1 { background: #10b981; }
 
         /* Collapsible sections */
+        .pub-section-container {
+            margin-left: 1.5rem;
+            border-left: 3px solid var(--global-divider-color);
+            padding-left: 1rem;
+        }
         .pub-section-header {
             display: flex; align-items: center; justify-content: space-between;
             padding: 0.75rem 0; cursor: pointer; user-select: none;
+            position: relative;
         }
-        .pub-section-header h3 { font-size: 1.1rem; font-weight: 600; margin: 0; display: flex; align-items: center; gap: 0.5rem; color: var(--global-text-color); }
+        .pub-section-header::before {
+            content: '';
+            position: absolute;
+            left: -1.35rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 10px;
+            height: 10px;
+            background: var(--global-theme-color);
+            border-radius: 50%;
+            border: 3px solid var(--global-bg-color);
+            box-shadow: 0 0 0 2px var(--global-theme-color);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        .pub-section-header:hover::before {
+            opacity: 1;
+            transform: translateY(-50%) scale(1.2);
+        }
+        .pub-section-header h3 { font-size: 1.05rem; font-weight: 500; margin: 0; display: flex; align-items: center; gap: 0.5rem; color: var(--global-text-color); }
         .pub-section-header .toggle-icon { color: var(--global-muted); transition: transform 0.3s; font-size: 0.85rem; }
         .pub-section-header.active .toggle-icon { transform: rotate(180deg); }
         .pub-section-body { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
@@ -201,6 +254,11 @@ redirect_from:
         [data-theme="dark"] .tag { opacity: 0.9; }
         [data-theme="dark"] .pub-info .links a { border-color: var(--global-divider-color); }
         [data-theme="dark"] .pub-info .links a:hover { background: var(--global-theme-color); color: #1a1a2e; }
+        [data-theme="dark"] .pub-list li { border-bottom-color: var(--global-divider-color); }
+        [data-theme="dark"] .pub-list li:hover { background: var(--global-card-bg); box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+        [data-theme="dark"] .pub-list li::before { background: linear-gradient(180deg, var(--global-theme-color), var(--global-hover-color)); }
+        [data-theme="dark"] .pub-section-container { border-left-color: var(--global-divider-color); }
+        [data-theme="dark"] .pub-section-header::before { background: var(--global-theme-color); border-color: var(--global-bg-color); box-shadow: 0 0 0 2px var(--global-theme-color); }
     </style>
 </head>
 <body>
@@ -291,7 +349,7 @@ redirect_from:
             </h5>
 
             <!-- Primary Author -->
-            <div>
+            <div class="pub-section-container">
                 <div class="pub-section-header active" onclick="togglePub('primary')">
                     <h3><i class="fas fa-star" style="color:var(--global-theme-color);"></i> As the Primary Author</h3>
                     <i class="fas fa-chevron-down toggle-icon"></i>
@@ -322,7 +380,7 @@ redirect_from:
             </div>
 
             <!-- Co-author -->
-            <div>
+            <div class="pub-section-container">
                 <div class="pub-section-header" onclick="togglePub('coauthor')">
                     <h3><i class="fas fa-users" style="color:var(--global-theme-color);"></i> As a Co-author</h3>
                     <i class="fas fa-chevron-down toggle-icon"></i>

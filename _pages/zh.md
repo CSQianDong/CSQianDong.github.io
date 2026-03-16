@@ -62,16 +62,73 @@ masthead: false
         .news-table td { padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--global-divider-color); vertical-align: top; font-size: 0.95rem; }
         .news-table td:first-child { white-space: nowrap; font-weight: 600; color: var(--global-theme-color); width: 110px; }
         .pub-list { list-style: none; padding: 0; }
-        .pub-list li { margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #f0f0f0; }
+        .pub-list li {
+            margin-bottom: 2rem;
+            padding: 1.2rem 1rem 1.2rem 1rem;
+            border-bottom: 2px solid var(--global-divider-color);
+            position: relative;
+            background: transparent;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
         .pub-list li:last-child { border-bottom: none; }
-        .pub-info .title { font-weight: 600; font-size: 0.95rem; line-height: 1.45; color: var(--global-text-color); margin-bottom: 0.2rem; }
-        .pub-info .venue { font-size: 0.87rem; color: var(--global-muted); font-style: italic; margin-bottom: 0.3rem; }
+        .pub-list li:hover {
+            background: var(--global-card-bg);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transform: translateY(-2px);
+        }
+        .pub-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 1.2rem;
+            bottom: 1.2rem;
+            width: 4px;
+            background: linear-gradient(180deg, var(--global-theme-color), var(--global-hover-color));
+            border-radius: 0 4px 4px 0;
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+        .pub-list li:hover::before {
+            opacity: 1;
+        }
+        .pub-info .title { font-weight: 600; font-size: 0.95rem; line-height: 1.45; color: var(--global-text-color); margin-bottom: 0.3rem; }
+        .pub-info .venue { font-size: 0.87rem; color: var(--global-muted); font-style: italic; margin-bottom: 0.5rem; }
         .pub-tags { display: inline-flex; gap: 0.3rem; margin-top: 0.2rem; }
         .tag { padding: 0.1rem 0.4rem; border-radius: 8px; font-size: 0.65rem; font-weight: 600; text-transform: uppercase; color: #fff; }
         .tag-ccf-a { background: #ef4444; } .tag-ccf-b { background: #f97316; } .tag-ccf-c { background: #eab308; }
         .tag-th-a { background: #22c55e; } .tag-th-b { background: #3b82f6; } .tag-jcr-q1 { background: #10b981; }
-        .pub-section-header { display: flex; align-items: center; justify-content: space-between; padding: 0.75rem 0; cursor: pointer; user-select: none; }
-        .pub-section-header h3 { font-size: 1.1rem; font-weight: 600; margin: 0; display: flex; align-items: center; gap: 0.5rem; color: var(--global-text-color); }
+
+        .pub-section-container {
+            margin-left: 1.5rem;
+            border-left: 3px solid var(--global-divider-color);
+            padding-left: 1rem;
+        }
+        .pub-section-header {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 0.75rem 0; cursor: pointer; user-select: none;
+            position: relative;
+        }
+        .pub-section-header::before {
+            content: '';
+            position: absolute;
+            left: -1.35rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 10px;
+            height: 10px;
+            background: var(--global-theme-color);
+            border-radius: 50%;
+            border: 3px solid var(--global-bg-color);
+            box-shadow: 0 0 0 2px var(--global-theme-color);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        .pub-section-header:hover::before {
+            opacity: 1;
+            transform: translateY(-50%) scale(1.2);
+        }
+        .pub-section-header h3 { font-size: 1.05rem; font-weight: 500; margin: 0; display: flex; align-items: center; gap: 0.5rem; color: var(--global-text-color); }
         .pub-section-header .toggle-icon { color: var(--global-muted); transition: transform 0.3s; font-size: 0.85rem; }
         .pub-section-header.active .toggle-icon { transform: rotate(180deg); }
         .pub-section-body { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
@@ -115,6 +172,11 @@ masthead: false
         [data-theme="dark"] .social-icons a { border-color: var(--global-divider-color); color: var(--global-muted); }
         [data-theme="dark"] .social-icons a:hover { background: var(--global-theme-color); color: var(--global-bg-color); border-color: var(--global-theme-color); }
         [data-theme="dark"] .tag { opacity: 0.9; }
+        [data-theme="dark"] .pub-list li { border-bottom-color: var(--global-divider-color); }
+        [data-theme="dark"] .pub-list li:hover { background: var(--global-card-bg); box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+        [data-theme="dark"] .pub-list li::before { background: linear-gradient(180deg, var(--global-theme-color), var(--global-hover-color)); }
+        [data-theme="dark"] .pub-section-container { border-left-color: var(--global-divider-color); }
+        [data-theme="dark"] .pub-section-header::before { background: var(--global-theme-color); border-color: var(--global-bg-color); box-shadow: 0 0 0 2px var(--global-theme-color); }
     </style>
 </head>
 <body>
@@ -175,20 +237,20 @@ masthead: false
             <h2 class="section-title">最新动态</h2>
             <div class="news-table">
                 <table>
-                    <tr><td>2026.02</td><td>🚀 <a href="https://www.arxiv.org/abs/2602.15763" target="_blank">GLM-5 技术报告</a>发布！我是模型架构核心贡献者之一。</td></tr>
-                    <tr><td>2025.12</td><td>🚀 GLM-4.7 发布！<a href="https://z.ai/blog/glm-4.7" target="_blank">Blog</a></td></tr>
-                    <tr><td>2025.11</td><td>📄 <strong>SelfRACG</strong> accepted to EMNLP 2025 — Letting LLMs self-express retrieval queries for better code generation in one model arch.</td></tr>
-                    <tr><td>2025.09</td><td>🚀 GLM-4.6 发布！<a href="https://z.ai/blog/glm-4.6" target="_blank">Blog</a></td></tr>
-                    <tr><td>2025.08</td><td>🚀 <a href="https://arxiv.org/abs/2508.06471" target="_blank">GLM-4.5 技术报告</a>发布！我是 post-training 阶段 sparse attention adaptation 方向的贡献者之一。</td></tr>
-                    <tr><td>2025.07</td><td>📄 <strong>Qilin</strong> accepted to SIGIR 2025 — A multimodal IR dataset capturing real APP-level user sessions.</td></tr>
-                    <tr><td>2025.04</td><td>📄 <strong>DecoupledRAG</strong> accepted to WWW 2025 — Decoupling context and knowledge via cross-attention for efficient RAG.</td></tr>
-                    <tr><td>2024.07</td><td>📄 <strong>RLCF</strong> accepted to SIGIR 2024 — Aligning LLMs for IR through unsupervised contrastive feedback.</td></tr>
-                    <tr><td>2023.10</td><td>📄 <strong>I³Retriever</strong> accepted to CIKM 2023 — Incorporating implicit query-document interaction into retrievers via a generative module.</td></tr>
-                    <tr><td>2023.07</td><td>📄 <strong>T²Ranking</strong> accepted to SIGIR 2023 — A large-scale Chinese passage ranking benchmark.</td></tr>
-                    <tr><td>2022.07</td><td>📄 <strong>KERM</strong> accepted to SIGIR 2022 — Incorporating explicit knowledge into PLMs for passage re-ranking.</td></tr>
-                    <tr><td>2022.02</td><td>📄 <strong>DGRe</strong> published in Data Science and Engineering — Disentangled Causal Intervention for BERT-based Ad Hoc Document Ranking.</td></tr>
-                    <tr><td>2021.07</td><td>📄 <strong>R-FORMER</strong> accepted to SIGIR 2021 — Modeling Global Consistency Graphs for Entangled Multi-Task Legal Judgment Prediction.</td></tr>
-                    <tr><td>2021.04</td><td>📄 <strong>LGRe</strong> accepted to DASFAA 2021 — Refining BERT-based Document Ranking via Latent Graph Recurrent Networks.</td></tr>
+                    <tr><td>2026.02</td><td>🚀 <a href="https://www.arxiv.org/abs/2602.15763" target="_blank">GLM-5 Technical Report</a>发布！我是模型架构核心贡献者之一。</td></tr>
+                    <tr><td>2025.12</td><td>🚀 GLM-4.7 发布！查看我们的<a href="https://z.ai/blog/glm-4.7" target="_blank">博客</a>了解更多详情。</td></tr>
+                    <tr><td>2025.11</td><td>📄 <strong>SelfRACG</strong> 被 EMNLP 2025 接收 — 在单一模型架构中让LLM自主表达检索查询以实现更好的代码生成。</td></tr>
+                    <tr><td>2025.09</td><td>🚀 GLM-4.6 发布！查看我们的<a href="https://z.ai/blog/glm-4.6" target="_blank">博客</a>了解更多详情。</td></tr>
+                    <tr><td>2025.08</td><td>🚀 <a href="https://arxiv.org/abs/2508.06471" target="_blank">GLM-4.5 Technical Report</a>发布！我是 post-training 阶段探索稀疏注意力适配的贡献者之一。</td></tr>
+                    <tr><td>2025.07</td><td>📄 <strong>Qilin</strong> 被 SIGIR 2025 接收 — 一个捕获真实APP级用户会话的多模态信息检索数据集。</td></tr>
+                    <tr><td>2025.04</td><td>📄 <strong>DecoupledRAG</strong> 被 WWW 2025 接收 — 通过交叉注意力解耦上下文和知识的高效RAG框架。</td></tr>
+                    <tr><td>2024.07</td><td>📄 <strong>RLCF</strong> 被 SIGIR 2024 接收 — 通过无监督对比反馈对齐IR领域的LLM。</td></tr>
+                    <tr><td>2023.10</td><td>📄 <strong>I³Retriever</strong> 被 CIKM 2023 接收 — 通过生成模块将隐式查询-文档交互融入检索器。</td></tr>
+                    <tr><td>2023.07</td><td>📄 <strong>T²Ranking</strong> 被 SIGIR 2023 接收 — 大规模中文段落排序基准。</td></tr>
+                    <tr><td>2022.07</td><td>📄 <strong>KERM</strong> 被 SIGIR 2022 接收 — 将显式知识融入预训练语言模型用于段落重排序。</td></tr>
+                    <tr><td>2022.02</td><td>📄 <strong>DGRe</strong> 发表于 Data Science and Engineering — 用于BERT即席文档排序的解耦因果干预。</td></tr>
+                    <tr><td>2021.07</td><td>📄 <strong>R-FORMER</strong> 被 SIGIR 2021 接收 — 为纠缠多任务法律判决预测建模全局一致性图。</td></tr>
+                    <tr><td>2021.04</td><td>📄 <strong>LGRe</strong> 被 DASFAA 2021 接收 — 通过潜在图循环网络优化基于BERT的文档排序。</td></tr>
                 </table>
             </div>
 
@@ -200,7 +262,7 @@ masthead: false
                 </a>
             </h5>
 
-            <div>
+            <div class="pub-section-container">
                 <div class="pub-section-header active" onclick="togglePub('primary')">
                     <h3><i class="fas fa-star" style="color:var(--global-theme-color);"></i> 主要作者论文</h3>
                     <i class="fas fa-chevron-down toggle-icon"></i>
@@ -219,7 +281,7 @@ masthead: false
                 </div>
             </div>
 
-            <div>
+            <div class="pub-section-container">
                 <div class="pub-section-header" onclick="togglePub('coauthor')">
                     <h3><i class="fas fa-users" style="color:var(--global-theme-color);"></i> 合作论文</h3>
                     <i class="fas fa-chevron-down toggle-icon"></i>
