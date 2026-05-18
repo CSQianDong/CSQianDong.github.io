@@ -321,6 +321,7 @@ redirect_from:
             <h2 class="section-title">News</h2>
             <div class="news-table">
                 <table>
+                    <tr><td>Mar 2026</td><td>📄 <a href="https://arxiv.org/abs/2603.12201" target="_blank"><strong>IndexCache</strong></a> is released — A promising improvement attempt on GLM-5 (DSA), accelerating sparse attention via cross-layer index reuse.</td></tr>
                     <tr><td>Feb 2026</td><td>🚀 <a href="https://www.arxiv.org/abs/2602.15763" target="_blank">GLM-5 Technical Report</a> is released! I am one of the core contributors for model architecture.</td></tr>
                     <tr><td>Dec 2025</td><td>🚀 GLM-4.7 is released! Check our <a href="https://z.ai/blog/glm-4.7" target="_blank">Blog</a> for details.</td></tr>
                     <tr><td>Nov 2025</td><td>📄 <strong>SelfRACG</strong> accepted to EMNLP 2025 — Letting LLMs self-express retrieval queries for better code generation in one model arch.</td></tr>
@@ -387,6 +388,8 @@ redirect_from:
                 </div>
                 <div class="pub-section-body" id="coauthor">
                     <ul class="pub-list">
+                        <li><div class="pub-info"><div class="title">IndexCache: Accelerating Sparse Attention via Cross-Layer Index Reuse</div><div class="authors">Yushi Bai, <strong>Qian Dong</strong>, Ting Jiang, Xin Lv, Zhengxiao Du, Aohan Zeng, Jie Tang, Juanzi Li</div><div class="venue">arXiv 2026</div><div class="links"><a href="https://arxiv.org/abs/2603.12201" target="_blank">Paper</a></div></div></li>
+
                         <li><div class="pub-info"><div class="title">CalibraEval: Calibrating Prediction Distribution to Mitigate Selection Bias in LLMs-as-Judges</div><div class="authors">Haitao Li, Junjie Chen, Qingyao Ai, Zhumin Chu, Yujia Zhou, <strong>Qian Dong</strong>, Yiqun Liu</div><div class="venue">ACL 2025</div><div class="pub-tags"><span class="tag tag-ccf-a">CCF-A</span></div></div></li>
 
                         <li><div class="pub-info"><div class="title">LLMs-as-Judges: A Comprehensive Survey on LLM-based Evaluation Methods</div><div class="authors">Haitao Li, <strong>Qian Dong</strong>, Junjie Chen, Huixue Su, Yujia Zhou, Qingyao Ai, Ziyi Ye, Yiqun Liu</div><div class="venue">Under Review</div></div></li>
