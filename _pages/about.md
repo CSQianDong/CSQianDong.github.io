@@ -474,7 +474,7 @@ redirect_from:
         <article>
             <div class="profile">
                 <figure>
-                    <img src="/images/profile.jpg" alt="Qian Dong" loading="eager">
+                    <img src="/images/icon.png" alt="Qian Dong" loading="eager">
                 </figure>
             </div>
 
