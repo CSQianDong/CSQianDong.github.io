@@ -1,0 +1,58 @@
+name: Daily Theme Switcher
+
+on:
+  schedule:
+    # Run every day at 00:05 Beijing time (16:05 UTC previous day)
+    - cron: '5 16 * * *'
+  workflow_dispatch:
+    inputs:
+      day_override:
+        description: 'Override day (0=Mon, 1=Tue, 2=Wed, 3=Thu, 4=Fri, 5=Sat, 6=Sun)'
+        required: false
+        default: ''
+
+jobs:
+  switch-theme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run daily theme script
+        run: |
+          if [ -n "${{ github.event.inputs.day_override }}" ]; then
+            python scripts/daily_theme.py ${{ github.event.inputs.day_override }}
+          else
+            python scripts/daily_theme.py
+          fi
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          DAY_NAMES=("Monday" "Tuesday" "Wednesday" "Thursday" "Friday" "Saturday" "Sunday")
+          DOW=$(python -c "import datetime; print(datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).weekday())")
+          THEME_NAME=$(python -c "
+          import sys; sys.path.insert(0, 'scripts')
+          from daily_theme import THEMES
+          import datetime
+          dow = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).weekday()
+          print(THEMES[dow]['name'])
+          ")
+          git add _pages/about.md
+          git commit -m "auto: switch daily theme to ${THEME_NAME} (${DAY_NAMES[$DOW]})"
+          git push
