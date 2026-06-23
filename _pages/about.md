@@ -30,29 +30,29 @@ redirect_from:
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --global-bg-color: #f6faf8;
-            --global-text-color: #1a2e24;
-            --global-theme-color: #059669;
-            --global-hover-color: #047857;
-            --global-divider-color: #d1e7dd;
-            --global-muted: #5f7a6e;
+            --global-bg-color: #fffaf6;
+            --global-text-color: #2e1f1a;
+            --global-theme-color: #e85d04;
+            --global-hover-color: #c44d03;
+            --global-divider-color: #f5e6d3;
+            --global-muted: #7a6455;
             --global-card-bg: #ffffff;
-            --global-accent: #10b981;
-            --global-accent-2: #34d399;
-            --global-glow: rgba(5, 150, 105, 0.12);
+            --global-accent: #f97316;
+            --global-accent-2: #fb923c;
+            --global-glow: rgba(232, 93, 4, 0.1);
         }
 
         [data-theme="dark"] {
-            --global-bg-color: #0a1410;
-            --global-text-color: #d4e8de;
-            --global-theme-color: #34d399;
-            --global-hover-color: #6ee7b7;
-            --global-divider-color: #1a2e24;
-            --global-muted: #7da393;
-            --global-card-bg: #12201a;
-            --global-accent: #10b981;
-            --global-accent-2: #059669;
-            --global-glow: rgba(52, 211, 153, 0.08);
+            --global-bg-color: #14100c;
+            --global-text-color: #f0e0d4;
+            --global-theme-color: #fb923c;
+            --global-hover-color: #fdba74;
+            --global-divider-color: #2e2218;
+            --global-muted: #b89a82;
+            --global-card-bg: #1e1610;
+            --global-accent: #f97316;
+            --global-accent-2: #e85d04;
+            --global-glow: rgba(251, 146, 60, 0.08);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
