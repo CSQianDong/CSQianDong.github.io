@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Qian Dong (董骞)"
 title_separator          : "-"
 name                     : &name "Qian Dong"
-description              : &description "Qian Dong — model architecture researcher working at the intersection of algorithms and infrastructure."
+description              : &description "Qian Dong — Ph.D. from Tsinghua University researching scalable model architectures."
 url                      : https://CSQianDong.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "CSQianDong/CSQianDong.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Qian Dong"
   avatar           : "profile.jpg"
-  bio              : "Model Architecture Researcher · Ph.D."
+  bio              : "Ph.D. in Computer Science and Technology"
   location         : "Beijing, China"
   employer         :
   googlescholar    : "https://scholar.google.com/citations?user=m88SZGgAAAAJ&hl=en"
