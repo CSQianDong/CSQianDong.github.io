@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Qian Dong 董骞"
-excerpt: "Qian Dong — Ph.D. from Tsinghua University working on scalable model architectures."
+excerpt: "Qian Dong — model architecture researcher working at the intersection of algorithms and infrastructure."
 author_profile: false
 layout: bare
 header: false
@@ -19,9 +19,9 @@ redirect_from:
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Qian Dong">
-  <meta name="description" content="Qian Dong — Ph.D. from Tsinghua University researching scalable model architectures, efficient attention, and information retrieval.">
-  <meta name="theme-color" content="#0b0d10">
-  <title>Qian Dong 董骞</title>
+  <meta name="description" content="Qian Dong — model architecture researcher working on scalable architectures, efficient attention, and algorithm–infrastructure co-design.">
+  <meta name="theme-color" content="#080b12">
+  <title>Qian Dong — Model Architecture</title>
   <link rel="icon" href="{{ '/images/icon.png' | relative_url }}" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,11 +33,12 @@ redirect_from:
 
   <header class="t-nav">
     <nav class="t-nav__inner" aria-label="Primary navigation">
-      <a class="t-brand" href="{{ '/' | relative_url }}">qian.dong</a>
+      <a class="t-brand" href="{{ '/' | relative_url }}">qian.dong / arch</a>
       <div class="t-nav__links">
+        <a href="#architecture">architecture</a>
         <a href="#research">research</a>
-        <a href="#news">news</a>
         <a href="#publications">publications</a>
+        <a href="#news">news</a>
         <a href="#education">education</a>
         <a class="t-utility" href="{{ '/submit/' | relative_url }}">submit</a>
         <a class="t-utility" href="{{ '/dm/' | relative_url }}">dm</a>
@@ -48,25 +49,76 @@ redirect_from:
 
   <main class="t-main" id="main-content">
     <header class="t-hero">
-      <p class="t-hero__path">~/qian-dong<span> $</span></p>
-      <h1 class="t-hero__name">Qian Dong <span>董骞</span></h1>
-      <p class="t-hero__line">
-        <span class="t-prompt">&gt;</span><span id="hero-rotator" data-phrases='["Ph.D. @ Tsinghua","Model Architecture","Scalable Intelligence"]'>Ph.D. @ Tsinghua</span><span class="t-cursor">_</span>
-      </p>
-      <p class="t-hero__bio">
-        Ph.D. in Computer Science and Technology from Tsinghua University
-        (<a href="https://ai.thuir.cn/">THUIR</a>). I work on
-        <strong>algo &amp; infra co-designed model architectures</strong> for scalable
-        parameters, context, and especially intelligence.
-      </p>
-      <nav class="t-hero__links" aria-label="Profile links">
-        <a class="t-link" href="https://scholar.google.com/citations?user=m88SZGgAAAAJ&amp;hl=en">scholar</a>
-        <a class="t-link" href="https://github.com/CSQianDong">github</a>
-        <a class="t-link" href="mailto:qiandong.97@qq.com">email</a>
-        <a class="t-link" href="https://www.linkedin.com/in/qian-dong-58b14a23a/">linkedin</a>
-        <a class="t-link" href="https://x.com/verymakesense">x</a>
-        <a class="t-link" href="https://www.xiaohongshu.com/user/profile/64d8bdc1000000000100f445">xiaohongshu</a>
-      </nav>
+      <p class="t-hero__path">~/model-architecture/qian-dong<span> $</span></p>
+      <div class="t-hero__grid">
+        <div class="t-hero__copy">
+          <p class="t-hero__eyebrow"><span>model architecture</span> algo × infra</p>
+          <h1 class="t-hero__name">Qian Dong <span>董骞</span></h1>
+          <p class="t-hero__line">
+            <span class="t-prompt">&gt;</span><span class="t-hero__role">Model Architecture Researcher</span>
+          </p>
+          <p class="t-hero__bio">
+            Ph.D. in Computer Science and Technology from Tsinghua University
+            (<a href="https://ai.thuir.cn/">THUIR</a>). I design
+            <strong>model architectures that scale parameters, context, and intelligence</strong>
+            by co-designing algorithms with the infrastructure that makes them efficient.
+          </p>
+          <nav class="t-hero__links" aria-label="Profile links">
+            <a class="t-link" href="https://scholar.google.com/citations?user=m88SZGgAAAAJ&amp;hl=en">scholar</a>
+            <a class="t-link" href="https://github.com/CSQianDong">github</a>
+            <a class="t-link" href="mailto:qiandong.97@qq.com">email</a>
+            <a class="t-link" href="https://www.linkedin.com/in/qian-dong-58b14a23a/">linkedin</a>
+            <a class="t-link" href="https://x.com/verymakesense">x</a>
+          </nav>
+        </div>
+
+        <figure class="arch-map">
+          <figcaption class="arch-map__head"><span>architecture_map / v1</span><span>active</span></figcaption>
+          <svg viewBox="0 0 420 280" role="img" aria-labelledby="arch-map-title">
+            <title id="arch-map-title">Model architecture connecting algorithms, infrastructure, parameters, context, and intelligence</title>
+            <defs>
+              <pattern id="arch-grid" width="18" height="18" patternUnits="userSpaceOnUse">
+                <path d="M18 0H0V18" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.16"></path>
+              </pattern>
+            </defs>
+            <rect class="arch-map__grid" width="420" height="280" rx="12" fill="url(#arch-grid)"></rect>
+            <g aria-hidden="true">
+              <line class="arch-map__edge arch-map__edge--accent" x1="210" y1="140" x2="74" y2="48"></line>
+              <line class="arch-map__edge arch-map__edge--accent" x1="210" y1="140" x2="346" y2="48"></line>
+              <line class="arch-map__edge" x1="210" y1="140" x2="70" y2="234"></line>
+              <line class="arch-map__edge" x1="210" y1="140" x2="210" y2="240"></line>
+              <line class="arch-map__edge" x1="210" y1="140" x2="350" y2="234"></line>
+            </g>
+            <rect class="arch-map__halo" x="124" y="97" width="172" height="86" rx="16"></rect>
+            <g class="arch-map__node arch-map__node--algo" transform="translate(16 28)">
+              <rect width="116" height="40" rx="8"></rect>
+              <text x="58" y="25">ALGORITHM</text>
+            </g>
+            <g class="arch-map__node arch-map__node--infra" transform="translate(288 28)">
+              <rect width="116" height="40" rx="8"></rect>
+              <text x="58" y="25">INFRASTRUCTURE</text>
+            </g>
+            <g class="arch-map__node arch-map__node--core" transform="translate(130 103)">
+              <rect width="160" height="74" rx="13"></rect>
+              <text x="80" y="31">MODEL</text>
+              <text x="80" y="49">ARCHITECTURE</text>
+            </g>
+            <g class="arch-map__node" transform="translate(12 214)">
+              <rect width="116" height="40" rx="8"></rect>
+              <text x="58" y="25">PARAMETERS</text>
+            </g>
+            <g class="arch-map__node" transform="translate(152 220)">
+              <rect width="116" height="40" rx="8"></rect>
+              <text x="58" y="25">CONTEXT</text>
+            </g>
+            <g class="arch-map__node" transform="translate(292 214)">
+              <rect width="116" height="40" rx="8"></rect>
+              <text x="58" y="25">INTELLIGENCE</text>
+            </g>
+          </svg>
+          <div class="arch-map__legend"><span>parameters ↑</span><span>context ↑</span><span>intelligence ↑</span></div>
+        </figure>
+      </div>
     </header>
 
     <section class="t-section reveal" id="about">
@@ -86,26 +138,84 @@ redirect_from:
       </div>
     </section>
 
+    <section class="t-section reveal" id="architecture">
+      <h2 class="t-h2"><span class="t-h2__idx">// 02</span> architecture work</h2>
+      <p class="t-section__lead">Selected work where architecture decisions meet real systems constraints.</p>
+      <div class="arch-work">
+        <a class="arch-work__item" href="https://www.arxiv.org/abs/2602.15763">
+          <span class="arch-work__meta">foundation model · 2026</span>
+          <h3>GLM-5 Architecture</h3>
+          <p>Core contributor to the model architecture behind GLM-5.</p>
+          <span class="arch-work__link">technical report ↗</span>
+        </a>
+        <a class="arch-work__item" href="https://arxiv.org/abs/2603.12201">
+          <span class="arch-work__meta">efficient attention · 2026</span>
+          <h3>IndexCache</h3>
+          <p>Reuse sparse-attention indices across layers to reduce indexing overhead.</p>
+          <span class="arch-work__link">paper ↗</span>
+        </a>
+        <article class="arch-work__item">
+          <span class="arch-work__meta">cross-attention · 2025</span>
+          <h3>DecoupledRAG</h3>
+          <p>Decouple context encoding and knowledge access through a cross-attention architecture.</p>
+          <span class="arch-work__link">WWW 2025</span>
+        </article>
+      </div>
+    </section>
+
     <section class="t-section reveal" id="research">
-      <h2 class="t-h2"><span class="t-h2__idx">// 02</span> research</h2>
+      <h2 class="t-h2"><span class="t-h2__idx">// 03</span> research directions</h2>
       <div class="t-grid">
         <article class="t-card">
           <span class="t-card__no">01</span>
+          <svg class="t-card__diagram" viewBox="0 0 104 52" aria-hidden="true">
+            <rect class="diagram-dim" x="1" y="14" width="20" height="24" rx="3"></rect>
+            <path class="diagram-line" d="M21 26h18"></path>
+            <rect class="diagram-fill" x="39" y="8" width="26" height="36" rx="4"></rect>
+            <circle class="diagram-line" cx="52" cy="26" r="4"></circle>
+            <path class="diagram-line" d="M65 26h18"></path>
+            <rect class="diagram-dim" x="83" y="14" width="20" height="24" rx="3"></rect>
+          </svg>
           <h3 class="t-card__title">Model Architecture</h3>
           <p class="t-card__desc">Co-designing algorithms and infrastructure for capable models that remain efficient at scale.</p>
         </article>
         <article class="t-card">
           <span class="t-card__no">02</span>
+          <svg class="t-card__diagram" viewBox="0 0 104 52" aria-hidden="true">
+            <g class="diagram-dim">
+              <rect x="2" y="2" width="12" height="12" rx="2"></rect><rect x="18" y="2" width="12" height="12" rx="2"></rect><rect x="34" y="2" width="12" height="12" rx="2"></rect>
+              <rect x="2" y="18" width="12" height="12" rx="2"></rect><rect x="18" y="18" width="12" height="12" rx="2"></rect><rect x="34" y="18" width="12" height="12" rx="2"></rect>
+              <rect x="2" y="34" width="12" height="12" rx="2"></rect><rect x="18" y="34" width="12" height="12" rx="2"></rect><rect x="34" y="34" width="12" height="12" rx="2"></rect>
+            </g>
+            <rect class="diagram-fill" x="2" y="2" width="12" height="12" rx="2"></rect>
+            <rect class="diagram-fill" x="18" y="18" width="12" height="12" rx="2"></rect>
+            <rect class="diagram-fill" x="34" y="34" width="12" height="12" rx="2"></rect>
+            <path class="diagram-line" d="M54 26h18m0 0-5-5m5 5-5 5"></path>
+            <rect class="diagram-fill" x="78" y="14" width="24" height="24" rx="4"></rect>
+          </svg>
           <h3 class="t-card__title">Efficient Attention</h3>
           <p class="t-card__desc">Sparse attention, index reuse, and architecture-level techniques for reducing inference cost.</p>
         </article>
         <article class="t-card">
           <span class="t-card__no">03</span>
+          <svg class="t-card__diagram" viewBox="0 0 104 52" aria-hidden="true">
+            <path class="diagram-dim" d="M2 8h34M2 20h48M2 32h62M2 44h76"></path>
+            <path class="diagram-line" d="M36 8 78 26M50 20l28 6M64 32l14-6M78 44V26"></path>
+            <rect class="diagram-fill" x="78" y="13" width="24" height="26" rx="4"></rect>
+          </svg>
           <h3 class="t-card__title">Scalable Context</h3>
           <p class="t-card__desc">Extending useful context while balancing model quality, memory, throughput, and latency.</p>
         </article>
         <article class="t-card">
           <span class="t-card__no">04</span>
+          <svg class="t-card__diagram" viewBox="0 0 104 52" aria-hidden="true">
+            <circle class="diagram-fill" cx="10" cy="26" r="8"></circle>
+            <path class="diagram-line" d="M18 26h18"></path>
+            <rect class="diagram-fill" x="36" y="12" width="30" height="28" rx="4"></rect>
+            <path class="diagram-line" d="M66 19h16M66 33h16"></path>
+            <rect class="diagram-dim" x="82" y="10" width="20" height="14" rx="3"></rect>
+            <rect class="diagram-dim" x="82" y="28" width="20" height="14" rx="3"></rect>
+          </svg>
           <h3 class="t-card__title">Information Retrieval</h3>
           <p class="t-card__desc">Ranking and retrieval-augmented generation that connect models with the right information.</p>
         </article>
@@ -113,7 +223,7 @@ redirect_from:
     </section>
 
     <section class="t-section reveal" id="news">
-      <h2 class="t-h2"><span class="t-h2__idx">// 03</span> news</h2>
+      <h2 class="t-h2"><span class="t-h2__idx">// 04</span> news</h2>
       <ul class="t-news">
         <li><span class="t-news__date">2026.06</span><p>I received my <strong>Ph.D. in Computer Science and Technology</strong> from Tsinghua University.</p></li>
         <li><span class="t-news__date">2026.03</span><p><a href="https://arxiv.org/abs/2603.12201"><strong>IndexCache</strong></a> was released, accelerating sparse attention via cross-layer index reuse.</p></li>
@@ -124,6 +234,10 @@ redirect_from:
         <li><span class="t-news__date">2025.08</span><p>The <a href="https://arxiv.org/abs/2508.06471">GLM-4.5 Technical Report</a> was released. I contributed to sparse-attention adaptation during post-training.</p></li>
         <li><span class="t-news__date">2025.07</span><p><strong>Qilin</strong> was accepted to SIGIR 2025, introducing a multimodal IR dataset with app-level user sessions.</p></li>
         <li><span class="t-news__date">2025.04</span><p><strong>DecoupledRAG</strong> was accepted to WWW 2025, decoupling context and knowledge via cross-attention for efficient RAG.</p></li>
+      </ul>
+      <details class="t-news-archive">
+        <summary>earlier updates · 2021–2024</summary>
+        <ul class="t-news">
         <li><span class="t-news__date">2024.07</span><p><strong>RLCF</strong> was accepted to SIGIR 2024, aligning LLMs for information retrieval through unsupervised contrastive feedback.</p></li>
         <li><span class="t-news__date">2023.10</span><p><strong>I³Retriever</strong> was accepted to CIKM 2023, incorporating implicit query-document interaction into retrievers.</p></li>
         <li><span class="t-news__date">2023.07</span><p><strong>T²Ranking</strong> was accepted to SIGIR 2023 as a large-scale Chinese passage-ranking benchmark.</p></li>
@@ -131,11 +245,12 @@ redirect_from:
         <li><span class="t-news__date">2022.02</span><p><strong>DGRe</strong> was published in Data Science and Engineering.</p></li>
         <li><span class="t-news__date">2021.07</span><p><strong>R-FORMER</strong> was accepted to SIGIR 2021.</p></li>
         <li><span class="t-news__date">2021.04</span><p><strong>LGRe</strong> was accepted to DASFAA 2021.</p></li>
-      </ul>
+        </ul>
+      </details>
     </section>
 
     <section class="t-section reveal" id="publications">
-      <h2 class="t-h2"><span class="t-h2__idx">// 04</span> publications</h2>
+      <h2 class="t-h2"><span class="t-h2__idx">// 05</span> publications</h2>
       <div class="t-callout">
         <div class="t-callout__text">
           <h3>Full publication list on Google Scholar</h3>
@@ -255,7 +370,7 @@ redirect_from:
     </section>
 
     <section class="t-section reveal" id="education">
-      <h2 class="t-h2"><span class="t-h2__idx">// 05</span> education</h2>
+      <h2 class="t-h2"><span class="t-h2__idx">// 06</span> education</h2>
       <ul class="t-log">
         <li class="t-log__item">
           <span class="t-log__date">2022 — 2026</span>
@@ -285,14 +400,14 @@ redirect_from:
     </section>
 
     <section class="t-section reveal" id="honors">
-      <h2 class="t-h2"><span class="t-h2__idx">// 06</span> honors &amp; awards</h2>
+      <h2 class="t-h2"><span class="t-h2__idx">// 07</span> honors &amp; awards</h2>
       <div class="t-tags">
         <span class="t-tag t-tag--star">National Scholarship · Top 1% · 2021</span>
       </div>
     </section>
 
     <section class="t-section reveal" id="more">
-      <h2 class="t-h2"><span class="t-h2__idx">// 07</span> beyond research</h2>
+      <h2 class="t-h2"><span class="t-h2__idx">// 08</span> beyond research</h2>
       <p class="t-note">
         Away from models and systems, I enjoy exploring <strong>craft beer</strong> —
         from crisp wheat beers and hop-forward IPAs to Belgian witbiers and saisons. 🍻

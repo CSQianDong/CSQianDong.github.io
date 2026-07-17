@@ -1,4 +1,4 @@
-/* Homepage interactions: scroll reveal, hero rotator, and cursor spotlight. */
+/* Homepage interactions: scroll reveal and cursor spotlight. */
 (function () {
   "use strict";
 
@@ -37,49 +37,6 @@
     });
   }
 
-  function initRotator() {
-    var element = document.getElementById("hero-rotator");
-    if (!element) return;
-
-    var phrases;
-    try {
-      phrases = JSON.parse(element.getAttribute("data-phrases"));
-    } catch (error) {
-      phrases = [];
-    }
-
-    if (!phrases || !phrases.length) return;
-    element.textContent = phrases[0];
-
-    if (prefersReducedMotion()) return;
-
-    var phraseIndex = 0;
-    var characterIndex = phrases[0].length;
-    var deleting = true;
-
-    function tick() {
-      var phrase = phrases[phraseIndex];
-      element.textContent = phrase.substring(0, characterIndex);
-
-      var delay = deleting ? 45 : 95;
-
-      if (deleting && characterIndex === 0) {
-        deleting = false;
-        phraseIndex = (phraseIndex + 1) % phrases.length;
-        delay = 350;
-      } else if (!deleting && characterIndex === phrase.length) {
-        deleting = true;
-        delay = 1500;
-      } else {
-        characterIndex += deleting ? -1 : 1;
-      }
-
-      window.setTimeout(tick, delay);
-    }
-
-    window.setTimeout(tick, 1500);
-  }
-
   function initGlow() {
     if (
       prefersReducedMotion() ||
@@ -116,7 +73,6 @@
 
   function init() {
     initReveal();
-    initRotator();
     initGlow();
   }
 
