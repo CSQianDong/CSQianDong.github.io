@@ -1,731 +1,318 @@
 ---
 permalink: /
 title: "Qian Dong 董骞"
-excerpt: "Home page"
+excerpt: "Qian Dong — Ph.D. from Tsinghua University working on scalable model architectures."
 author_profile: false
 layout: bare
 header: false
 sidebar: false
 masthead: false
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
+{::nomarkdown}
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Qian Dong</title>
-    <meta name="author" content="Qian Dong">
-    <meta name="description" content="Qian Dong - Ph.D. candidate at Tsinghua University, THUIR.">
-    <link rel="icon" href="/images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --global-bg-color: #fdf6f9;
-            --global-text-color: #2e1a22;
-            --global-theme-color: #e11d7b;
-            --global-hover-color: #be185d;
-            --global-divider-color: #f5d5e3;
-            --global-muted: #7a5568;
-            --global-card-bg: #ffffff;
-            --global-accent: #f43f7a;
-            --global-accent-2: #fb7185;
-            --global-glow: rgba(225, 29, 123, 0.1);
-        }
-
-        [data-theme="dark"] {
-            --global-bg-color: #140a10;
-            --global-text-color: #f0d4e0;
-            --global-theme-color: #fb7185;
-            --global-hover-color: #fda4af;
-            --global-divider-color: #2e1a22;
-            --global-muted: #b88296;
-            --global-card-bg: #1e1018;
-            --global-accent: #f43f7a;
-            --global-accent-2: #e11d7b;
-            --global-glow: rgba(251, 113, 133, 0.08);
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            font-size: 1rem;
-            line-height: 1.7;
-            color: var(--global-text-color);
-            background-color: var(--global-bg-color);
-            -webkit-font-smoothing: antialiased;
-            transition: background-color 0.4s ease, color 0.4s ease;
-            position: relative;
-            overflow-x: hidden;
-        }
-
-        /* Animated background gradient orbs */
-        body::before {
-            content: '';
-            position: fixed;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(ellipse at 20% 50%, var(--global-glow) 0%, transparent 50%),
-                        radial-gradient(ellipse at 80% 20%, rgba(99, 102, 241, 0.06) 0%, transparent 40%),
-                        radial-gradient(ellipse at 50% 80%, rgba(139, 92, 246, 0.04) 0%, transparent 40%);
-            animation: bgFloat 20s ease-in-out infinite;
-            z-index: -1;
-            pointer-events: none;
-        }
-
-        @keyframes bgFloat {
-            0%, 100% { transform: translate(0, 0) rotate(0deg); }
-            33% { transform: translate(2%, -2%) rotate(1deg); }
-            66% { transform: translate(-1%, 1%) rotate(-0.5deg); }
-        }
-
-        a { color: var(--global-theme-color); text-decoration: none; transition: color 0.2s ease; }
-        a:hover { color: var(--global-hover-color); text-decoration: none; }
-
-        .container { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
-
-        /* Header */
-        .post-header { margin-top: 3rem; margin-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: flex-start; }
-        .header-controls { display: flex; align-items: center; gap: 0.5rem; flex-shrink: 0; margin-top: 0.5rem; }
-        .post-title { font-size: 2.2rem; font-weight: 700; color: var(--global-text-color); line-height: 1.3; }
-        .post-title .name-chinese { font-weight: 400; font-size: 1.5rem; }
-
-        /* Animated gradient name */
-        .name-english {
-            background: linear-gradient(135deg, var(--global-theme-color), var(--global-accent), var(--global-accent-2), var(--global-theme-color));
-            background-size: 300% 300%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: gradientShift 6s ease infinite;
-        }
-
-        @keyframes gradientShift {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-        }
-
-        /* Profile image + X timeline */
-        .profile { float: right; margin: 0 0 1.5rem 2rem; width: 200px; }
-        .profile figure {
-            position: relative;
-            border-radius: 12px;
-            overflow: hidden;
-        }
-        .profile figure::after {
-            content: '';
-            position: absolute;
-            inset: -3px;
-            border-radius: 14px;
-            background: linear-gradient(135deg, var(--global-theme-color), var(--global-accent), var(--global-accent-2));
-            z-index: -1;
-            opacity: 0;
-            transition: opacity 0.4s ease;
-        }
-        .profile:hover figure::after { opacity: 1; }
-        .profile img {
-            width: 100%;
-            border-radius: 12px;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-            transition: transform 0.4s ease, box-shadow 0.4s ease;
-        }
-        .profile:hover img {
-            transform: scale(1.02);
-            box-shadow: 0 12px 40px rgba(74, 111, 165, 0.2);
-        }
-
-        /* Bio text */
-        .bio-text { font-size: 1rem; line-height: 1.8; color: var(--global-text-color); }
-        .bio-text p { margin-bottom: 1rem; }
-
-        /* Section headings */
-        h2.section-title {
-            font-size: 1.5rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            color: var(--global-text-color);
-            position: relative;
-            border-bottom: none;
-        }
-        h2.section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 60px;
-            height: 3px;
-            background: linear-gradient(90deg, var(--global-theme-color), var(--global-accent));
-            border-radius: 2px;
-            transition: width 0.4s ease;
-        }
-        h2.section-title:hover::after {
-            width: 120px;
-        }
-
-        /* News table */
-        .news-table { width: 100%; max-height: 240px; overflow-y: auto; border-radius: 10px; background: var(--global-card-bg); border: 1px solid var(--global-divider-color); padding: 0.5rem; }
-        .news-table table { width: 100%; border-collapse: collapse; }
-        .news-table td { padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--global-divider-color); vertical-align: top; font-size: 0.95rem; transition: background 0.2s ease; }
-        .news-table tr:last-child td { border-bottom: none; }
-        .news-table tr:hover td { background: var(--global-glow); }
-        .news-table td:first-child { white-space: nowrap; font-weight: 600; color: var(--global-theme-color); width: 110px; }
-
-        /* Custom scrollbar */
-        .news-table::-webkit-scrollbar { width: 6px; }
-        .news-table::-webkit-scrollbar-track { background: transparent; border-radius: 3px; }
-        .news-table::-webkit-scrollbar-thumb { background: var(--global-theme-color); border-radius: 3px; opacity: 0.5; }
-        .news-table::-webkit-scrollbar-thumb:hover { opacity: 1; }
-
-        /* Publication list */
-        .pub-list { list-style: none; padding: 0; }
-        .pub-list li {
-            margin-bottom: 1.5rem;
-            padding: 1.2rem 1.2rem 1.2rem 1.5rem;
-            border-bottom: none;
-            position: relative;
-            background: var(--global-card-bg);
-            border: 1px solid var(--global-divider-color);
-            border-radius: 12px;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            backdrop-filter: blur(10px);
-        }
-        .pub-list li:last-child { border-bottom: none; }
-        .pub-list li:hover {
-            border-color: var(--global-theme-color);
-            box-shadow: 0 8px 25px rgba(74, 111, 165, 0.12);
-            transform: translateY(-3px);
-        }
-        .pub-list li::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 4px;
-            background: linear-gradient(180deg, var(--global-theme-color), var(--global-accent));
-            border-radius: 12px 0 0 12px;
-            opacity: 0.5;
-            transition: opacity 0.3s ease, width 0.3s ease;
-        }
-        .pub-list li:hover::before {
-            opacity: 1;
-            width: 5px;
-        }
-        .pub-info .title { font-weight: 600; font-size: 0.95rem; line-height: 1.45; color: var(--global-text-color); margin-bottom: 0.3rem; }
-        .pub-info .authors { font-size: 0.87rem; color: var(--global-muted); margin-bottom: 0.2rem; line-height: 1.4; }
-        .pub-info .authors strong { color: var(--global-text-color); }
-        .pub-info .venue { font-size: 0.87rem; color: var(--global-muted); font-style: italic; margin-bottom: 0.5rem; }
-        .pub-info .links a {
-            display: inline-block; font-size: 0.78rem; font-weight: 500;
-            padding: 0.2rem 0.6rem; border: 1px solid var(--global-divider-color);
-            border-radius: 6px; margin-right: 0.3rem; margin-top: 0.2rem;
-            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .pub-info .links a:hover {
-            background: linear-gradient(135deg, var(--global-theme-color), var(--global-accent));
-            color: #fff;
-            border-color: transparent;
-            transform: translateY(-1px);
-            box-shadow: 0 3px 10px rgba(74, 111, 165, 0.3);
-        }
-        .pub-tags { display: inline-flex; gap: 0.3rem; margin-top: 0.2rem; }
-        .tag { padding: 0.1rem 0.4rem; border-radius: 8px; font-size: 0.65rem; font-weight: 600; text-transform: uppercase; color: #fff; }
-        .tag-ccf-a { background: linear-gradient(135deg, #ef4444, #dc2626); }
-        .tag-ccf-b { background: linear-gradient(135deg, #f97316, #ea580c); }
-        .tag-ccf-c { background: linear-gradient(135deg, #eab308, #ca8a04); }
-        .tag-th-a { background: linear-gradient(135deg, #22c55e, #16a34a); }
-        .tag-th-b { background: linear-gradient(135deg, #3b82f6, #2563eb); }
-        .tag-jcr-q1 { background: linear-gradient(135deg, #10b981, #059669); }
-
-        /* Collapsible sections */
-        .pub-section-container {
-            margin-left: 1.5rem;
-            border-left: 3px solid var(--global-divider-color);
-            padding-left: 1rem;
-        }
-        .pub-section-header {
-            display: flex; align-items: center; justify-content: space-between;
-            padding: 0.75rem 0; cursor: pointer; user-select: none;
-            position: relative;
-        }
-        .pub-section-header::before {
-            content: '';
-            position: absolute;
-            left: -1.35rem;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 10px;
-            height: 10px;
-            background: var(--global-theme-color);
-            border-radius: 50%;
-            border: 3px solid var(--global-bg-color);
-            box-shadow: 0 0 0 2px var(--global-theme-color);
-            opacity: 0.7;
-            transition: all 0.3s ease;
-        }
-        .pub-section-header:hover::before {
-            opacity: 1;
-            transform: translateY(-50%) scale(1.3);
-            box-shadow: 0 0 0 2px var(--global-theme-color), 0 0 12px var(--global-theme-color);
-        }
-        .pub-section-header h3 { font-size: 1.05rem; font-weight: 500; margin: 0; display: flex; align-items: center; gap: 0.5rem; color: var(--global-text-color); }
-        .pub-section-header .toggle-icon { color: var(--global-muted); transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); font-size: 0.85rem; }
-        .pub-section-header.active .toggle-icon { transform: rotate(180deg); }
-        .pub-section-body { max-height: 0; overflow: hidden; transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
-        .pub-section-body.active { max-height: 8000px; }
-
-        /* Awards / Education table */
-        .info-table { width: 100%; border-collapse: collapse; background: var(--global-card-bg); border-radius: 10px; overflow: hidden; border: 1px solid var(--global-divider-color); }
-        .info-table td { padding: 0.7rem 1rem; border-bottom: 1px solid var(--global-divider-color); font-size: 0.95rem; transition: background 0.2s ease; }
-        .info-table tr:last-child td { border-bottom: none; }
-        .info-table tr:hover td { background: var(--global-glow); }
-        .info-table td:first-child { font-weight: 600; font-style: italic; width: 100px; color: var(--global-theme-color); white-space: nowrap; }
-
-        /* More text */
-        .more-text { font-size: 1rem; line-height: 1.8; color: var(--global-muted); background: var(--global-card-bg); padding: 1.2rem 1.5rem; border-radius: 12px; border: 1px solid var(--global-divider-color); }
-
-        /* Social icons */
-        .social-icons { display: flex; gap: 0.8rem; margin-top: 1.5rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
-        .social-icons a {
-            display: inline-flex; align-items: center; justify-content: center;
-            width: 42px; height: 42px; border-radius: 12px;
-            border: 1px solid var(--global-divider-color); color: var(--global-muted);
-            font-size: 1.1rem; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            background: var(--global-card-bg);
-        }
-        .social-icons a:hover {
-            color: #fff;
-            background: linear-gradient(135deg, var(--global-theme-color), var(--global-accent));
-            border-color: transparent;
-            transform: translateY(-3px) scale(1.05);
-            box-shadow: 0 8px 20px rgba(74, 111, 165, 0.25);
-        }
-
-        /* Footer */
-        .site-footer {
-            margin-top: 3rem; padding: 1.5rem 0;
-            border-top: 1px solid var(--global-divider-color);
-            text-align: center; font-size: 0.85rem; color: var(--global-muted);
-        }
-
-        .clearfix::after { content: ''; display: table; clear: both; }
-
-        .lang-switch {
-            display: inline-block;
-            background: linear-gradient(135deg, var(--global-theme-color), var(--global-accent));
-            color: #fff;
-            padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 500;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); margin-left: 0.5rem;
-            box-shadow: 0 2px 8px rgba(74, 111, 165, 0.2);
-        }
-        .lang-switch:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 4px 15px rgba(74, 111, 165, 0.35);
-            color: #fff; text-decoration: none;
-        }
-
-        @media (max-width: 768px) {
-            .profile { float: none; margin: 0 auto 1.5rem; width: 160px; text-align: center; }
-            .post-title { font-size: 1.7rem; }
-            .post-header { flex-direction: column; }
-            .header-controls { margin-top: 0.75rem; }
-        }
-
-        /* Theme toggle */
-        .theme-toggle {
-            display: inline-flex; align-items: center; justify-content: center;
-            width: 36px; height: 36px; border-radius: 50%;
-            border: 1px solid var(--global-divider-color);
-            background: var(--global-card-bg); color: var(--global-muted);
-            cursor: pointer; font-size: 1.1rem;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); margin-left: 0.5rem;
-            vertical-align: middle;
-        }
-        .theme-toggle:hover {
-            color: var(--global-theme-color);
-            border-color: var(--global-theme-color);
-            transform: rotate(30deg) scale(1.1);
-            box-shadow: 0 4px 12px var(--global-glow);
-        }
-
-        /* Scroll reveal animation */
-        .reveal {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .reveal.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Back to top button */
-        .back-to-top {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            width: 42px;
-            height: 42px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--global-theme-color), var(--global-accent));
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.1rem;
-            cursor: pointer;
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 4px 15px rgba(74, 111, 165, 0.3);
-            z-index: 999;
-            border: none;
-        }
-        .back-to-top.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .back-to-top:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(74, 111, 165, 0.4);
-        }
-
-        /* Quote section enhanced */
-        .quote-section {
-            text-align: center;
-            margin: 2rem 0 2.5rem;
-            padding: 1.5rem 2rem;
-            position: relative;
-            border-radius: 12px;
-            background: var(--global-card-bg);
-            border: 1px solid var(--global-divider-color);
-            overflow: hidden;
-        }
-        .quote-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, var(--global-theme-color), var(--global-accent), var(--global-accent-2));
-            background-size: 200% 100%;
-            animation: gradientShift 4s ease infinite;
-        }
-
-        /* Dark mode specific overrides */
-        [data-theme="dark"] .profile img { box-shadow: 0 8px 30px rgba(0,0,0,0.4); }
-        [data-theme="dark"] .profile:hover img { box-shadow: 0 12px 40px rgba(123, 159, 212, 0.2); }
-        [data-theme="dark"] .news-table { background: var(--global-card-bg); border-color: var(--global-divider-color); }
-        [data-theme="dark"] .news-table td { color: var(--global-text-color); }
-        [data-theme="dark"] .news-table a { color: var(--global-theme-color); }
-        [data-theme="dark"] .info-table { background: var(--global-card-bg); border-color: var(--global-divider-color); }
-        [data-theme="dark"] .info-table td { color: var(--global-text-color); }
-        [data-theme="dark"] .info-table a { color: var(--global-theme-color); }
-        [data-theme="dark"] .pub-info .title { color: var(--global-text-color); }
-        [data-theme="dark"] .pub-info .authors { color: var(--global-muted); }
-        [data-theme="dark"] .pub-info .authors strong { color: var(--global-text-color); }
-        [data-theme="dark"] .pub-info .venue { color: var(--global-muted); }
-        [data-theme="dark"] .pub-section-header h3 { color: var(--global-text-color); }
-        [data-theme="dark"] .quote-text, [data-theme="dark"] .quote-attr { color: var(--global-text-color) !important; }
-        [data-theme="dark"] .more-text { color: var(--global-muted); background: var(--global-card-bg); border-color: var(--global-divider-color); }
-        [data-theme="dark"] .site-footer { border-top-color: var(--global-divider-color); color: var(--global-muted); }
-        [data-theme="dark"] .social-icons a { border-color: var(--global-divider-color); color: var(--global-muted); background: var(--global-card-bg); }
-        [data-theme="dark"] .social-icons a:hover { background: linear-gradient(135deg, var(--global-theme-color), var(--global-accent)); color: #fff; border-color: transparent; }
-        [data-theme="dark"] .tag { opacity: 0.9; }
-        [data-theme="dark"] .pub-info .links a { border-color: var(--global-divider-color); }
-        [data-theme="dark"] .pub-info .links a:hover { background: linear-gradient(135deg, var(--global-theme-color), var(--global-accent)); color: #fff; }
-        [data-theme="dark"] .pub-list li { border-color: var(--global-divider-color); background: var(--global-card-bg); }
-        [data-theme="dark"] .pub-list li:hover { border-color: var(--global-theme-color); box-shadow: 0 8px 25px rgba(123, 159, 212, 0.1); }
-        [data-theme="dark"] .pub-list li::before { background: linear-gradient(180deg, var(--global-theme-color), var(--global-accent)); }
-        [data-theme="dark"] .pub-section-container { border-left-color: var(--global-divider-color); }
-        [data-theme="dark"] .pub-section-header::before { background: var(--global-theme-color); border-color: var(--global-bg-color); box-shadow: 0 0 0 2px var(--global-theme-color); }
-        [data-theme="dark"] .quote-section { background: var(--global-card-bg); border-color: var(--global-divider-color); }
-        [data-theme="dark"] .back-to-top { box-shadow: 0 4px 15px rgba(123, 159, 212, 0.2); }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Qian Dong">
+  <meta name="description" content="Qian Dong — Ph.D. from Tsinghua University researching scalable model architectures, efficient attention, and information retrieval.">
+  <meta name="theme-color" content="#0b0d10">
+  <title>Qian Dong 董骞</title>
+  <link rel="icon" href="{{ '/images/icon.png' | relative_url }}" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
 </head>
 <body>
+  <a class="t-skip" href="#main-content">Skip to content</a>
 
-<div class="container mt-5" role="main">
-    <div class="post">
-        <header class="post-header">
-            <h1 class="post-title">
-                <span class="name-english"><span style="font-weight:700;">Qian</span> Dong</span>
-            </h1>
-            <div class="header-controls">
-                <a href="/submit/" class="lang-switch" title="Submit a paper"><img src="/images/xhs.png" alt="XHS" style="width:14px;height:14px;border-radius:50%;vertical-align:middle;margin-right:2px;"> Submit</a>
-                <a href="/dm/" class="lang-switch" title="Send me a message">DM</a>
-                <a href="/zh/" class="lang-switch">中文</a>
-                <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode"><i class="fas fa-moon"></i></button>
-            </div>
-        </header>
+  <header class="t-nav">
+    <nav class="t-nav__inner" aria-label="Primary navigation">
+      <a class="t-brand" href="{{ '/' | relative_url }}">qian.dong</a>
+      <div class="t-nav__links">
+        <a href="#research">research</a>
+        <a href="#news">news</a>
+        <a href="#publications">publications</a>
+        <a href="#education">education</a>
+        <a class="t-utility" href="{{ '/submit/' | relative_url }}">submit</a>
+        <a class="t-utility" href="{{ '/dm/' | relative_url }}">dm</a>
+        <a class="t-lang" href="{{ '/zh/' | relative_url }}">中文</a>
+      </div>
+    </nav>
+  </header>
 
-        <article>
-            <div class="profile">
-                <figure>
-                    <img src="/images/icon.png" alt="Qian Dong" loading="eager">
-                </figure>
-            </div>
+  <main class="t-main" id="main-content">
+    <header class="t-hero">
+      <p class="t-hero__path">~/qian-dong<span> $</span></p>
+      <h1 class="t-hero__name">Qian Dong <span>董骞</span></h1>
+      <p class="t-hero__line">
+        <span class="t-prompt">&gt;</span><span id="hero-rotator" data-phrases='["Ph.D. @ Tsinghua","Model Architecture","Scalable Intelligence"]'>Ph.D. @ Tsinghua</span><span class="t-cursor">_</span>
+      </p>
+      <p class="t-hero__bio">
+        Ph.D. in Computer Science and Technology from Tsinghua University
+        (<a href="https://ai.thuir.cn/">THUIR</a>). I work on
+        <strong>algo &amp; infra co-designed model architectures</strong> for scalable
+        parameters, context, and especially intelligence.
+      </p>
+      <nav class="t-hero__links" aria-label="Profile links">
+        <a class="t-link" href="https://scholar.google.com/citations?user=m88SZGgAAAAJ&amp;hl=en">scholar</a>
+        <a class="t-link" href="https://github.com/CSQianDong">github</a>
+        <a class="t-link" href="mailto:qiandong.97@qq.com">email</a>
+        <a class="t-link" href="https://www.linkedin.com/in/qian-dong-58b14a23a/">linkedin</a>
+        <a class="t-link" href="https://x.com/verymakesense">x</a>
+        <a class="t-link" href="https://www.xiaohongshu.com/user/profile/64d8bdc1000000000100f445">xiaohongshu</a>
+      </nav>
+    </header>
 
-            <div class="bio-text clearfix">
-                <p>
-                    I am a final-year Ph.D. student at <a href="https://ai.thuir.cn/" target="_blank">THUIR</a>,
-                    <a href="https://www.cs.tsinghua.edu.cn/" target="_blank">Department of Computer Science and Technology</a>,
-                    <a href="https://www.tsinghua.edu.cn/" target="_blank">Tsinghua University</a>.
-                    I am fortunate to be supervised by Prof.
-                    <a href="http://www.thuir.cn/group/msp/" target="_blank">Shaoping Ma</a>, Prof.
-                    <a href="http://www.thuir.cn/group/YQLiu/" target="_blank">Yiqun Liu</a> and Prof.
-                    <a href="http://www.thuir.cn/group/aiqy/" target="_blank">Qingyao Ai</a>.
-                </p>
-                <p>
-                    My research interest lies in algo &amp; infra co-designed <strong>model architectures</strong> for <strong>scalable</strong> <em>parameters, context, and especially intelligence</em>.
-                </p>
-                <p>
-                    <a href="mailto:qiandong.97@qq.com" title="Email"><i class="fas fa-envelope"></i></a>&nbsp;&nbsp;
-                    <a href="https://scholar.google.com/citations?user=m88SZGgAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>&nbsp;&nbsp;
-                    <a href="https://github.com/CSQianDong" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>&nbsp;&nbsp;
-                    <a href="https://www.linkedin.com/in/qian-dong-58b14a23a/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>&nbsp;&nbsp;
-                    <a href="https://x.com/verymakesense" target="_blank" title="Twitter/X">
-                        <svg style="width:16px;height:16px;fill:currentColor;vertical-align:middle;" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                    </a>&nbsp;&nbsp;
-                    <a href="https://www.xiaohongshu.com/user/profile/64d8bdc1000000000100f445" target="_blank" title="Xiaohongshu"><img src="/images/xhs.png" alt="XHS" style="width:16px;height:16px;border-radius:50%;vertical-align:middle;"></a>
-                </p>
-            </div>
+    <section class="t-section reveal" id="about">
+      <h2 class="t-h2"><span class="t-h2__idx">// 01</span> about</h2>
+      <div class="t-prose">
+        <p>
+          I received my Ph.D. in Computer Science and Technology from
+          <a href="https://www.tsinghua.edu.cn/">Tsinghua University</a> in June 2026,
+          where I was a member of <a href="https://ai.thuir.cn/">THUIR</a>. I was
+          fortunate to be advised by Prof.
+          <a href="http://www.thuir.cn/group/msp/">Shaoping Ma</a>, Prof.
+          <a href="http://www.thuir.cn/group/YQLiu/">Yiqun Liu</a>, and Prof.
+          <a href="http://www.thuir.cn/group/aiqy/">Qingyao Ai</a>. My research
+          focuses on efficient, scalable model architectures and the systems that
+          make them practical.
+        </p>
+      </div>
+    </section>
 
-            <!-- Quote -->
-            <div class="quote-section reveal">
-                <p class="quote-text" style="font-family:Georgia,serif;font-style:italic;font-size:1.15rem;margin-bottom:0.3rem;color:var(--global-text-color);">
-                    "Do not go gentle into that good night."</p>
-                <p class="quote-attr" style="font-size:0.85rem;opacity:0.6;color:var(--global-text-color);margin:0;">
-                    — Dylan Thomas</p>
-            </div>
-
-            <!-- News -->
-            <h2 class="section-title reveal">News</h2>
-            <div class="news-table reveal">
-                <table>
-                    <tr><td>Mar 2026</td><td>📄 <a href="https://arxiv.org/abs/2603.12201" target="_blank"><strong>IndexCache</strong></a> is released — A promising improvement attempt on GLM-5 (DSA), accelerating sparse attention via cross-layer index reuse.</td></tr>
-                    <tr><td>Feb 2026</td><td>🚀 <a href="https://www.arxiv.org/abs/2602.15763" target="_blank">GLM-5 Technical Report</a> is released! I am one of the core contributors for model architecture.</td></tr>
-                    <tr><td>Dec 2025</td><td>🚀 GLM-4.7 is released! Check our <a href="https://z.ai/blog/glm-4.7" target="_blank">Blog</a> for details.</td></tr>
-                    <tr><td>Nov 2025</td><td>📄 <strong>SelfRACG</strong> accepted to EMNLP 2025 — Letting LLMs self-express retrieval queries for better code generation in one model arch.</td></tr>
-                    <tr><td>Sep 2025</td><td>🚀 GLM-4.6 is released! Check our <a href="https://z.ai/blog/glm-4.6" target="_blank">Blog</a> for details.</td></tr>
-                    <tr><td>Aug 2025</td><td>🚀 <a href="https://arxiv.org/abs/2508.06471" target="_blank">GLM-4.5 Technical Report</a> is released! I am one of the contributors for exploring sparse attention adaptation in the post-training stage.</td></tr>
-                    <tr><td>Jul 2025</td><td>📄 <strong>Qilin</strong> accepted to SIGIR 2025 — A multimodal IR dataset capturing real APP-level user sessions.</td></tr>
-                    <tr><td>Apr 2025</td><td>📄 <strong>DecoupledRAG</strong> accepted to WWW 2025 — Decoupling context and knowledge via cross-attention for efficient RAG.</td></tr>
-                    <tr><td>Jul 2024</td><td>📄 <strong>RLCF</strong> accepted to SIGIR 2024 — Aligning LLMs for IR through unsupervised contrastive feedback.</td></tr>
-                    <tr><td>Oct 2023</td><td>📄 <strong>I³Retriever</strong> accepted to CIKM 2023 — Incorporating implicit query-document interaction into retrievers via a generative module.</td></tr>
-                    <tr><td>Jul 2023</td><td>📄 <strong>T²Ranking</strong> accepted to SIGIR 2023 — A large-scale Chinese passage ranking benchmark.</td></tr>
-                    <tr><td>Jul 2022</td><td>📄 <strong>KERM</strong> accepted to SIGIR 2022 — Incorporating explicit knowledge into PLMs for passage re-ranking.</td></tr>
-                    <tr><td>Feb 2022</td><td>📄 <strong>DGRe</strong> published in Data Science and Engineering — Disentangled Causal Intervention for BERT-based Ad Hoc Document Ranking.</td></tr>
-                    <tr><td>Jul 2021</td><td>📄 <strong>R-FORMER</strong> accepted to SIGIR 2021 — Modeling Global Consistency Graphs for Entangled Multi-Task Legal Judgment Prediction.</td></tr>
-                    <tr><td>Apr 2021</td><td>📄 <strong>LGRe</strong> accepted to DASFAA 2021 — Refining BERT-based Document Ranking via Latent Graph Recurrent Networks.</td></tr>
-                </table>
-            </div>
-
-            <!-- Selected Publications -->
-            <h2 class="section-title reveal">Selected Publications</h2>
-
-            <h5 style="margin-bottom:1rem;">
-                <a href="https://scholar.google.com/citations?user=m88SZGgAAAAJ&hl=en" target="_blank" style="text-decoration:none;">
-                    <i class="ai ai-google-scholar" style="vertical-align:middle;margin-right:4px;"></i>
-                    <strong>Full Paper List on Google Scholar</strong>
-                </a>
-            </h5>
-
-            <!-- Primary Author -->
-            <div class="pub-section-container">
-                <div class="pub-section-header active" onclick="togglePub('primary')">
-                    <h3><i class="fas fa-star" style="color:var(--global-theme-color);"></i> As the Primary Author</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
-                </div>
-                <div class="pub-section-body active" id="primary">
-                    <ul class="pub-list">
-                        <li><div class="pub-info"><div class="title">SelfRACG: Enabling LLMs to Self-Express and Retrieve for Code Generation</div><div class="authors"><strong>Qian Dong</strong>, Jia Chen, Qingyao Ai, Hongning Wang, Haitao Li, Yi Wu, Yao Hu, Yiqun Liu, Shaoping Ma</div><div class="venue">EMNLP 2025</div><div class="pub-tags"><span class="tag tag-th-a">TH-CPL-A</span><span class="tag tag-ccf-b">CCF-B</span></div><div class="links"><a href="https://www.arxiv.org/abs/2507.19033" target="_blank">Paper</a></div></div></li>
-
-                        <li><div class="pub-info"><div class="title">Qilin: A Multimodal Information Retrieval Dataset with APP-level User Sessions</div><div class="authors">Jia Chen*, <strong>Qian Dong</strong>*, Haitao Li, Xiaohui He, Yan Gao, Shaosheng Cao, Yi Wu, Ping Yang, Chen Xu, Yao Hu, Qingyao Ai, Yiqun Liu <span style="font-size:.75rem">(* Equal Contribution)</span></div><div class="venue">SIGIR 2025</div><div class="pub-tags"><span class="tag tag-th-a">TH-CPL-A</span><span class="tag tag-ccf-a">CCF-A</span></div></div></li>
-
-                        <li><div class="pub-info"><div class="title">DecoupledRAG: An Efficient and Effective Retrieval Augmented Generation Framework via Cross Attention</div><div class="authors"><strong>Qian Dong</strong>, Qingyao Ai, Hongning Wang, Yiding Liu, Haitao Li, Weihang Su, Yiqun Liu, Tat-Seng Chua, Shaoping Ma</div><div class="venue">WWW 2025</div><div class="pub-tags"><span class="tag tag-th-a">TH-CPL-A</span><span class="tag tag-ccf-a">CCF-A</span></div></div></li>
-
-                        <li><div class="pub-info"><div class="title">Unsupervised Large Language Model Alignment for Information Retrieval via Contrastive Feedback</div><div class="authors"><strong>Qian Dong</strong>, Yiding Liu, Qingyao Ai, Zhijing Wu, Haitao Li, Yiqun Liu, Shuaiqiang Wang, Dawei Yin, Shaoping Ma</div><div class="venue">SIGIR 2024</div><div class="pub-tags"><span class="tag tag-th-a">TH-CPL-A</span><span class="tag tag-ccf-a">CCF-A</span></div><div class="links"><a href="https://doi.org/gss8w3" target="_blank">Paper</a></div></div></li>
-
-                        <li><div class="pub-info"><div class="title">T<sup>2</sup>Ranking: A Large-scale Chinese Benchmark for Passage Ranking</div><div class="authors">Xiaohui Xie, <strong>Qian Dong</strong>* (Student First Author), Bingning Wang, Feiyang Lv, Ting Yao, Weinan Gan, Zhijing Wu, Xiangsheng Li, Haitao Li, Yiqun Liu, Jin Ma</div><div class="venue">SIGIR 2023</div><div class="pub-tags"><span class="tag tag-th-a">TH-CPL-A</span><span class="tag tag-ccf-a">CCF-A</span></div><div class="links"><a href="https://doi.org/gsjb5w" target="_blank">Paper</a></div></div></li>
-
-                        <li><div class="pub-info"><div class="title">I<sup>3</sup>Retriever: Incorporating Implicit Interaction in Pre-trained Language Models for Passage Retrieval</div><div class="authors"><strong>Qian Dong</strong>, Yiding Liu, Qingyao Ai, Haitao Li, Shuaiqiang Wang, Yiqun Liu, Dawei Yin, Shaoping Ma</div><div class="venue">CIKM 2023</div><div class="pub-tags"><span class="tag tag-th-b">TH-CPL-B</span><span class="tag tag-ccf-b">CCF-B</span></div><div class="links"><a href="https://doi.org/gs2pcc" target="_blank">Paper</a></div></div></li>
-
-                        <li><div class="pub-info"><div class="title">Incorporating Explicit Knowledge in Pre-trained Language Models for Passage Re-ranking</div><div class="authors"><strong>Qian Dong</strong>, Yiding Liu, Suqi Cheng, Shuaiqiang Wang, Zhicong Cheng, Shuzi Niu, Dawei Yin</div><div class="venue">SIGIR 2022</div><div class="pub-tags"><span class="tag tag-th-a">TH-CPL-A</span><span class="tag tag-ccf-a">CCF-A</span></div><div class="links"><a href="https://doi.org/gsh8px" target="_blank">Paper</a></div></div></li>
-
-                        <li><div class="pub-info"><div class="title">Disentangled Graph Recurrent Network for Document Ranking</div><div class="authors"><strong>Qian Dong</strong>, Shuzi Niu, Tao Yuan, Yucheng Li</div><div class="venue">Data Science and Engineering — DASFAA 2021 Special Issue (JCR-Q1, IF: 7.2)</div><div class="pub-tags"><span class="tag tag-jcr-q1">JCR-Q1</span></div><div class="links"><a href="https://doi.org/gsh8pw" target="_blank">Paper</a></div></div></li>
-
-                        <li><div class="pub-info"><div class="title">Legal Judgment Prediction via Relational Learning</div><div class="authors"><strong>Qian Dong</strong>, Shuzi Niu</div><div class="venue">SIGIR 2021</div><div class="pub-tags"><span class="tag tag-th-a">TH-CPL-A</span><span class="tag tag-ccf-a">CCF-A</span></div><div class="links"><a href="https://doi.org/gq4w8t" target="_blank">Paper</a></div></div></li>
-
-                        <li><div class="pub-info"><div class="title">Latent Graph Recurrent Network for Document Ranking</div><div class="authors"><strong>Qian Dong</strong>, Shuzi Niu</div><div class="venue">DASFAA 2021</div><div class="pub-tags"><span class="tag tag-th-b">TH-CPL-B</span><span class="tag tag-ccf-b">CCF-B</span></div><div class="links"><a href="https://doi.org/gsh8ps" target="_blank">Paper</a></div></div></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Co-author -->
-            <div class="pub-section-container">
-                <div class="pub-section-header" onclick="togglePub('coauthor')">
-                    <h3><i class="fas fa-users" style="color:var(--global-theme-color);"></i> As a Co-author</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
-                </div>
-                <div class="pub-section-body" id="coauthor">
-                    <ul class="pub-list">
-                        <li><div class="pub-info"><div class="title">IndexCache: Accelerating Sparse Attention via Cross-Layer Index Reuse</div><div class="authors">Yushi Bai, <strong>Qian Dong</strong>, Ting Jiang, Xin Lv, Zhengxiao Du, Aohan Zeng, Jie Tang, Juanzi Li</div><div class="venue">arXiv 2026</div><div class="links"><a href="https://arxiv.org/abs/2603.12201" target="_blank">Paper</a></div></div></li>
-
-                        <li><div class="pub-info"><div class="title">CalibraEval: Calibrating Prediction Distribution to Mitigate Selection Bias in LLMs-as-Judges</div><div class="authors">Haitao Li, Junjie Chen, Qingyao Ai, Zhumin Chu, Yujia Zhou, <strong>Qian Dong</strong>, Yiqun Liu</div><div class="venue">ACL 2025</div><div class="pub-tags"><span class="tag tag-ccf-a">CCF-A</span></div></div></li>
-
-                        <li><div class="pub-info"><div class="title">LLMs-as-Judges: A Comprehensive Survey on LLM-based Evaluation Methods</div><div class="authors">Haitao Li, <strong>Qian Dong</strong>, Junjie Chen, Huixue Su, Yujia Zhou, Qingyao Ai, Ziyi Ye, Yiqun Liu</div><div class="venue">Under Review</div></div></li>
-
-                        <li><div class="pub-info"><div class="title">DELTA: Pre-train a Discriminative Encoder for Legal Case Retrieval via Structural Word Alignment</div><div class="authors">Haitao Li, Qingyao Ai, Xinyan Han, Jia Chen, <strong>Qian Dong</strong>, Yiqun Liu, Chong Chen, Qi Tian</div><div class="venue">AAAI 2025</div><div class="pub-tags"><span class="tag tag-ccf-a">CCF-A</span></div></div></li>
-
-                        <li><div class="pub-info"><div class="title">BLADE: Enhancing Black-box Large Language Models with Small Domain-Specific Models</div><div class="authors">Haitao Li, Qingyao Ai, Jia Chen, <strong>Qian Dong</strong>, Zhijing Wu, Yiqun Liu, Chong Chen, Qi Tian</div><div class="venue">AAAI 2025</div><div class="pub-tags"><span class="tag tag-ccf-a">CCF-A</span></div></div></li>
-
-                        <li><div class="pub-info"><div class="title">SAILER: Structure-aware Pre-trained Language Model for Legal Case Retrieval</div><div class="authors">Haitao Li, Qingyao Ai, Jia Chen, <strong>Qian Dong</strong>, Yueyue Wu, Yiqun Liu, Chong Chen, Qi Tian</div><div class="venue">SIGIR 2023</div><div class="pub-tags"><span class="tag tag-ccf-a">CCF-A</span></div><div class="links"><a href="https://doi.org/gsjb5x" target="_blank">Paper</a></div></div></li>
-
-                        <li><div class="pub-info"><div class="title">Layout-aware Webpage Quality Assessment</div><div class="authors">Anfeng Cheng, Yiding Liu, Weibin Li, <strong>Qian Dong</strong>, Shuaiqiang Wang, Zhengjie Huang, Shikun Feng, Zhicong Cheng, Dawei Yin</div><div class="venue">arXiv 2023</div><div class="links"><a href="https://doi.org/gsh8pz" target="_blank">Paper</a></div></div></li>
-
-                        <li><div class="pub-info"><div class="title">Incorporating Social-Aware User Preference for Video Recommendation</div><div class="authors">Xuanji Xiao, Huaqiang Dai, <strong>Qian Dong</strong>, Shuzi Niu, Yuzhen Liu, Pei Liu</div><div class="venue">WISE 2023</div><div class="pub-tags"><span class="tag tag-ccf-c">CCF-C</span></div><div class="links"><a href="https://doi.org/gs2pcb" target="_blank">Paper</a></div></div></li>
-
-                        <li><div class="pub-info"><div class="title">Emotion Recognition Based on Multi-View Body Gestures</div><div class="authors">Zhijuan Shen, Jun Cheng, Xiping Hu, <strong>Qian Dong</strong></div><div class="venue">ICIP 2019</div><div class="pub-tags"><span class="tag tag-ccf-c">CCF-C</span></div><div class="links"><a href="https://doi.org/ghjxdq" target="_blank">Paper</a></div></div></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Education -->
-            <h2 class="section-title reveal">Education</h2>
-            <table class="info-table reveal">
-                <tr><td>2022 –</td><td><strong>Ph.D. Student</strong>, Dept. of Computer Science and Technology, <a href="https://www.tsinghua.edu.cn/" target="_blank">Tsinghua University</a></td></tr>
-                <tr><td>2019 – 2022</td><td><strong>M.Eng.</strong>, <a href="http://www.is.cas.cn/" target="_blank">Institute of Software, Chinese Academy of Sciences</a></td></tr>
-                <tr><td>2015 – 2019</td><td><strong>B.Eng.</strong>, School of Software Engineering, <a href="https://www.scut.edu.cn/" target="_blank">South China University of Technology</a></td></tr>
-            </table>
-
-            <!-- Awards -->
-            <h2 class="section-title reveal">Honors &amp; Awards</h2>
-            <table class="info-table reveal">
-                <tr><td>2021</td><td>National Scholarship (<strong>Top 1%</strong>)</td></tr>
-            </table>
-
-            <!-- More -->
-            <h2 class="section-title reveal">More About Me</h2>
-            <p class="more-text reveal">
-                I'm an enthusiast of a diverse array of craft beers, ranging from crisp wheat beers to robust IPAs and everything in between. I'm always on the lookout for exceptional brews from various corners of the globe. Whether it's the refreshing notes of a Belgian Witbier, the hop-forward complexity of an IPA, or the subtle elegance of a Saison, I relish the opportunity to savor and discover the craftsmanship behind each unique flavor profile! 🍻
-            </p>
-
-            <!-- Social icons -->
-            <div class="social-icons reveal">
-                <a href="mailto:qiandong.97@qq.com" title="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://scholar.google.com/citations?user=m88SZGgAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-                <a href="https://github.com/CSQianDong" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/qian-dong-58b14a23a/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://x.com/verymakesense" target="_blank" title="Twitter/X">
-                    <svg style="width:16px;height:16px;fill:currentColor;" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                </a>
-                <a href="https://www.xiaohongshu.com/user/profile/64d8bdc1000000000100f445" target="_blank" title="Xiaohongshu">
-                    <img src="/images/xhs.png" alt="XHS" style="width:18px;height:18px;border-radius:50%;">
-                </a>
-            </div>
-
-            <div style="text-align:center;margin:1.5rem 0;">
-                <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=J7QANnH4LJYLoOu_V6HTux3g537xFQCL00jK2z4-6jg"></script>
-            </div>
-
+    <section class="t-section reveal" id="research">
+      <h2 class="t-h2"><span class="t-h2__idx">// 02</span> research</h2>
+      <div class="t-grid">
+        <article class="t-card">
+          <span class="t-card__no">01</span>
+          <h3 class="t-card__title">Model Architecture</h3>
+          <p class="t-card__desc">Co-designing algorithms and infrastructure for capable models that remain efficient at scale.</p>
         </article>
-    </div>
-</div>
+        <article class="t-card">
+          <span class="t-card__no">02</span>
+          <h3 class="t-card__title">Efficient Attention</h3>
+          <p class="t-card__desc">Sparse attention, index reuse, and architecture-level techniques for reducing inference cost.</p>
+        </article>
+        <article class="t-card">
+          <span class="t-card__no">03</span>
+          <h3 class="t-card__title">Scalable Context</h3>
+          <p class="t-card__desc">Extending useful context while balancing model quality, memory, throughput, and latency.</p>
+        </article>
+        <article class="t-card">
+          <span class="t-card__no">04</span>
+          <h3 class="t-card__title">Information Retrieval</h3>
+          <p class="t-card__desc">Ranking and retrieval-augmented generation that connect models with the right information.</p>
+        </article>
+      </div>
+    </section>
 
-<footer class="site-footer">
-    <div class="container">
-        Last updated: {{ site.time | date: "%B %d, %Y" }}
-    </div>
-</footer>
+    <section class="t-section reveal" id="news">
+      <h2 class="t-h2"><span class="t-h2__idx">// 03</span> news</h2>
+      <ul class="t-news">
+        <li><span class="t-news__date">2026.06</span><p>I received my <strong>Ph.D. in Computer Science and Technology</strong> from Tsinghua University.</p></li>
+        <li><span class="t-news__date">2026.03</span><p><a href="https://arxiv.org/abs/2603.12201"><strong>IndexCache</strong></a> was released, accelerating sparse attention via cross-layer index reuse.</p></li>
+        <li><span class="t-news__date">2026.02</span><p>The <a href="https://www.arxiv.org/abs/2602.15763">GLM-5 Technical Report</a> was released. I am one of the core contributors to model architecture.</p></li>
+        <li><span class="t-news__date">2025.12</span><p><strong>GLM-4.7</strong> was released. See our <a href="https://z.ai/blog/glm-4.7">blog</a> for details.</p></li>
+        <li><span class="t-news__date">2025.11</span><p><strong>SelfRACG</strong> was accepted to EMNLP 2025, enabling LLMs to self-express retrieval queries for better code generation.</p></li>
+        <li><span class="t-news__date">2025.09</span><p><strong>GLM-4.6</strong> was released. See our <a href="https://z.ai/blog/glm-4.6">blog</a> for details.</p></li>
+        <li><span class="t-news__date">2025.08</span><p>The <a href="https://arxiv.org/abs/2508.06471">GLM-4.5 Technical Report</a> was released. I contributed to sparse-attention adaptation during post-training.</p></li>
+        <li><span class="t-news__date">2025.07</span><p><strong>Qilin</strong> was accepted to SIGIR 2025, introducing a multimodal IR dataset with app-level user sessions.</p></li>
+        <li><span class="t-news__date">2025.04</span><p><strong>DecoupledRAG</strong> was accepted to WWW 2025, decoupling context and knowledge via cross-attention for efficient RAG.</p></li>
+        <li><span class="t-news__date">2024.07</span><p><strong>RLCF</strong> was accepted to SIGIR 2024, aligning LLMs for information retrieval through unsupervised contrastive feedback.</p></li>
+        <li><span class="t-news__date">2023.10</span><p><strong>I³Retriever</strong> was accepted to CIKM 2023, incorporating implicit query-document interaction into retrievers.</p></li>
+        <li><span class="t-news__date">2023.07</span><p><strong>T²Ranking</strong> was accepted to SIGIR 2023 as a large-scale Chinese passage-ranking benchmark.</p></li>
+        <li><span class="t-news__date">2022.07</span><p><strong>KERM</strong> was accepted to SIGIR 2022, incorporating explicit knowledge into pre-trained models for passage re-ranking.</p></li>
+        <li><span class="t-news__date">2022.02</span><p><strong>DGRe</strong> was published in Data Science and Engineering.</p></li>
+        <li><span class="t-news__date">2021.07</span><p><strong>R-FORMER</strong> was accepted to SIGIR 2021.</p></li>
+        <li><span class="t-news__date">2021.04</span><p><strong>LGRe</strong> was accepted to DASFAA 2021.</p></li>
+      </ul>
+    </section>
 
-<!-- Back to top button -->
-<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
-    <i class="fas fa-arrow-up"></i>
-</button>
+    <section class="t-section reveal" id="publications">
+      <h2 class="t-h2"><span class="t-h2__idx">// 04</span> publications</h2>
+      <div class="t-callout">
+        <div class="t-callout__text">
+          <h3>Full publication list on Google Scholar</h3>
+          <p>Peer-reviewed work across model architecture, retrieval, RAG, and language models.</p>
+        </div>
+        <a class="t-btn" href="https://scholar.google.com/citations?user=m88SZGgAAAAJ&amp;hl=en">→ google scholar</a>
+      </div>
 
-<!-- Dify Chatbot -->
-<script>
- window.difyChatbotConfig = { token: '6CoM85G6spngdgsq' };
-</script>
-<script src="https://udify.app/embed.min.js" id="6CoM85G6spngdgsq" defer></script>
-<style>
-  #dify-chatbot-bubble-button { background-color: #4a6fa5 !important; }
-  #dify-chatbot-bubble-window { width: 24rem !important; height: 40rem !important; }
-</style>
+      <div class="t-pub-groups">
+        <details class="t-pub-group">
+          <summary>selected papers · primary author (10)</summary>
+          <ul class="t-pub-list">
+            <li class="t-pub">
+              <h3 class="t-pub__title">SelfRACG: Enabling LLMs to Self-Express and Retrieve for Code Generation</h3>
+              <p class="t-pub__authors"><strong>Qian Dong</strong>, Jia Chen, Qingyao Ai, Hongning Wang, Haitao Li, Yi Wu, Yao Hu, Yiqun Liu, Shaoping Ma</p>
+              <p class="t-pub__meta"><span>EMNLP 2025</span><span class="t-badge">TH-CPL-A</span><span class="t-badge">CCF-B</span><a href="https://www.arxiv.org/abs/2507.19033">paper ↗</a></p>
+            </li>
+            <li class="t-pub">
+              <h3 class="t-pub__title">Qilin: A Multimodal Information Retrieval Dataset with APP-level User Sessions</h3>
+              <p class="t-pub__authors">Jia Chen*, <strong>Qian Dong</strong>*, Haitao Li, Xiaohui He, Yan Gao, Shaosheng Cao, Yi Wu, Ping Yang, Chen Xu, Yao Hu, Qingyao Ai, Yiqun Liu (* equal contribution)</p>
+              <p class="t-pub__meta"><span>SIGIR 2025</span><span class="t-badge">TH-CPL-A</span><span class="t-badge">CCF-A</span></p>
+            </li>
+            <li class="t-pub">
+              <h3 class="t-pub__title">DecoupledRAG: An Efficient and Effective Retrieval Augmented Generation Framework via Cross Attention</h3>
+              <p class="t-pub__authors"><strong>Qian Dong</strong>, Qingyao Ai, Hongning Wang, Yiding Liu, Haitao Li, Weihang Su, Yiqun Liu, Tat-Seng Chua, Shaoping Ma</p>
+              <p class="t-pub__meta"><span>WWW 2025</span><span class="t-badge">TH-CPL-A</span><span class="t-badge">CCF-A</span></p>
+            </li>
+            <li class="t-pub">
+              <h3 class="t-pub__title">Unsupervised Large Language Model Alignment for Information Retrieval via Contrastive Feedback</h3>
+              <p class="t-pub__authors"><strong>Qian Dong</strong>, Yiding Liu, Qingyao Ai, Zhijing Wu, Haitao Li, Yiqun Liu, Shuaiqiang Wang, Dawei Yin, Shaoping Ma</p>
+              <p class="t-pub__meta"><span>SIGIR 2024</span><span class="t-badge">TH-CPL-A</span><span class="t-badge">CCF-A</span><a href="https://doi.org/gss8w3">paper ↗</a></p>
+            </li>
+            <li class="t-pub">
+              <h3 class="t-pub__title">T²Ranking: A Large-scale Chinese Benchmark for Passage Ranking</h3>
+              <p class="t-pub__authors">Xiaohui Xie, <strong>Qian Dong</strong>* (student first author), Bingning Wang, Feiyang Lv, Ting Yao, Weinan Gan, Zhijing Wu, Xiangsheng Li, Haitao Li, Yiqun Liu, Jin Ma</p>
+              <p class="t-pub__meta"><span>SIGIR 2023</span><span class="t-badge">TH-CPL-A</span><span class="t-badge">CCF-A</span><a href="https://doi.org/gsjb5w">paper ↗</a></p>
+            </li>
+            <li class="t-pub">
+              <h3 class="t-pub__title">I³Retriever: Incorporating Implicit Interaction in Pre-trained Language Models for Passage Retrieval</h3>
+              <p class="t-pub__authors"><strong>Qian Dong</strong>, Yiding Liu, Qingyao Ai, Haitao Li, Shuaiqiang Wang, Yiqun Liu, Dawei Yin, Shaoping Ma</p>
+              <p class="t-pub__meta"><span>CIKM 2023</span><span class="t-badge">TH-CPL-B</span><span class="t-badge">CCF-B</span><a href="https://doi.org/gs2pcc">paper ↗</a></p>
+            </li>
+            <li class="t-pub">
+              <h3 class="t-pub__title">Incorporating Explicit Knowledge in Pre-trained Language Models for Passage Re-ranking</h3>
+              <p class="t-pub__authors"><strong>Qian Dong</strong>, Yiding Liu, Suqi Cheng, Shuaiqiang Wang, Zhicong Cheng, Shuzi Niu, Dawei Yin</p>
+              <p class="t-pub__meta"><span>SIGIR 2022</span><span class="t-badge">TH-CPL-A</span><span class="t-badge">CCF-A</span><a href="https://doi.org/gsh8px">paper ↗</a></p>
+            </li>
+            <li class="t-pub">
+              <h3 class="t-pub__title">Disentangled Graph Recurrent Network for Document Ranking</h3>
+              <p class="t-pub__authors"><strong>Qian Dong</strong>, Shuzi Niu, Tao Yuan, Yucheng Li</p>
+              <p class="t-pub__meta"><span>Data Science and Engineering</span><span class="t-badge">JCR-Q1</span><a href="https://doi.org/gsh8pw">paper ↗</a></p>
+            </li>
+            <li class="t-pub">
+              <h3 class="t-pub__title">Legal Judgment Prediction via Relational Learning</h3>
+              <p class="t-pub__authors"><strong>Qian Dong</strong>, Shuzi Niu</p>
+              <p class="t-pub__meta"><span>SIGIR 2021</span><span class="t-badge">TH-CPL-A</span><span class="t-badge">CCF-A</span><a href="https://doi.org/gq4w8t">paper ↗</a></p>
+            </li>
+            <li class="t-pub">
+              <h3 class="t-pub__title">Latent Graph Recurrent Network for Document Ranking</h3>
+              <p class="t-pub__authors"><strong>Qian Dong</strong>, Shuzi Niu</p>
+              <p class="t-pub__meta"><span>DASFAA 2021</span><span class="t-badge">TH-CPL-B</span><span class="t-badge">CCF-B</span><a href="https://doi.org/gsh8ps">paper ↗</a></p>
+            </li>
+          </ul>
+        </details>
 
-<script>
-// Theme toggle
-function toggleTheme() {
-    var html = document.documentElement;
-    var btn = document.querySelector('.theme-toggle i');
-    if (html.getAttribute('data-theme') === 'dark') {
-        html.removeAttribute('data-theme');
-        btn.className = 'fas fa-moon';
-        localStorage.setItem('theme', 'light');
-    } else {
-        html.setAttribute('data-theme', 'dark');
-        btn.className = 'fas fa-sun';
-        localStorage.setItem('theme', 'dark');
-    }
-}
+        <details class="t-pub-group">
+          <summary>selected papers · co-author (9)</summary>
+          <ul class="t-pub-list">
+            <li class="t-pub">
+              <h3 class="t-pub__title">IndexCache: Accelerating Sparse Attention via Cross-Layer Index Reuse</h3>
+              <p class="t-pub__authors">Yushi Bai, <strong>Qian Dong</strong>, Ting Jiang, Xin Lv, Zhengxiao Du, Aohan Zeng, Jie Tang, Juanzi Li</p>
+              <p class="t-pub__meta"><span>arXiv 2026</span><a href="https://arxiv.org/abs/2603.12201">paper ↗</a></p>
+            </li>
+            <li class="t-pub">
+              <h3 class="t-pub__title">CalibraEval: Calibrating Prediction Distribution to Mitigate Selection Bias in LLMs-as-Judges</h3>
+              <p class="t-pub__authors">Haitao Li, Junjie Chen, Qingyao Ai, Zhumin Chu, Yujia Zhou, <strong>Qian Dong</strong>, Yiqun Liu</p>
+              <p class="t-pub__meta"><span>ACL 2025</span><span class="t-badge">CCF-A</span></p>
+            </li>
+            <li class="t-pub">
+              <h3 class="t-pub__title">LLMs-as-Judges: A Comprehensive Survey on LLM-based Evaluation Methods</h3>
+              <p class="t-pub__authors">Haitao Li, <strong>Qian Dong</strong>, Junjie Chen, Huixue Su, Yujia Zhou, Qingyao Ai, Ziyi Ye, Yiqun Liu</p>
+              <p class="t-pub__meta"><span>under review</span></p>
+            </li>
+            <li class="t-pub">
+              <h3 class="t-pub__title">DELTA: Pre-train a Discriminative Encoder for Legal Case Retrieval via Structural Word Alignment</h3>
+              <p class="t-pub__authors">Haitao Li, Qingyao Ai, Xinyan Han, Jia Chen, <strong>Qian Dong</strong>, Yiqun Liu, Chong Chen, Qi Tian</p>
+              <p class="t-pub__meta"><span>AAAI 2025</span><span class="t-badge">CCF-A</span></p>
+            </li>
+            <li class="t-pub">
+              <h3 class="t-pub__title">BLADE: Enhancing Black-box Large Language Models with Small Domain-Specific Models</h3>
+              <p class="t-pub__authors">Haitao Li, Qingyao Ai, Jia Chen, <strong>Qian Dong</strong>, Zhijing Wu, Yiqun Liu, Chong Chen, Qi Tian</p>
+              <p class="t-pub__meta"><span>AAAI 2025</span><span class="t-badge">CCF-A</span></p>
+            </li>
+            <li class="t-pub">
+              <h3 class="t-pub__title">SAILER: Structure-aware Pre-trained Language Model for Legal Case Retrieval</h3>
+              <p class="t-pub__authors">Haitao Li, Qingyao Ai, Jia Chen, <strong>Qian Dong</strong>, Yueyue Wu, Yiqun Liu, Chong Chen, Qi Tian</p>
+              <p class="t-pub__meta"><span>SIGIR 2023</span><span class="t-badge">CCF-A</span><a href="https://doi.org/gsjb5x">paper ↗</a></p>
+            </li>
+            <li class="t-pub">
+              <h3 class="t-pub__title">Layout-aware Webpage Quality Assessment</h3>
+              <p class="t-pub__authors">Anfeng Cheng, Yiding Liu, Weibin Li, <strong>Qian Dong</strong>, Shuaiqiang Wang, Zhengjie Huang, Shikun Feng, Zhicong Cheng, Dawei Yin</p>
+              <p class="t-pub__meta"><span>arXiv 2023</span><a href="https://doi.org/gsh8pz">paper ↗</a></p>
+            </li>
+            <li class="t-pub">
+              <h3 class="t-pub__title">Incorporating Social-Aware User Preference for Video Recommendation</h3>
+              <p class="t-pub__authors">Xuanji Xiao, Huaqiang Dai, <strong>Qian Dong</strong>, Shuzi Niu, Yuzhen Liu, Pei Liu</p>
+              <p class="t-pub__meta"><span>WISE 2023</span><span class="t-badge">CCF-C</span><a href="https://doi.org/gs2pcb">paper ↗</a></p>
+            </li>
+            <li class="t-pub">
+              <h3 class="t-pub__title">Emotion Recognition Based on Multi-View Body Gestures</h3>
+              <p class="t-pub__authors">Zhijuan Shen, Jun Cheng, Xiping Hu, <strong>Qian Dong</strong></p>
+              <p class="t-pub__meta"><span>ICIP 2019</span><span class="t-badge">CCF-C</span><a href="https://doi.org/ghjxdq">paper ↗</a></p>
+            </li>
+          </ul>
+        </details>
+      </div>
+    </section>
 
-// Load saved theme
-(function() {
-    var saved = localStorage.getItem('theme');
-    if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        document.addEventListener('DOMContentLoaded', function() {
-            var btn = document.querySelector('.theme-toggle i');
-            if (btn) btn.className = 'fas fa-sun';
-        });
-    }
-})();
+    <section class="t-section reveal" id="education">
+      <h2 class="t-h2"><span class="t-h2__idx">// 05</span> education</h2>
+      <ul class="t-log">
+        <li class="t-log__item">
+          <span class="t-log__date">2022 — 2026</span>
+          <div>
+            <span class="t-log__org">Tsinghua University</span>
+            <span class="t-log__role">Ph.D.</span>
+            <p>Computer Science and Technology · THUIR</p>
+          </div>
+        </li>
+        <li class="t-log__item">
+          <span class="t-log__date">2019 — 2022</span>
+          <div>
+            <span class="t-log__org">Chinese Academy of Sciences</span>
+            <span class="t-log__role">M.Eng.</span>
+            <p>Institute of Software</p>
+          </div>
+        </li>
+        <li class="t-log__item">
+          <span class="t-log__date">2015 — 2019</span>
+          <div>
+            <span class="t-log__org">South China University of Technology <span class="t-dim">SCUT</span></span>
+            <span class="t-log__role">B.Eng.</span>
+            <p>Software Engineering</p>
+          </div>
+        </li>
+      </ul>
+    </section>
 
-function togglePub(id) {
-    var body = document.getElementById(id);
-    var header = body.previousElementSibling;
-    body.classList.toggle('active');
-    header.classList.toggle('active');
-}
+    <section class="t-section reveal" id="honors">
+      <h2 class="t-h2"><span class="t-h2__idx">// 06</span> honors &amp; awards</h2>
+      <div class="t-tags">
+        <span class="t-tag t-tag--star">National Scholarship · Top 1% · 2021</span>
+      </div>
+    </section>
 
-// Scroll reveal
-document.addEventListener('DOMContentLoaded', function() {
-    var reveals = document.querySelectorAll('.reveal');
-    var observer = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    <section class="t-section reveal" id="more">
+      <h2 class="t-h2"><span class="t-h2__idx">// 07</span> beyond research</h2>
+      <p class="t-note">
+        Away from models and systems, I enjoy exploring <strong>craft beer</strong> —
+        from crisp wheat beers and hop-forward IPAs to Belgian witbiers and saisons. 🍻
+      </p>
+      <div class="t-map">
+        <script id="clustrmaps" src="https://cdn.clustrmaps.com/map_v2.js?cl=ffffff&amp;w=a&amp;t=n&amp;d=J7QANnH4LJYLoOu_V6HTux3g537xFQCL00jK2z4-6jg"></script>
+      </div>
+    </section>
+  </main>
 
-    reveals.forEach(function(el) { observer.observe(el); });
+  <footer class="t-footer">
+    <span>© {{ site.time | date: "%Y" }} Qian Dong · </span>
+    <span>Last updated {{ site.time | date: "%B %d, %Y" }}</span>
+  </footer>
 
-    // Back to top button
-    var backToTop = document.getElementById('backToTop');
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 400) {
-            backToTop.classList.add('visible');
-        } else {
-            backToTop.classList.remove('visible');
-        }
-    });
-});
-</script>
-
+  <script>
+    window.difyChatbotConfig = { token: "6CoM85G6spngdgsq" };
+  </script>
+  <script src="https://udify.app/embed.min.js" id="6CoM85G6spngdgsq" defer></script>
+  <script src="{{ '/assets/js/home.js' | relative_url }}" defer></script>
 </body>
 </html>
+{:/nomarkdown}

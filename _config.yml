@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "THUIR"
+title                    : "Qian Dong (董骞)"
 title_separator          : "-"
 name                     : &name "Qian Dong"
-description              : &description "personal description"
+description              : &description "Qian Dong — Ph.D. from Tsinghua University researching scalable model architectures."
 url                      : https://CSQianDong.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "CSQianDong/CSQianDong.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Qian Dong"
   avatar           : "profile.jpg"
-  bio              : "Ph.D. student"
+  bio              : "Ph.D. in Computer Science and Technology"
   location         : "Beijing, China"
   employer         :
   googlescholar    : "https://scholar.google.com/citations?user=m88SZGgAAAAJ&hl=en"
@@ -253,7 +253,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Shanghai # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
