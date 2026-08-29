@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Qian Dong 董骞"
-excerpt: "Qian Dong — Ph.D. from Tsinghua University working on scalable model architectures."
+excerpt: "Qian Dong — Research Engineer on the Scaling Team at Tencent HY, working on model architecture."
 author_profile: false
 layout: bare
 header: false
@@ -19,7 +19,7 @@ redirect_from:
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Qian Dong">
-  <meta name="description" content="Qian Dong — Ph.D. from Tsinghua University researching scalable model architectures, efficient attention, and information retrieval.">
+  <meta name="description" content="Qian Dong — Research Engineer on the Scaling Team at Tencent HY, working on scalable model architectures.">
   <meta name="theme-color" content="#0b0d10">
   <title>Qian Dong 董骞</title>
   <link rel="icon" href="{{ '/images/icon.png' | relative_url }}" type="image/png">
@@ -38,7 +38,6 @@ redirect_from:
         <a href="#research">research</a>
         <a href="#news">news</a>
         <a href="#publications">publications</a>
-        <a href="#education">education</a>
         <a class="t-utility" href="{{ '/submit/' | relative_url }}">submit</a>
         <a class="t-utility" href="{{ '/dm/' | relative_url }}">dm</a>
         <a class="t-lang" href="{{ '/zh/' | relative_url }}">中文</a>
@@ -51,13 +50,13 @@ redirect_from:
       <p class="t-hero__path">~/qian-dong<span> $</span></p>
       <h1 class="t-hero__name">Qian Dong <span>董骞</span></h1>
       <p class="t-hero__line">
-        <span class="t-prompt">&gt;</span><span id="hero-rotator" data-phrases='["Ph.D. @ Tsinghua","Model Architecture","Scalable Intelligence"]'>Ph.D. @ Tsinghua</span><span class="t-cursor">_</span>
+        <span class="t-prompt">&gt;</span><span id="hero-rotator" data-phrases='["Research Engineer @ Tencent HY","Model Architecture","Scalable Intelligence"]'>Research Engineer @ Tencent HY</span><span class="t-cursor">_</span>
       </p>
       <p class="t-hero__bio">
-        Ph.D. in Computer Science and Technology from Tsinghua University
-        (<a href="https://ai.thuir.cn/">THUIR</a>). I work on
-        <strong>algo &amp; infra co-designed model architectures</strong> for scalable
-        parameters, context, and especially intelligence.
+        Research Engineer on the Scaling Team at
+        <a href="https://hy.tencent.ai/">Tencent HY</a>, working on
+        <strong>model architecture</strong>. I received my Ph.D. in Computer Science
+        and Technology from Tsinghua University.
       </p>
       <nav class="t-hero__links" aria-label="Profile links">
         <a class="t-link" href="https://scholar.google.com/citations?user=m88SZGgAAAAJ&amp;hl=en">scholar</a>
@@ -73,10 +72,12 @@ redirect_from:
       <h2 class="t-h2"><span class="t-h2__idx">// 01</span> about</h2>
       <div class="t-prose">
         <p>
+          I am a Research Engineer on the Scaling Team at
+          <a href="https://hy.tencent.ai/">Tencent HY</a>, where I work on model
+          architecture.
           I received my Ph.D. in Computer Science and Technology from
-          <a href="https://www.tsinghua.edu.cn/">Tsinghua University</a> in June 2026,
-          where I was a member of <a href="https://ai.thuir.cn/">THUIR</a>. I was
-          fortunate to be advised by Prof.
+          <a href="https://www.tsinghua.edu.cn/">Tsinghua University</a> in June 2026.
+          I was fortunate to be advised by Prof.
           <a href="http://www.thuir.cn/group/msp/">Shaoping Ma</a>, Prof.
           <a href="http://www.thuir.cn/group/YQLiu/">Yiqun Liu</a>, and Prof.
           <a href="http://www.thuir.cn/group/aiqy/">Qingyao Ai</a>. My research
@@ -97,7 +98,7 @@ redirect_from:
         <article class="t-card">
           <span class="t-card__no">02</span>
           <h3 class="t-card__title">Efficient Attention</h3>
-          <p class="t-card__desc">Sparse attention, index reuse, and architecture-level techniques for reducing inference cost.</p>
+          <p class="t-card__desc">Sparse attention, linear attention, and architecture-level techniques for reducing inference cost.</p>
         </article>
         <article class="t-card">
           <span class="t-card__no">03</span>
@@ -106,8 +107,8 @@ redirect_from:
         </article>
         <article class="t-card">
           <span class="t-card__no">04</span>
-          <h3 class="t-card__title">Information Retrieval</h3>
-          <p class="t-card__desc">Ranking and retrieval-augmented generation that connect models with the right information.</p>
+          <h3 class="t-card__title">Low-Precision Training</h3>
+          <p class="t-card__desc">Developing stable low-precision methods that reduce training cost while preserving model quality at scale.</p>
         </article>
       </div>
     </section>
@@ -115,22 +116,13 @@ redirect_from:
     <section class="t-section reveal" id="news">
       <h2 class="t-h2"><span class="t-h2__idx">// 03</span> news</h2>
       <ul class="t-news">
+        <li><span class="t-news__date">2026.08</span><p><a href="https://hy.tencent.ai/research/hy4-preview"><strong>Hy4 preview</strong></a> was released. As one of its model-architecture contributors, I helped bring our research <a href="https://arxiv.org/abs/2603.12201"><strong>IndexCache</strong></a> into production in Hy4, enabling a cost-efficient 1M-token context.</p></li>
         <li><span class="t-news__date">2026.06</span><p>I received my <strong>Ph.D. in Computer Science and Technology</strong> from Tsinghua University.</p></li>
         <li><span class="t-news__date">2026.03</span><p><a href="https://arxiv.org/abs/2603.12201"><strong>IndexCache</strong></a> was released, accelerating sparse attention via cross-layer index reuse.</p></li>
         <li><span class="t-news__date">2026.02</span><p>The <a href="https://www.arxiv.org/abs/2602.15763">GLM-5 Technical Report</a> was released. I am one of the core contributors to model architecture.</p></li>
         <li><span class="t-news__date">2025.12</span><p><strong>GLM-4.7</strong> was released. See our <a href="https://z.ai/blog/glm-4.7">blog</a> for details.</p></li>
-        <li><span class="t-news__date">2025.11</span><p><strong>SelfRACG</strong> was accepted to EMNLP 2025, enabling LLMs to self-express retrieval queries for better code generation.</p></li>
         <li><span class="t-news__date">2025.09</span><p><strong>GLM-4.6</strong> was released. See our <a href="https://z.ai/blog/glm-4.6">blog</a> for details.</p></li>
         <li><span class="t-news__date">2025.08</span><p>The <a href="https://arxiv.org/abs/2508.06471">GLM-4.5 Technical Report</a> was released. I contributed to sparse-attention adaptation during post-training.</p></li>
-        <li><span class="t-news__date">2025.07</span><p><strong>Qilin</strong> was accepted to SIGIR 2025, introducing a multimodal IR dataset with app-level user sessions.</p></li>
-        <li><span class="t-news__date">2025.04</span><p><strong>DecoupledRAG</strong> was accepted to WWW 2025, decoupling context and knowledge via cross-attention for efficient RAG.</p></li>
-        <li><span class="t-news__date">2024.07</span><p><strong>RLCF</strong> was accepted to SIGIR 2024, aligning LLMs for information retrieval through unsupervised contrastive feedback.</p></li>
-        <li><span class="t-news__date">2023.10</span><p><strong>I³Retriever</strong> was accepted to CIKM 2023, incorporating implicit query-document interaction into retrievers.</p></li>
-        <li><span class="t-news__date">2023.07</span><p><strong>T²Ranking</strong> was accepted to SIGIR 2023 as a large-scale Chinese passage-ranking benchmark.</p></li>
-        <li><span class="t-news__date">2022.07</span><p><strong>KERM</strong> was accepted to SIGIR 2022, incorporating explicit knowledge into pre-trained models for passage re-ranking.</p></li>
-        <li><span class="t-news__date">2022.02</span><p><strong>DGRe</strong> was published in Data Science and Engineering.</p></li>
-        <li><span class="t-news__date">2021.07</span><p><strong>R-FORMER</strong> was accepted to SIGIR 2021.</p></li>
-        <li><span class="t-news__date">2021.04</span><p><strong>LGRe</strong> was accepted to DASFAA 2021.</p></li>
       </ul>
     </section>
 
@@ -254,45 +246,8 @@ redirect_from:
       </div>
     </section>
 
-    <section class="t-section reveal" id="education">
-      <h2 class="t-h2"><span class="t-h2__idx">// 05</span> education</h2>
-      <ul class="t-log">
-        <li class="t-log__item">
-          <span class="t-log__date">2022 — 2026</span>
-          <div>
-            <span class="t-log__org">Tsinghua University</span>
-            <span class="t-log__role">Ph.D.</span>
-            <p>Computer Science and Technology · THUIR</p>
-          </div>
-        </li>
-        <li class="t-log__item">
-          <span class="t-log__date">2019 — 2022</span>
-          <div>
-            <span class="t-log__org">Chinese Academy of Sciences</span>
-            <span class="t-log__role">M.Eng.</span>
-            <p>Institute of Software</p>
-          </div>
-        </li>
-        <li class="t-log__item">
-          <span class="t-log__date">2015 — 2019</span>
-          <div>
-            <span class="t-log__org">South China University of Technology <span class="t-dim">SCUT</span></span>
-            <span class="t-log__role">B.Eng.</span>
-            <p>Software Engineering</p>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <section class="t-section reveal" id="honors">
-      <h2 class="t-h2"><span class="t-h2__idx">// 06</span> honors &amp; awards</h2>
-      <div class="t-tags">
-        <span class="t-tag t-tag--star">National Scholarship · Top 1% · 2021</span>
-      </div>
-    </section>
-
     <section class="t-section reveal" id="more">
-      <h2 class="t-h2"><span class="t-h2__idx">// 07</span> beyond research</h2>
+      <h2 class="t-h2"><span class="t-h2__idx">// 05</span> beyond research</h2>
       <p class="t-note">
         Away from models and systems, I enjoy exploring <strong>craft beer</strong> —
         from crisp wheat beers and hop-forward IPAs to Belgian witbiers and saisons. 🍻
