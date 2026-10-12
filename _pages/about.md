@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Qian Dong 董骞"
-excerpt: "Qian Dong — Research Engineer on the Scaling Team at Tencent HY, working on model architecture."
+excerpt: "Qian Dong — Research Engineer on the Pretraining Team at Tencent HY, working on model architecture."
 author_profile: false
 layout: bare
 header: false
@@ -19,60 +19,78 @@ redirect_from:
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Qian Dong">
-  <meta name="description" content="Qian Dong — Research Engineer on the Scaling Team at Tencent HY, working on scalable model architectures.">
-  <meta name="theme-color" content="#0b0d10">
+  <meta name="description" content="Qian Dong — Research Engineer on the Pretraining Team at Tencent HY, working on scalable model architectures.">
+  <meta name="theme-color" content="#f7f8f2">
   <title>Qian Dong 董骞</title>
   <link rel="icon" href="{{ '/images/icon.png' | relative_url }}" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 </head>
 <body>
   <a class="t-skip" href="#main-content">Skip to content</a>
 
   <header class="t-nav">
     <nav class="t-nav__inner" aria-label="Primary navigation">
-      <a class="t-brand" href="{{ '/' | relative_url }}">qian.dong</a>
-      <div class="t-nav__links">
-        <a href="#research">research</a>
-        <a href="#news">news</a>
-        <a href="#publications">publications</a>
-        <a class="t-utility" href="{{ '/submit/' | relative_url }}">submit</a>
-        <a class="t-utility" href="{{ '/dm/' | relative_url }}">dm</a>
-        <a class="t-lang" href="{{ '/zh/' | relative_url }}">中文</a>
+      <a class="t-brand" href="{{ '/' | relative_url }}">
+        <span class="t-brand__mark" aria-hidden="true">qd.</span>
+        <span>Qian Dong<span class="t-brand__divider"> / </span><span lang="zh">董骞</span></span>
+      </a>
+      <button class="t-menu-toggle" type="button" aria-controls="primary-links" aria-expanded="false" data-label-open="Menu" data-label-close="Close">
+        <span class="t-menu-toggle__label">Menu</span><span class="t-menu-toggle__icon" aria-hidden="true"></span>
+      </button>
+      <div class="t-nav__links" id="primary-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a class="t-lang" href="{{ '/zh/' | relative_url }}" lang="zh" hreflang="zh-CN">中文 <span aria-hidden="true">↗</span></a>
       </div>
     </nav>
   </header>
 
-  <main class="t-main" id="main-content">
+  <main class="t-main" id="main-content" tabindex="-1">
     <header class="t-hero">
-      <p class="t-hero__path">~/qian-dong<span> $</span></p>
-      <h1 class="t-hero__name">Qian Dong <span>董骞</span></h1>
-      <p class="t-hero__line">
-        <span class="t-prompt">&gt;</span><span id="hero-rotator" data-phrases='["Research Engineer @ Tencent HY","Model Architecture","Scalable Intelligence"]'>Research Engineer @ Tencent HY</span><span class="t-cursor">_</span>
-      </p>
-      <p class="t-hero__bio">
-        Research Engineer on the Scaling Team at
-        <a href="https://hy.tencent.ai/">Tencent HY</a>, working on
-        <strong>model architecture</strong>. I received my Ph.D. in Computer Science
-        and Technology from Tsinghua University.
-      </p>
-      <nav class="t-hero__links" aria-label="Profile links">
-        <a class="t-link" href="https://scholar.google.com/citations?user=m88SZGgAAAAJ&amp;hl=en">scholar</a>
-        <a class="t-link" href="https://github.com/CSQianDong">github</a>
-        <a class="t-link" href="mailto:qiandong.97@qq.com">email</a>
-        <a class="t-link" href="https://www.linkedin.com/in/qian-dong-58b14a23a/">linkedin</a>
-        <a class="t-link" href="https://x.com/verymakesense">x</a>
-        <a class="t-link" href="https://www.xiaohongshu.com/user/profile/64d8bdc1000000000100f445">xiaohongshu</a>
-      </nav>
+      <div class="t-hero__copy">
+        <p class="t-eyebrow"><span class="t-status-dot" aria-hidden="true"></span> RESEARCH ENGINEER · TENCENT HY</p>
+        <h1 class="t-hero__name">Qian Dong<span lang="zh">董骞</span></h1>
+        <p class="t-hero__focus">Efficient models.<br><em>Scalable intelligence.</em></p>
+        <p class="t-hero__bio">I work on model architecture at <a href="https://hy.tencent.ai/">Tencent HY</a>'s Pretraining Team, exploring how to make capable models more efficient at scale. Ph.D. in Computer Science, Tsinghua University.</p>
+        <nav class="t-hero__actions" aria-label="Primary profile links">
+          <a class="t-button t-button--primary" href="https://scholar.google.com/citations?user=m88SZGgAAAAJ&amp;hl=en">Google Scholar <span aria-hidden="true">↗</span></a>
+          <a class="t-button t-button--secondary" href="mailto:qiandong.97@qq.com">Get in touch <span aria-hidden="true">↗</span></a>
+          <a class="t-github" href="https://github.com/CSQianDong">GitHub <span aria-hidden="true">↗</span></a>
+        </nav>
+        <nav class="t-social" aria-label="Social profiles">
+          <a href="https://www.linkedin.com/in/qian-dong-58b14a23a/">LinkedIn</a>
+          <span aria-hidden="true">/</span><a href="https://x.com/verymakesense">X (Twitter)</a>
+          <span aria-hidden="true">/</span><a href="https://www.xiaohongshu.com/user/profile/64d8bdc1000000000100f445">Xiaohongshu</a>
+        </nav>
+      </div>
+      <figure class="t-portrait">
+        <div class="t-portrait__frame"><img src="{{ '/images/profile-cartoon.jpg' | relative_url }}" alt="Cartoon avatar of Qian Dong" width="720" height="720" fetchpriority="high"></div>
+        <figcaption><span class="t-portrait__location">BEIJING, CHINA</span><span>Tsinghua Ph.D. · 2026</span></figcaption>
+        <span class="t-portrait__annotation" aria-hidden="true">RESEARCH / ENGINEERING</span>
+      </figure>
     </header>
 
-    <section class="t-section reveal" id="about">
-      <h2 class="t-h2"><span class="t-h2__idx">// 01</span> about</h2>
+    <a class="t-latest" href="#news">
+      <span class="t-latest__label"><span class="t-status-dot" aria-hidden="true"></span> LATEST <time datetime="2026-08">2026.08</time></span>
+      <span class="t-latest__text">Hy4 preview is here. Bringing IndexCache to 1M-token context.</span>
+      <span class="t-latest__arrow" aria-hidden="true">↗</span>
+    </a>
+
+    <section class="t-section" id="about" aria-labelledby="heading-about">
+      <div class="t-section__heading">
+        <p class="t-section__index">01 / ABOUT</p>
+        <h2 id="heading-about">A little about me</h2>
+        <p class="t-section__caption">From research to real-world systems.</p>
+      </div>
+      <div class="t-section__body">
       <div class="t-prose">
         <p>
-          I am a Research Engineer on the Scaling Team at
+          I am a Research Engineer on the Pretraining Team at
           <a href="https://hy.tencent.ai/">Tencent HY</a>, where I work on model
           architecture.
           I received my Ph.D. in Computer Science and Technology from
@@ -85,60 +103,97 @@ redirect_from:
           make them practical.
         </p>
       </div>
+      </div>
     </section>
 
-    <section class="t-section reveal" id="research">
-      <h2 class="t-h2"><span class="t-h2__idx">// 02</span> research</h2>
+    <section class="t-section" id="research" aria-labelledby="heading-research">
+      <div class="t-section__heading">
+        <p class="t-section__index">02 / RESEARCH</p>
+        <h2 id="heading-research">Research interests</h2>
+        <p class="t-section__caption">Making intelligence more efficient.</p>
+      </div>
+      <div class="t-section__body">
       <div class="t-grid">
         <article class="t-card">
-          <span class="t-card__no">01</span>
+          <div class="t-card__top"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="18" y="3" width="7" height="7" rx="1"/><rect x="10.5" y="19" width="7" height="7" rx="1"/><path d="M6.5 10v4h15v-4M14 14v5"/></svg><span class="t-card__no" aria-hidden="true">01</span></div>
           <h3 class="t-card__title">Model Architecture</h3>
           <p class="t-card__desc">Co-designing algorithms and infrastructure for capable models that remain efficient at scale.</p>
         </article>
         <article class="t-card">
-          <span class="t-card__no">02</span>
+          <div class="t-card__top"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h3m5 0h3m5 0h3M4 14h3m5 0h3m5 0h3M4 23h3m5 0h3m5 0h3"/><path d="m5 6 8 7 8-7M5 22l8-7 8 7"/></svg><span class="t-card__no" aria-hidden="true">02</span></div>
           <h3 class="t-card__title">Efficient Attention</h3>
           <p class="t-card__desc">Sparse attention, linear attention, and architecture-level techniques for reducing inference cost.</p>
         </article>
         <article class="t-card">
-          <span class="t-card__no">03</span>
+          <div class="t-card__top"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 14h24M5 9l-5 5 5 5m18-10 5 5-5 5M9 6v16M19 6v16"/></svg><span class="t-card__no" aria-hidden="true">03</span></div>
           <h3 class="t-card__title">Scalable Context</h3>
           <p class="t-card__desc">Extending useful context while balancing model quality, memory, throughput, and latency.</p>
         </article>
         <article class="t-card">
-          <span class="t-card__no">04</span>
+          <div class="t-card__top"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 22V6m7 16V10m7 12v-8m7 8v-4"/><path d="M1 25h26"/></svg><span class="t-card__no" aria-hidden="true">04</span></div>
           <h3 class="t-card__title">Low-Precision Training</h3>
           <p class="t-card__desc">Developing stable low-precision methods that reduce training cost while preserving model quality at scale.</p>
         </article>
       </div>
-    </section>
-
-    <section class="t-section reveal" id="news">
-      <h2 class="t-h2"><span class="t-h2__idx">// 03</span> news</h2>
-      <ul class="t-news">
-        <li><span class="t-news__date">2026.08</span><p><a href="https://hy.tencent.ai/research/hy4-preview"><strong>Hy4 preview</strong></a> was released. As one of its model-architecture contributors, I helped bring our research <a href="https://arxiv.org/abs/2603.12201"><strong>IndexCache</strong></a> into production in Hy4, enabling a cost-efficient 1M-token context.</p></li>
-        <li><span class="t-news__date">2026.06</span><p>I received my <strong>Ph.D. in Computer Science and Technology</strong> from Tsinghua University.</p></li>
-        <li><span class="t-news__date">2026.03</span><p><a href="https://arxiv.org/abs/2603.12201"><strong>IndexCache</strong></a> was released, accelerating sparse attention via cross-layer index reuse.</p></li>
-        <li><span class="t-news__date">2026.02</span><p>The <a href="https://www.arxiv.org/abs/2602.15763">GLM-5 Technical Report</a> was released. I am one of the core contributors to model architecture.</p></li>
-        <li><span class="t-news__date">2025.12</span><p><strong>GLM-4.7</strong> was released. See our <a href="https://z.ai/blog/glm-4.7">blog</a> for details.</p></li>
-        <li><span class="t-news__date">2025.09</span><p><strong>GLM-4.6</strong> was released. See our <a href="https://z.ai/blog/glm-4.6">blog</a> for details.</p></li>
-        <li><span class="t-news__date">2025.08</span><p>The <a href="https://arxiv.org/abs/2508.06471">GLM-4.5 Technical Report</a> was released. I contributed to sparse-attention adaptation during post-training.</p></li>
-      </ul>
-    </section>
-
-    <section class="t-section reveal" id="publications">
-      <h2 class="t-h2"><span class="t-h2__idx">// 04</span> publications</h2>
-      <div class="t-callout">
-        <div class="t-callout__text">
-          <h3>Full publication list on Google Scholar</h3>
-          <p>Peer-reviewed work across model architecture, retrieval, RAG, and language models.</p>
-        </div>
-        <a class="t-btn" href="https://scholar.google.com/citations?user=m88SZGgAAAAJ&amp;hl=en">→ google scholar</a>
       </div>
+    </section>
+
+    <section class="t-section" id="news" aria-labelledby="heading-news">
+      <div class="t-section__heading">
+        <p class="t-section__index">03 / NEWS</p>
+        <h2 id="heading-news">Latest updates</h2>
+        <p class="t-section__caption">Recent work and milestones.</p>
+      </div>
+      <div class="t-section__body">
+      <ul class="t-news">
+        <li><time class="t-news__date" datetime="2026-08">2026.08</time><p><a href="https://hy.tencent.ai/research/hy4-preview"><strong>Hy4 preview</strong></a> was released. As one of its model-architecture contributors, I helped bring our research <a href="https://arxiv.org/abs/2603.12201"><strong>IndexCache</strong></a> into production in Hy4, enabling a cost-efficient 1M-token context.</p></li>
+        <li><time class="t-news__date" datetime="2026-06">2026.06</time><p>I received my <strong>Ph.D. in Computer Science and Technology</strong> from Tsinghua University.</p></li>
+        <li><time class="t-news__date" datetime="2026-03">2026.03</time><p><a href="https://arxiv.org/abs/2603.12201"><strong>IndexCache</strong></a> was released, accelerating sparse attention via cross-layer index reuse.</p></li>
+        <li><time class="t-news__date" datetime="2026-02">2026.02</time><p>The <a href="https://www.arxiv.org/abs/2602.15763">GLM-5 Technical Report</a> was released. I am one of the core contributors to model architecture.</p></li>
+      </ul>
+      <details class="t-news-archive">
+        <summary>Earlier updates <span class="t-count">2025</span></summary>
+        <ul class="t-news">
+        <li><time class="t-news__date" datetime="2025-12">2025.12</time><p><strong>GLM-4.7</strong> was released. See our <a href="https://z.ai/blog/glm-4.7">blog</a> for details.</p></li>
+        <li><time class="t-news__date" datetime="2025-09">2025.09</time><p><strong>GLM-4.6</strong> was released. See our <a href="https://z.ai/blog/glm-4.6">blog</a> for details.</p></li>
+        <li><time class="t-news__date" datetime="2025-08">2025.08</time><p>The <a href="https://arxiv.org/abs/2508.06471">GLM-4.5 Technical Report</a> was released. I contributed to sparse-attention adaptation during post-training.</p></li>
+        </ul>
+      </details>
+      </div>
+    </section>
+
+    <section class="t-section" id="publications" aria-labelledby="heading-publications">
+      <div class="t-section__heading">
+        <p class="t-section__index">04 / PUBLICATIONS</p>
+        <h2 id="heading-publications">Selected publications</h2>
+        <p class="t-section__caption">Ideas, experiments, and findings.</p>
+      </div>
+      <div class="t-section__body">
+      <p class="t-section-intro">Work on model architecture, information retrieval, and language models.</p>
+      <div class="t-featured-papers">
+        <article class="t-featured-paper">
+          <div class="t-featured-paper__meta"><span>2026</span><span class="t-venue">arXiv</span></div>
+          <div class="t-featured-paper__body">
+            <h3><a href="https://arxiv.org/abs/2603.12201">IndexCache: Accelerating Sparse Attention via Cross-Layer Index Reuse <span aria-hidden="true">↗</span></a></h3>
+            <p>Accelerating sparse attention through cross-layer index reuse. Brought into production in Hy4.</p>
+            <span class="t-paper-topic">Efficient attention</span>
+          </div>
+        </article>
+        <article class="t-featured-paper">
+          <div class="t-featured-paper__meta"><span>2025</span><span class="t-venue">EMNLP</span></div>
+          <div class="t-featured-paper__body">
+            <h3><a href="https://www.arxiv.org/abs/2507.19033">SelfRACG: Enabling LLMs to Self-Express and Retrieve for Code Generation <span aria-hidden="true">↗</span></a></h3>
+            <p>Enabling language models to self-express and retrieve for code generation.</p>
+            <span class="t-paper-topic">Retrieval-augmented generation</span>
+          </div>
+        </article>
+      </div>
+      <a class="t-scholar-link" href="https://scholar.google.com/citations?user=m88SZGgAAAAJ&amp;hl=en">View all publications on Google Scholar <span aria-hidden="true">↗</span></a>
+
 
       <div class="t-pub-groups">
         <details class="t-pub-group">
-          <summary>selected papers · primary author (10)</summary>
+          <summary>Primary author <span class="t-count">10 papers</span></summary>
           <ul class="t-pub-list">
             <li class="t-pub">
               <h3 class="t-pub__title">SelfRACG: Enabling LLMs to Self-Express and Retrieve for Code Generation</h3>
@@ -194,7 +249,7 @@ redirect_from:
         </details>
 
         <details class="t-pub-group">
-          <summary>selected papers · co-author (9)</summary>
+          <summary>Co-author <span class="t-count">9 papers</span></summary>
           <ul class="t-pub-list">
             <li class="t-pub">
               <h3 class="t-pub__title">IndexCache: Accelerating Sparse Attention via Cross-Layer Index Reuse</h3>
@@ -244,23 +299,38 @@ redirect_from:
           </ul>
         </details>
       </div>
+      </div>
     </section>
 
-    <section class="t-section reveal" id="more">
-      <h2 class="t-h2"><span class="t-h2__idx">// 05</span> beyond research</h2>
+    <section class="t-section" id="more" aria-labelledby="heading-more">
+      <div class="t-section__heading">
+        <p class="t-section__index">05 / OFF THE CLOCK</p>
+        <h2 id="heading-more">Beyond research</h2>
+        <p class="t-section__caption">A little curiosity outside of work.</p>
+      </div>
+      <div class="t-section__body">
       <p class="t-note">
         Away from models and systems, I enjoy exploring <strong>craft beer</strong> —
-        from crisp wheat beers and hop-forward IPAs to Belgian witbiers and saisons. 🍻
+        from crisp wheat beers and hop-forward IPAs to Belgian witbiers and saisons.
       </p>
       <div class="t-map">
         <script id="clustrmaps" src="https://cdn.clustrmaps.com/map_v2.js?cl=ffffff&amp;w=a&amp;t=n&amp;d=J7QANnH4LJYLoOu_V6HTux3g537xFQCL00jK2z4-6jg"></script>
+      </div>
+      <a class="t-text-link" href="mailto:qiandong.97@qq.com">Let’s talk research, or a good craft beer <span aria-hidden="true">↗</span></a>
       </div>
     </section>
   </main>
 
   <footer class="t-footer">
-    <span>© {{ site.time | date: "%Y" }} Qian Dong · </span>
-    <span>Last updated {{ site.time | date: "%B %d, %Y" }}</span>
+    <div class="t-footer__inner">
+      <a class="t-footer__name" href="{{ '/' | relative_url }}">Qian Dong <span lang="zh">董骞</span></a>
+      <span class="t-footer__copyright">© {{ site.time | date: "%Y" }} · Updated {{ site.time | date: "%b %d, %Y" }}</span>
+      <nav class="t-footer__links" aria-label="More links">
+        <a href="{{ '/submit/' | relative_url }}">Submit</a>
+        <a href="{{ '/dm/' | relative_url }}">Message</a>
+        <a href="#main-content">Back to top <span aria-hidden="true">↑</span></a>
+      </nav>
+    </div>
   </footer>
 
   <script>
